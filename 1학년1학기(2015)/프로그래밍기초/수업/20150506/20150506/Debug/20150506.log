@@ -1,0 +1,47 @@
+﻿빌드 시작: 2015-05-10 오후 8:57:25
+     1>2 노드의 "C:\Users\유석환\Desktop\프로그래밍\화78수34 복프\수업\20150506\20150506\20150506.vcxproj" 프로젝트(build 대상)입니다.
+     1>InitializeBuildStatus:
+         "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\20150506.unsuccessfulbuild"을(를) 만들고 있습니다.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt "01 sum.c" "02 draw_box.c" "03 factorial.java.c" "04 중간점검 1번.c" "05 중간점검 2번.c" "06 nested_loop1.c" "07 nested_loop2.c" 08.c "09 square_root.c" "10 averagel.c" "11 to_upper.c"
+         11 to_upper.c
+         10 averagel.c
+         09 square_root.c
+         08.c
+         07 nested_loop2.c
+         06 nested_loop1.c
+         05 중간점검 2번.c
+         04 중간점검 1번.c
+         03 factorial.java.c
+         02 draw_box.c
+         01 sum.c
+         코드를 생성하고 있습니다...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\20150506.exe.embed.manifest.res" Debug\20150506_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\유석환\Desktop\프로그래밍\화78수34 복프\수업\20150506\Debug\20150506.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\20150506.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\유석환\Desktop\프로그래밍\화78수34 복프\수업\20150506\Debug\20150506.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\유석환\Desktop\프로그래밍\화78수34 복프\수업\20150506\Debug\20150506.lib" /MACHINE:X86 Debug\20150506.exe.embed.manifest.res
+         "Debug\01 sum.obj"
+         "Debug\02 draw_box.obj"
+         "Debug\03 factorial.java.obj"
+         "Debug\04 중간점검 1번.obj"
+         "Debug\05 중간점검 2번.obj"
+         "Debug\06 nested_loop1.obj"
+         "Debug\07 nested_loop2.obj"
+         Debug\08.obj
+         "Debug\09 square_root.obj"
+         "Debug\10 averagel.obj"
+         "Debug\11 to_upper.obj"
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\20150506.exe.embed.manifest" /manifest Debug\20150506.exe.intermediate.manifest
+         모든 출력이 최신 상태입니다.
+       LinkEmbedManifest:
+         모든 출력이 최신 상태입니다.
+         20150506.vcxproj -> C:\Users\유석환\Desktop\프로그래밍\화78수34 복프\수업\20150506\Debug\20150506.exe
+       FinalizeBuildStatus:
+         "Debug\20150506.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+         "Debug\20150506.lastbuildstate"에 연결(touching)하고 있습니다.
+     1>"C:\Users\유석환\Desktop\프로그래밍\화78수34 복프\수업\20150506\20150506\20150506.vcxproj" 프로젝트를 빌드했습니다(build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:01.34

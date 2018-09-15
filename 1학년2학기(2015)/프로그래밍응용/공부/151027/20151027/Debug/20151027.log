@@ -1,0 +1,33 @@
+﻿빌드 시작: 2015-11-26 오후 1:45:32
+     1>2 노드의 "C:\Users\유석환\Desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\공부\151027\20151027\20151027.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:prompt "13 token.c"
+         13 token.c
+     1>c:\users\유석환\desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\공부\151027\20151027\13 token.c(12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(453): note: 'strtok' 선언을 참조하십시오.
+     1>c:\users\유석환\desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\공부\151027\20151027\13 token.c(19): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(453): note: 'strtok' 선언을 참조하십시오.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\유석환\Desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\공부\151027\Debug\20151027.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\유석환\Desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\공부\151027\Debug\20151027.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\유석환\Desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\공부\151027\Debug\20151027.lib" /MACHINE:X86 "Debug\01 char_const.obj"
+         "Debug\02 string1.obj"
+         "Debug\03 string2.obj"
+         "Debug\04 string3.obj"
+         "Debug\05 getchar.obj"
+         "Debug\06 getch.obj"
+         "Debug\07 stringio.obj"
+         "Debug\08 gets.obj"
+         "Debug\09 char_process.obj"
+         "Debug\10 char_probe.obj"
+         "Debug\11 strcpy_strcat.obj"
+         "Debug\12 strcmp.obj"
+         "Debug\13 token.obj"
+         "Debug\14 sprintf.obj"
+         "Debug\15 atoi.obj"
+         "Debug\16 array_of_string.obj"
+         "Debug\17 dic.obj"
+         20151027.vcxproj -> C:\Users\유석환\Desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\공부\151027\Debug\20151027.exe
+     1>"C:\Users\유석환\Desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\공부\151027\20151027\20151027.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:01.53

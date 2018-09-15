@@ -1,0 +1,2 @@
+실행파일 .dll 파일없다면서 실행안되면
+http://dosnipe.tistory.com/30 에서 .dll 파일 받아서 넣어주시면 실행됩니다!

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var sum = 0;
+		var startTime = new Date();
+		for(var i = 0; i < 1000000; i++)
+			sum += i;
+		var finishTime = new Date();
+		var diff = finishTime.getTime() - startTime.getTime();
+		alert(diff + "밀리초가 걸렸음!");
+	</script>
+</head>
+<body>
+</body>
+</html>

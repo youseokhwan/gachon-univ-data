@@ -1,0 +1,32 @@
+<!-- chapter 03 10번
+html 작성 -->
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>카드 정보 입력</legend>
+			<ol>
+				<li>
+					<fieldset>
+						<legend>카드 타입</legend>
+						<ol>
+							<li><input type="radio" name="cardtype" value="VISA" />VISA</li>
+							<li><input type="radio" name="cardtype" value="AmEx" />AmEx</li>
+							<li><input type="radio" name="cardtype" value="Mastercard" />Mastercard</li>
+						</ol>
+					</fieldset>
+				</li>
+				<li>카드 번호 <input type="number" /></li>
+				<li>CRC 번호 <input type="number" /></li>
+				<li>카드 소유자 이름 <input type="text" placeholder="카드 상의 이름" />
+			</ol>
+		</fieldset>
+		<fieldset>
+			<input type="submit" value="구매" />
+		</fieldset>
+	</form>
+</body>
+</html>

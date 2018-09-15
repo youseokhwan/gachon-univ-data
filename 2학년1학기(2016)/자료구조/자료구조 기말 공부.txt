@@ -1,0 +1,534 @@
+자료구조 공부
+
+=========================================================
+
+6장 스택
+스택: 접시를 쌓듯이 자료를 차곡차곡 쌓아올린 형태의 구조 (후입선출: Last In First Out)
+
+알고리즘 6-1 (스택의 push 알고리즘)
+push(S, data)
+	top <- top + 1;
+	if(top > STACK_SIZE) then
+		overflow;
+	else
+		S(top) <- data;
+end push()
+
+알고리즘 6-2 (스택의 pop 알고리즘)
+pop(S)
+	if(top = 0) then underflow;
+	else {
+		return S(top);
+		top <- top - 1;
+	}
+end pop(S)
+
+---------------------------------------------------------
+
+스택의 응용
+1. 역순 문자열 만들기
+2. 시스템 스택
+3. 수식의 괄호 검사
+4. 수식의 후위 표기법 변환 {
+	전위 표기법(profix notation): +AB
+	중위 표기법(infix notation): A+B
+	후위 표기법(postfix notation): AB+
+
+	변환 방법
+	1. 각 수식에 괄호를 씌운다.
+	2. 각 연산자를 대응하면 괄호의 앞(뒤)로 이동한다.
+	3. 괄호를 제거한다.
+
+	후위 표기법 변환 알고리즘
+	1. 왼쪽 괄호를 만나면 다음으로 넘어간다.
+	2. 피연산자를 만나면 출력한다.
+	3. 연산자를 만나면 push().
+	4. 오른쪽 괄호를 만나면 pop().
+	5. 수식이 끝나면 계속해서 pop().
+}
+5. 후위 표기 수식의 연산 {
+	1. 피연산자를 만나면 push().
+	2. 연산자를 만나면 pop()하여 연산하고, 결과를 다시 push().
+	3. 수식이 끝나면 pop()하여 출력한다.
+}
+
+=========================================================
+
+7장 큐
+큐: 한쪽 끝에서는 삽입 작업만 이루어지고 반대쪽 끝에서는 삭제 작업만 이루어지는 구조 (선입선출: First In First Out)
+
+큐의 rear에서 이루어지는 삽입 연산을 enQueue
+front에서 이루어지는 삭제 연산을 deQueue라고 한다.
+
+알고리즘 7-1 (공백 큐 생성 알고리즘)
+createQueue()
+	Q[n];
+	front <- -1;
+	rear <- -1;
+end createQueue()
+
+알고리즘 7-2 (공백 큐 검사 알고리즘 및 포화 상태 검사 알고리즘)
+isEmpty(Q)
+	if(front=rear) then
+		return true;
+	else
+		return false;
+end isEmpty()
+
+isFull(Q)
+	if(rear=n-1) then
+		return true;
+	else
+		return false;
+end isFull()
+
+알고리즘 7-3 (큐의 삽입 알고리즘)
+enQueue(Q, item)
+	if(isFull(Q)) then
+		overflow;
+	else {
+		rear <- rear + 1;
+		Q[rear] <- item;
+	}
+end enQueue()
+
+알고리즘 7-4 (큐의 삭제 알고리즘)
+deQueue(Q)
+	if(isEmpty(Q)) then
+		underflow;
+	else {
+		front <- front + 1;
+		return Q[front];
+	}
+end deQueue()
+
+delete(Q)
+	if(isEmpty(Q)) then
+		underflow;
+	else
+		front <- front + 1;
+end delete()
+
+알고리즘 7-5 (큐의 검색 알고리즘)
+peek(Q)
+	if(isEmpty(Q)) then
+		underflow;
+	else
+		return Q[front+1];
+end peek()
+
+---------------------------------------------------------
+
+원형 큐: 논리적으로 큐의 처음과 끝이 연결되어 있는 구조
+
+알고리즘 7-6 (공백 원형 큐의 생성 알고리즘)
+createQueue()
+	cQ[n];
+	front <- 0;
+	reat <- 0;
+end createQueue()
+
+알고리즘 7-7 (원형 큐의 공백 상태 및 포화 상태 검사 알고리즘)
+isEmpty(cQ)
+	if(front=rear) then
+		return true;
+	else
+		return false;
+end isEmpty()
+
+isFull(cQ)
+	if(((rear+1) mod n)=front) then
+		return true;
+	else
+		return false;
+end isFull()
+
+알고리즘 7-8 (원형 큐의 삽입 알고리즘)
+enQueue(cQ, item)
+	if(isFull(cQ)) then
+		overflow;
+	else {
+		rear <- (rear+1) mod n;
+		cQ[rear] <- item;
+	}
+end enQueue()
+
+알고리즘 7-9 (원형 큐의 삭제 알고리즘)
+deQueue(cQ)
+	if(isEmpty(cQ)) then
+		underflow;
+	else {
+		front <- (front+1) mod n;
+		return cQ[front];
+end deQueue()
+
+delete(cQ)
+	if(isEmpty(cQ)) then
+		underflow;
+	else
+		front <- (front+1) mod n;
+end delete()
+
+---------------------------------------------------------
+
+연결 큐
+
+알고리즘 7-10 (공백 연결 큐 생성 알고리즘)
+createLinkedQueue()
+	front <- null;
+	rear <- null;
+end createLinkedQueue()
+
+알고리즘 7-11 (공백 연결 큐 검사 알고리즘)
+isEmpty(LQ)
+	if(front=rear) then
+		return true;
+	else
+		return false;
+end isEmpty()
+
+알고리즘 7-12 (연결 큐의 삽입 알고리즘)
+enQueue(LQ, item)
+	new <- getNode();
+	new.data <- item;
+	new.link <- null;
+	if(front=null) then {
+		rear <- new;
+		front <- new;
+	}
+	else {
+		rear.link <- new;
+		rear <- new;
+	}
+end enQueue()
+
+알고리즘 7-13 (연결 큐의 삭제 알고리즘)
+deQueue(LQ)
+	if(isEmpty(LQ)) then
+		underflow;
+	else {
+		old <- front;
+		item <- front.data;
+		front <- front.link;
+		if (isEmpty(LQ)) then
+			rear <- null;
+		returnNode(old);
+		return item;
+	}
+end deQueue()
+
+delete(LQ)
+	if(isEmpty(LQ)) then
+		underflow;
+	else {
+		old <- front;
+		front <- front.link;
+		if(isEmpty(LQ)) then
+			rear <- null;
+		returnNode(old);
+	}
+end delete()
+
+알고리즘 7-14 (연결 큐의 검색 알고리즘)
+peek(LQ)
+	if(isEmpty(LQ)) then
+		underflow;
+	else
+		return (front.data);
+end peek()
+
+---------------------------------------------------------
+
+덱(Deque: Double-ended queue): 큐의 양쪽 끝에서 삽입 연산과 삭제 연산을 수행 (스택의 특성과 큐의 특성을 모두 가지고 있다)
+
+---------------------------------------------------------
+
+큐의 응용
+1. 운영체제의 작업 큐
+2. 시뮬레이션에서의 큐잉 시스템
+
+=========================================================
+
+8장 트리
+트리: 비선형 자료구조 중에서 자료들 간에 계층 관계를 가진 계층형 자료구조
+이진 트리: 트리의 모든 차수를 2 이하로 제한하여 전체 트리의 차수가 2 이하가 되도록 정의한 것
+
+특징
+1. n개의 노드를 가진 이진 트리는 항상 (n-1)개의 간선을 가진다.
+2. 높이가 h인 이진 트리가 가질 수 있는 노드의 최소 개수는 (h+1)개가 되며, 최대 개수는 (2^(h+1)-1)개가 된다.
+
+분류
+1. 포화 이진 트리: 모든 레벨에 노드가 꽉찬 이진 트리
+2. 완전 이진 트리: 노드들이 빈자리 없이 위치한 이진 트리
+3. 편향 이진 트리: 한쪽 서브 트리만 가지고 있는 트리
+
+구현
+typedef struct treeNode {
+	char data;
+	struct treeNode *left;
+	struct treeNode *right;
+} treeNode;
+
+---------------------------------------------------------
+
+순회: 모든 노드를 한 번씩 모두 방문하여 데이터를 처리하는 것
+1. 전위 순회(Preorder Traversal): D-L-R {
+	알고리즘 8-1 (이진 트리의 전위 순회 알고리즘)
+	preorder(T)
+	if(T≠null) then {
+		visit T.data;
+		preorder(T.left);
+		preorder(T.right);
+	}
+	end preorder()
+}
+2. 중위 순회(Inorder Traversal): L-D-R {
+	알고리즘 8-2 (이진 트리의 중위 순회 알고리즘)
+	inorder(T)
+	if(T≠null) then {
+		inorder(T.left);
+		visit T.data;
+		inorder(T.right);
+	}
+	end inorder()
+}
+3. 후위 순회(Postorder Traversal): L-R-D {
+	알고리즘 8-3 (이진 트리의 후위 순회 알고리즘)
+	postorder(T)
+	if(T≠null) then {
+		postorder(T.left);
+		postorder(T.right);
+		visit T.data;
+	}
+	end postorder()
+}
+
+---------------------------------------------------------
+
+이진 탐색 트리(Binary Search Tree): 이진 트리를 탐색을 위한 자료구조로 사용하기 위해서 원소의 크기에 따라 노드의 위치를 정의한 것
+키: 식별할 수 있는 유일한 값 (주민등록번호, 학번 등)
+1. 모든 원소는 서로 다른 유일한 키를 갖는다.
+2. 왼쪽 서브 트리의 키값 < 루트의 키값 < 오른쪽 서브 트리의 키값
+3. 서브 트리도 이진 탐색 트리이다.
+
+알고리즘 8-4 (이진 탐색 트리에서의 탐색 연산 알고리즘)
+searchBST(bsT, x)
+	p <- bsT;
+	if (p=null) then
+		return null;
+	if (x=p.key) then
+		return p;
+	if (x<p.key) then
+		return searchBST(p.left, x);
+	else
+		return searchBST(p.right, x);
+end searchBST()
+
+알고리즘 8-5 (이진 탐색 트리에서의 삽입 연산 알고리즘)
+insertBST(bsT, x)
+	p <- bsT;
+	while (p≠null) do {
+		if (x=p.key) then
+			return;
+		q <- p;
+		if (x<p.key) then
+			p <- p.left;
+		else
+			p <- p.right;
+	}
+	new <- getNode();
+	new.key <- x;
+	new.left <- null;
+	new.right <- null;
+	if (bsT = null) then
+		bsT <- new;
+	else if (x < p.key) then
+		q.left <- new;
+	else
+		q.right <- new;
+	return;
+end insertBST()
+
+이진 탐색 트리의 삭제 연산
+1. 삭제할 노드의 차수가 0인 경우 (단말 노드인 경우): 노드를 삭제하고 부모 노드의 링크 필드를 null로 설정
+2. 삭제할 노드의 차수가 1인 경우: 노드를 삭제하고 자식 노드를 부모 노드의 자리로 올려줌
+3. 삭제할 노드의 차수가 2인 경우: 노드를 삭제하고 후계자 선택하여 부모 노드의 자리로 올려준 후 후계자의 자식 노드는 후계자의 자리로 올려줌
+
+알고리즘 8-6 이진 탐색 트리에서의 원소 삭제 알고리즘
+deleteBST(bsT, x)
+	p <- 삭제할 노드;
+	parent <- 삭제할 노드의 부모 노드;
+	if(p=null) then
+		return;
+	if(p.left=null and p.right=null) then {
+		if(parent.left = p) then
+			parent.left <- null;
+		else
+			parent.right <- null;
+	}
+	else if(p.left=null or p.right=null) then {
+		if(p.left≠null) then {
+			if(parent.left = p) then
+				parent.left <- p.left;
+			else
+				parent.right <- p.left;
+		}
+		else {
+			if(parent.left = p) then
+				parent.left <- p.right;
+			else
+				parent.right <- p.right;
+		}
+	}
+	else if(p.left≠null and p.right≠null) then {
+		q <- maxNode(p.left);
+		p.key <- q.key;
+		deleteBST(p.left, p.key);
+	}
+end deleteBST()
+
+---------------------------------------------------------
+
+히프: 키값이 가장 크거나 작은 노드를 찾기 위해서 만든 자료구조 (최대 히프, 최소 히프)
+1. 완전 이진 트리여야함
+2. 키값 중복 가능
+3. 최대 히프는 부모 노드의 키값이 자식 노드의 키값보다 항상 크거나 같아야 함
+4. 최대 히프에서는 키값이 가장 큰 노드가 루트가 됨
+5. 일반적으로 히프는 최대 히프를 의미
+
+알고리즘 8-7 (최대 히프에서의 삽입 알고리즘)
+insertHeap(heap, item)
+	if(n=heapSize) then
+		overflow;
+	n <- n+1;
+	for(i <- n; ;) do {
+		if (i=1) then
+			exit;
+		if (item <= heap[ceil(i/2)]) then
+			exit;
+		heap[i] <- heap[ceil(i/2)]);
+		i <- ceil(i/2);
+	}
+	heap[i] <- item;
+end insertHeap()
+
+알고리즘 8-8 (최대 히프에서의 삭제 알고리즘)
+deleteHeap(heap)
+end deleteHeap()
+
+=========================================================
+
+9장 그래프
+그래프: 연결되어 있는 원소 간의 관계를 표현하는 자료구조
+1. 정점: 연결할 객체
+2. 간선: 객체를 연결
+
+종류
+1. 무방향 그래프: 방향이 없는 그래프
+2. 방향 그래프: 방향이 있는 그래프 (다이그래프)
+3. 완전 그래프: 모든 정점을 연결하여 최대 간선 수를 가진 그래프
+4. 부분 그래프: 원래 그래프의 일부로 만든 그래프
+5. 가중 그래프: 가중치를 할당한 그래프
+
+구현
+1. 인접행렬
+2. 인접리스트
+
+그래프 순회: 그래프에 있는 모든 정점을 한 번씩 방문하는 것
+1. 깊이 우선 탐색 (DFS: Depth First Search): 스택 {
+	알고리즘 9-1 (깊이 우선 탐색 알고리즘)
+	DFS(v)
+		for(i <- 0; i < n; i++) do {
+			visited[i] <- false;
+		}
+		stack <- createStack();
+		visited[v] <- true;
+		v 방문;
+		while (not isEmpty(stack)) do {
+			if (visited[v의 인접 정점 w]=false) then {
+				push(stack, v);
+				visited[w] <- true;
+				w 방문;
+				v <- w;
+			}
+			else
+				v <- pop(stack);
+		}
+	end DFS()
+}
+2. 너비 우선 탐색 (BFS: Breadth First Search): 큐 {
+	알고리즘 9-2 (너비 우선 탐색 알고리즘)
+	BFS(v)
+		for(i <- 0; i < n; i++) do {
+			visited[i] <- false;
+		}
+		Q <- createQueue();
+		visited[v] <- true;
+		v 방문;
+		while (not isEmpty(Q)) do {
+			while (visited[v의 인접 정점 w]=false) do {
+				visited[w] <- true;
+				w 방문;
+				enQueue(Q, w);
+			}
+			v <- deQueue(Q);
+		}
+	end BFS()
+}
+
+신장 트리: 최소의 간선을 이용하여 모든 정점을 연결한 그래프
+1. 깊이 우선 탐색 -> 깊이 우선 신장 트리 생성
+2. 너비 우선 탐색 -> 너비 우선 신장 트리 생성
+
+최소 비용 신장 트리: 가중치의 합이 최소인 신장 트리
+1. Kruskal 알고리즘 (가중치가 큰 간선부터 제거하되 단절되지 않도록 제거)
+2. Prime 알고리즘 (가중치가 가장 작은 간선부터 삽입하되, 사이클이 생기지 않도록 삽입)
+
+=========================================================
+
+10장 정렬
+오름차순(Ascending)
+내림차순(Descending)
+
+분류
+1. 실행 방법에 따른 분류 {
+	1. 비교식 정렬: 키값을 2개씩 비교하여 교환
+	2. 분산식 정렬: 여러 개의 부분집합으로 분해하고, 각각 정렬
+}
+2. 정렬 장소에 따른 분류 {
+	1. 내부 정렬: 컴퓨터 메모리 내부에서 정렬 (속도 빠르지만 용량 제한) {
+		1. 교환 방식: 키를 교환하여 정렬 (선택, 버블, 퀵)
+		2. 삽입 방식: 키를 삽입하여 정렬 (삽입, 셸)
+		3. 병합 방식: 키를 병합하여 정렬 (2-way, n-way)
+		4. 분배 방식: 부분집합에 분배하여 정렬 (기수)
+		5. 선택 방식: 이진 트리 사용하여 정렬 (히프, 트리)
+	}
+	2. 외부 정렬: 보조 기억 장치에서 정렬 {
+		1. 병합 방식: 파일을 부분 파일로 분리 (2-way, n-way)
+	}
+}
+
+---------------------------------------------------------
+
+선택 정렬
+알고리즘 10-1 (선택 정렬 알고리즘)
+selectionSort(a[], n)
+	for (i <- 1; i < n; i++) {
+		a[i], ..., a[n-1] 중에서 가장 작은 원소 a[k]를 선택하여,
+		a[i]와 교환한다.
+	}
+end selectionSort()
+
+버블 정렬
+알고리즘 10-2 (버블 정렬 알고리즘)
+bubbleSort(a[], n)
+	for(i <- n-1; i >= 0; i--) {
+		for(j <- 0; j < i; j++) {
+			if(a[j] > a[j+1]) then {
+				temp <- a[j];
+				a[j] <- a[j+1];
+				a[j+1] <- temp;
+			}
+		}
+	}
+end bubbleSort()

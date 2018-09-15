@@ -1,0 +1,5 @@
+로딩: 메인메모리에 적재하는 것 (모든 프로그램은 메인 메모리에 로딩되어야 실행할 수 있다)
+Asynchronous / Synchronous 의 차이점
+
+Asynchronous: 동시에 발생하지 않는 - 페이지의 일부만 업데이트
+Synchronous: 동시 발생하는 - 페이지 전체를 업데이트

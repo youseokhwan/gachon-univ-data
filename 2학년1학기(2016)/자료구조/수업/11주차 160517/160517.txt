@@ -1,0 +1,9 @@
+큐를 배열로 구현했을 때의 단점
+-> 자료가 항상 차있는 것처럼 인식해서 ?
+
+A+B PreOrder Traversal
++AB InOrder Traversal
+AB+ PostOrder Traversal
+
+어센딩 소트?
+Heap Sort?

@@ -1,0 +1,38 @@
+﻿빌드 시작: 2016-03-14 오후 4:52:53
+     1>2 노드의 "C:\Users\유석환\Desktop\1장\2장\2장.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt "2-23.cpp" "2-24.cpp"
+         2-24.cpp
+         2-23.cpp
+         코드를 생성하고 있습니다...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\유석환\Desktop\1장\Debug\2장.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\유석환\Desktop\1장\Debug\2장.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\유석환\Desktop\1장\Debug\2장.lib" /MACHINE:X86 "Debug\2-08.obj"
+         "Debug\2-01.obj"
+         "Debug\2-02.obj"
+         "Debug\2-03.obj"
+         "Debug\2-04.obj"
+         "Debug\2-05.obj"
+         "Debug\2-06.obj"
+         "Debug\2-07.obj"
+         "Debug\2-09.obj"
+         "Debug\2-10.obj"
+         "Debug\2-11.obj"
+         "Debug\2-12.obj"
+         "Debug\2-13.obj"
+         "Debug\2-14.obj"
+         "Debug\2-15.obj"
+         "Debug\2-16.obj"
+         "Debug\2-17.obj"
+         "Debug\2-18.obj"
+         "Debug\2-19.obj"
+         "Debug\2-20.obj"
+         "Debug\2-21.obj"
+         "Debug\2-22.obj"
+         "Debug\2-23.obj"
+         "Debug\2-24.obj"
+         2장.vcxproj -> C:\Users\유석환\Desktop\1장\Debug\2장.exe
+     1>"C:\Users\유석환\Desktop\1장\2장\2장.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:04.79

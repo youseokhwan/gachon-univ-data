@@ -1,0 +1,34 @@
+﻿빌드 시작: 2015-11-03 오후 3:23:26
+     1>2 노드의 "C:\Users\유석환\Desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\과제\11월3일\201533792\201533792\201533792.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:prompt 08.c 09.c
+         09.c
+     1>c:\users\유석환\desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\과제\11월3일\201533792\201533792\09.c(12): warning C4013: 'gets'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+     1>c:\users\유석환\desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\과제\11월3일\201533792\201533792\09.c(20): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(453): note: 'strtok' 선언을 참조하십시오.
+     1>c:\users\유석환\desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\과제\11월3일\201533792\201533792\09.c(25): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(90): note: 'strcat' 선언을 참조하십시오.
+     1>c:\users\유석환\desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\과제\11월3일\201533792\201533792\09.c(27): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(90): note: 'strcat' 선언을 참조하십시오.
+     1>c:\users\유석환\desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\과제\11월3일\201533792\201533792\09.c(28): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(453): note: 'strtok' 선언을 참조하십시오.
+     1>c:\users\유석환\desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\과제\11월3일\201533792\201533792\09.c(29): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(90): note: 'strcat' 선언을 참조하십시오.
+         08.c
+         코드를 생성하고 있습니다...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\유석환\Desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\과제\11월3일\201533792\Debug\201533792.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\유석환\Desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\과제\11월3일\201533792\Debug\201533792.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\유석환\Desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\과제\11월3일\201533792\Debug\201533792.lib" /MACHINE:X86 Debug\01.obj
+         Debug\02.obj
+         Debug\03.obj
+         Debug\04.obj
+         Debug\05.obj
+         Debug\06.obj
+         Debug\07.obj
+         Debug\08.obj
+         Debug\09.obj
+         201533792.vcxproj -> C:\Users\유석환\Desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\과제\11월3일\201533792\Debug\201533792.exe
+     1>"C:\Users\유석환\Desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\과제\11월3일\201533792\201533792\201533792.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:01.43

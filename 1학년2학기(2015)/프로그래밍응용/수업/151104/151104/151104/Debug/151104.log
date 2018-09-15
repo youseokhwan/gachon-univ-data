@@ -1,0 +1,39 @@
+﻿빌드 시작: 2015-11-10 오후 3:30:22
+     1>2 노드의 "C:\Users\유석환\Desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\수업\151104\151104\151104\151104.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:prompt "01 student1.c" "02 students2.c" "03 point.c" "04 nested_struct.c" "05 array_of_struct.c" "06 pointer_to_st.c" "07 st_pointer.c" "08 vector.c" "09 union.c" "10 union1.c" "11 enum1.c" "12 enum2.c" "13 typedef.c"
+         13 typedef.c
+         12 enum2.c
+         11 enum1.c
+         10 union1.c
+         09 union.c
+         08 vector.c
+         07 st_pointer.c
+         06 pointer_to_st.c
+         05 array_of_struct.c
+         04 nested_struct.c
+         03 point.c
+         02 students2.c
+         01 student1.c
+     1>c:\users\유석환\desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\수업\151104\151104\151104\01 student1.c(15): warning C4013: 'strcpy'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+         코드를 생성하고 있습니다...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\유석환\Desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\수업\151104\151104\Debug\151104.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\유석환\Desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\수업\151104\151104\Debug\151104.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\유석환\Desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\수업\151104\151104\Debug\151104.lib" /MACHINE:X86 "Debug\01 student1.obj"
+         "Debug\02 students2.obj"
+         "Debug\03 point.obj"
+         "Debug\04 nested_struct.obj"
+         "Debug\05 array_of_struct.obj"
+         "Debug\06 pointer_to_st.obj"
+         "Debug\07 st_pointer.obj"
+         "Debug\08 vector.obj"
+         "Debug\09 union.obj"
+         "Debug\10 union1.obj"
+         "Debug\11 enum1.obj"
+         "Debug\12 enum2.obj"
+         "Debug\13 typedef.obj"
+         151104.vcxproj -> C:\Users\유석환\Desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\수업\151104\151104\Debug\151104.exe
+     1>"C:\Users\유석환\Desktop\가천대학교\2 - 2015 1학년 2학기\프로그래밍응용\수업\151104\151104\151104\151104.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:02.14

@@ -1,0 +1,21 @@
+﻿빌드 시작: 2015-04-01 오후 12:17:59
+     1>2 노드의 "C:\Users\유석환\Desktop\프로그래밍\20150401\20150401\20150401.vcxproj" 프로젝트(build 대상)입니다.
+     1>InitializeBuildStatus:
+         "Debug\20150401.unsuccessfulbuild"에 연결(touching)하고 있습니다.
+       ClCompile:
+         모든 출력이 최신 상태입니다.
+       ManifestResourceCompile:
+         모든 출력이 최신 상태입니다.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\유석환\Desktop\프로그래밍\20150401\Debug\20150401.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\20150401.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\유석환\Desktop\프로그래밍\20150401\Debug\20150401.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\유석환\Desktop\프로그래밍\20150401\Debug\20150401.lib" /MACHINE:X86 Debug\20150401.exe.embed.manifest.res
+         Debug\leapyear.obj
+         Debug\condition.obj
+         Debug\prec.obj
+         Debug\typecast.obj
+     1>typecast.obj : error LNK2005: _main이(가) prec.obj에 이미 정의되어 있습니다.
+     1>C:\Users\유석환\Desktop\프로그래밍\20150401\Debug\20150401.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
+     1>"C:\Users\유석환\Desktop\프로그래밍\20150401\20150401\20150401.vcxproj" 프로젝트를 빌드했습니다(build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:00.30

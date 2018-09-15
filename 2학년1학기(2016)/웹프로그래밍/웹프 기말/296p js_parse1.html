@@ -1,0 +1,21 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<script>
+		function calc() {
+			var _x = document.getElementById("x").value;
+			var _y = document.getElementById("y").value;
+			var _sum = parseInt(_x) + parseInt(_y);
+			document.getElementById("sum").value = _sum;
+		}
+	</script>
+</head>
+<body>
+	<h3>덧셈 계산기</h3>
+	첫번째 정수: <input type="text" id="x" /><br />
+	두번째 정수: <input type="text" id="y" /><br />
+	합계: <input type="text" id="sum" /><br />
+	<input type="button" value="계산" onclick="calc();" />
+</body>
+</html>

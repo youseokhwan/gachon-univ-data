@@ -1,0 +1,32 @@
+// 9¹ø
+#include <iostream>
+using namespace std;
+void add(int a, int b)
+{
+	cout<<"µ¡¼À °á°ú = "<<a+b<<"\n";
+}
+void sub(int a, int b)
+{
+	cout<<"»¬¼À °á°ú = "<<a-b<<"\n;
+}
+
+void (*pf)(int, int);
+
+void main()
+{
+	int a=5, b=2;
+	int input; // Å°º¸µå ÀÔ·ÂÀ» À§ÇÑ º¯¼ö
+	cout<<"º¯¼ö a¿Í bÀÇ µ¡¼À È¤Àº »¬¼À ÀÛ¾÷À» ¼±ÅÃÇÏ½Ã¿À (µ¡¼À:1, »¬¼À:2): ";
+	cin>>input;
+
+	if(input==1) {
+		pf = add;
+		pf(a,b);
+	}
+	else if(input==2) {
+		pf = sub;
+		sub(a,b);
+	}
+	else
+		cout<<"¹øÈ£ ÀÔ·ÂÀÌ Àß¸ø µÇ¾ú½À´Ï´Ù!\n";
+}

@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>My Timetable</title>
+    <style>
+        p {font-style: italic;}
+        #timetable {text-align: center;
+                    border: 3px solid black;
+                    background-image: url('symbolmark.jpg');
+                    background-repeat: no-repeat;
+                    background-position: right bottom;
+        }
+        th {background-color:#faf4c0;}                                      
+        #major {background-color:#d4f4fa;
+                border: 2px solid black;
+        }
+        #major_e {background-color:#d4f4fa;
+                border: 2px solid black;
+                text-decoration: underline;
+        }
+        #general {background-color:#ffd9fa;
+                  border: 2px solid black;
+        }
+        a:link {color: black;}
+        a:visited {color: black;}
+    </style>
+</head>
+<body>
+    <h2>2016년도 1학기 시간표</h2>
+    <p>과목을 클릭하면 e-class로 연결됩니다. <a href="#information">과목별 상세 정보</a></p>
+    <hr />
+
+    <table border="0" id="timetable">
+        <tr>
+            <td>&nbsp;</td>
+            <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;월&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;화&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;수&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;목&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;금&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        </tr>
+        <tr>
+            <th>1교시</th>
+            <td rowspan="2">&nbsp;</td>
+            <td rowspan="4" id="major_e"><a onclick="alert('e-class가 개설되지 않았습니다!')">컴퓨터<br />구조</a></td>
+            <td rowspan="4">&nbsp;</td>
+            <td rowspan="4" id="major"><a href="http://eclass.gachon.ac.kr/myMain.jsp?Forum_seq=109762" target="_blank">C++<br />(원어강의)</a></td>
+            <td rowspan="11">&nbsp;</td>
+        </tr>
+        <tr>
+            <th>2교시</th>
+        </tr>    
+        <tr>
+            <th>3교시</th>
+            <td rowspan="2" id="general"><a href="http://eclass.gachon.ac.kr/myMain.jsp?Forum_seq=109256" target="_blank">독일의<br />이해</a></td>
+        </tr>
+        <tr>
+            <th>4교시</th>
+        </tr>
+        <tr>
+            <th>5교시</th>
+            <td rowspan="7">&nbsp;</td>
+            <td rowspan="4" id="major"><a href="http://eclass.gachon.ac.kr/myMain.jsp?Forum_seq=109767" target="_blank">자료<br />구조</a></td>
+            <td rowspan="4" id="major"><a href="http://eclass.gachon.ac.kr/myMain.jsp?Forum_seq=109753" target="_blank">웹<br />프로그래밍</a></td>
+            <td rowspan="2" id="general"><a href="http://eclass.gachon.ac.kr/myMain.jsp?Forum_seq=112514" target="_blank">자기개발과<br />진로탐색</a></td>
+        </tr>
+        <tr>
+            <th>6교시</th>
+        </tr>
+        <tr>
+            <th>7교시</th>
+            <td rowspan="5">&nbsp;</td>
+        </tr>
+        <tr>
+            <th>8교시</th>
+        </tr>
+        <tr>
+            <th>9교시</th>
+            <td rowspan="3" id="general"><a href="http://eclass.gachon.ac.kr/myMain.jsp?Forum_seq=112462" target="_blank">컴퓨터활용<br />및 실습</a></td>
+            <td id="general"><a href="http://eclass.gachon.ac.kr/myMain.jsp?Forum_seq=113226" target="_blank">에듀에코</a></td>
+        </tr>
+        <tr>
+            <th>10교시</th>
+            <td rowspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+            <th>11교시</th>
+        </tr>
+    </table>
+
+    <form>
+        <br />MEMO<br />
+        <textarea rows="5" cols="69"></textarea>
+    </form>
+    <hr />
+
+    <h2 id="information">과목별 상세 정보</h2>
+    <ul>
+        <li><a href="#german">독일의 이해</a></li>
+        <li>컴퓨터구조</li>
+        <li><a href="#data">자료구조</a></li>
+        <li><a href="#excel">컴퓨터활용 및 실습</a></li>
+        <li><a href="#web">웹프로그래밍</a></li>
+        <li>에듀에코세미나</li>
+        <li><a href="#cpp">C++(원어강의)</a></li>
+        <li><a href="#job">자기개발과 진로탐색</a></li>
+    </ul>
+    <hr />
+
+    <h3 id="german">독일의 이해</h3>
+    <p>
+        <strong>강의목표</strong>
+        여론조사에서‘살기 좋은 곳’으로 꼽힌 나라들 가운데 하나인 독일과
+        그곳에 사는 사람들의 삶을 살펴보고자 한다. 이를 위해 먼저 독일과
+        독일 사람들에 관한 정보들을 연대기 순으로 정리한 후, 영화를 보며
+        그들의 삶을 만나게 될 것이다.<br />
+        <strong>강의진행방법</strong>
+        이론 중심의 강의이며, 매 시간 영화를 보고 함께 고민하며 토론할 것이다.
+    </p>
+    <hr />
+
+    <h3 id="data">자료구조</h3>
+    <p>
+        <strong>강의목표</strong>
+        우리 주변을 살펴보자. 내 책상 위에 있 는책꽂이에는 책들이 어떤
+        순서로 놓여있나? 필통 안에는 필기도구가 어떤순서로 되어있나?
+        어머니가 즐겨 쓰시는 주방에 접시들은 닦은 후 어떤 순서로 쌓아놓으며
+        꺼낼 때는어떤 순서로 꺼내는가. 학교에 등교하기 위하여 버스를 타면
+        동전은 어떠한 형태로 쌓이고 어떤 형식으로 나오는가를 배우고 컴퓨터
+        프로그래밍을 통하여 표현하고자 한다.<br />
+        <strong>강의진행방법</strong>
+        강의는 PPT를 통한 텍스트수업을 기본으로, 실습수업을 진행하되 이론
+        수업과, 개인별 실습, 과제물 제출을 병행한다. 학생들의 이해도를 높이기
+        위해서 질의.응답식 수업을 병행한다. 실습을 통하여 실무에서 실제로
+        사용할 수 있는 자료구조 설계 및 구조실습 대한 상세 내용을 다룬다.
+    </p>
+    <hr />
+
+    <h3 id="excel">컴퓨터활용 및 실습</h3>
+    <p>
+        <strong>강의목표</strong>
+        컴퓨터가 일상 생활의 가장 기본적이면서도 필수적인 도구가된 이사회에서
+        문서를 만들고 데이터를 처리하여 자신의 업무에 관한 가장 적절한 최종
+        보고서를 작성할 수 있는 능력을 배양하기 위해 사무용 컴퓨터응용프로그램인
+        액셀, 파워포인트를 능숙하게 다룰 수 있도록 2010버전으로 강의와 실습을
+        통하여 학습한다.<br />
+        <strong>강의진행방법</strong>
+        실기위주로 강의식으로 진행함
+    </p>
+    <hr />
+
+    <h3 id="web">웹프로그래밍</h3>
+    <p>
+        <strong>강의목표</strong>
+        웹프로그래밍의 언어를 처음배우는 학생을 대상으로 하며, 프로그래밍 기초
+        과정에 익숙하지 않아도 강의를 수강 할수 있도록 기초부터 천천히 진행 할
+        것입니다. 요즘 웹프로그래밍의 대세를 이루고 있는 HTML5 언어를 사용하여
+        기초부터 시작하여 작은 종합 프로젝트를 구현 할 것입니다.
+    </p>
+    <hr />
+
+    <h3 id="cpp">C++(원어강의)</h3>
+    <p>
+        <strong>강의목표</strong>
+        The objective of this course is to learn the fundamentals of C++ programming language.<br />
+        <strong>강의진행방법</strong>
+        원어강의 (English)
+    </p>
+    <hr />
+
+    <h3 id="job">자기개발과 진로탐색</h3>
+    <p>
+        <strong>강의목표</strong>
+        자기개발과 진로탐색을 위해 자신을 분석하고(흥미,적성,가치관,강점역량 등)
+        이에 맞는 정보를 탐색하고 (직업,직무,기업,채용 등)이를 토대로 취업
+        전략(입사지원,면접등)을 수립한다.<br />
+        <strong>강의진행방법</strong>
+        강의/토의
+    </p>
+    <hr />
+</body>
+</html>

@@ -1,0 +1,59 @@
+캔버스 생성
+<canvas id="myCanvas" width="300" height="100"></canvas>
+
+컨텍스트 객체 얻기
+var canvas = document.getElementById("myCanvas"); // html 내에서 <canvas> 요소 찾음
+var context = canvas.getContext("2d"); // 컨텍스트 얻음
+
+채우기 속성 정의
+context.fillStyle = "#00FF00";
+
+채우기 속성을 가지고 사각형 그리기
+context.fillRect(0, 0, 100, 50); // x, y, width, height
+
+직선 그리기
+context.beginPath(); // 경로 초기화
+context.moveTo(0, 0); // 시작점 x, y
+context.lineTo(100, 100); // 끝점 x, y
+context.stroke(); // 마지막에 stroke를 호출해줘야만 실제로 그려진다.
+
+사각형 그리기
+context.beginPath();
+context.rect(10, 10, 100, 100); // x, y, width, height
+context.stroke();
+
+채워진 사각형 그리기
+context.beginPath();
+context.rect(10, 10, 100, 100);
+context.fillStyle = "Yellow";
+context.fill(); // stroke() 대신 호출
+
+도형은 직선 그리기를 연결해서 그린다.
+
+텍스트 그리기
+context.font = 'italic 38pt Arial';
+context.fillText = ('Hello World!', 20, 100); // text, x, y 채우기
+context.fillStroke = ('Hello World!', 20, 100); // text, x, y 윤곽선
+
+선 그리기 속성
+context.lineWidth = 20; // 선의 두께 지정
+context.strokeStyle = "Yellow"; // 선의 색상 지정
+context.lineCap = "round"; // 끝 모양 지정 (butt, round, square)
+
+그라디언트
+var gradient = context.createLinearGradient(0, 0, 200, 0); // 선형 그라디언트 생성, x, y, x1, y1
+var gradient = context.createRadialGradient(70, 50, 10, 80, 60, 120); // 원형 그라디언트 생성, x, y, z, x1, y1, z1
+gradient.addColorStop(0, "white");
+gradient.addColorStop(1, "red"); // 최소 2개 이상의 색상 지정
+
+
+
+
+평행 이동
+context.translate(50, 50); // x, y
+
+회전
+context.rotate(Math.PI/4, px, py); // degree, px, py (px, py) 기준으로 degree 만큼 회전
+
+신축
+context.scale(0.5, 0.5);

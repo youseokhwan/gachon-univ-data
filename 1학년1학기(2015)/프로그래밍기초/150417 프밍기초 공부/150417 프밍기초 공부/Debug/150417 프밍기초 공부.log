@@ -1,0 +1,75 @@
+﻿빌드 시작: 2015-04-19 오후 7:37:35
+     1>2 노드의 "C:\Users\유석환\Desktop\150417 프밍기초 공부\150417 프밍기초 공부\150417 프밍기초 공부.vcxproj" 프로젝트(build 대상)입니다.
+     1>InitializeBuildStatus:
+         "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\150417 프밍기초 공부.unsuccessfulbuild"을(를) 만들고 있습니다.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt "186p 05번(rand).c"
+         186p 05번(rand).c
+     1>c:\users\유석환\desktop\150417 프밍기초 공부\150417 프밍기초 공부\186p 05번(rand).c(10): warning C4244: '함수' : 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\유석환\desktop\150417 프밍기초 공부\150417 프밍기초 공부\186p 05번(rand).c(14): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(304) : 'scanf' 선언을 참조하십시오.
+         모든 출력이 최신 상태입니다.
+       ManifestResourceCompile:
+         모든 출력이 최신 상태입니다.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\유석환\Desktop\150417 프밍기초 공부\Debug\150417 프밍기초 공부.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\150417 프밍기초 공부.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\유석환\Desktop\150417 프밍기초 공부\Debug\150417 프밍기초 공부.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\유석환\Desktop\150417 프밍기초 공부\Debug\150417 프밍기초 공부.lib" /MACHINE:X86 "Debug\150417 프밍기초 공부.exe.embed.manifest.res"
+         "Debug\065p 연봉 계산 프로그램.obj"
+         "Debug\066p 원의 면적 구하기 프로그램.obj"
+         "Debug\073p 01번.obj"
+         "Debug\074p 02번.obj"
+         "Debug\074p 03번.obj"
+         "Debug\074p 04번.obj"
+         "Debug\086p 달러화를 원화로 계산하는 프로그램.obj"
+         "Debug\113p 01번.obj"
+         "Debug\113p 02번.obj"
+         "Debug\114p 03번.obj"
+         "Debug\114p 04번.obj"
+         "Debug\114p 05번.obj"
+         "Debug\114p 06번.obj"
+         "Debug\114p 07번.obj"
+         "Debug\114p 08번.obj"
+         "Debug\114p 09번.obj"
+         "Debug\114p 10번.obj"
+         "Debug\121p 초 단위 시간 계산 프로그램.obj"
+         "Debug\133p 윤년 판단 프로그램.obj"
+         "Debug\149p 01번.obj"
+         "Debug\150p 02번.obj"
+         "Debug\150p 03번.obj"
+         "Debug\151p 04번.obj"
+         "Debug\151p 05번.obj"
+         "Debug\152p 06번.obj"
+         "Debug\152p 07번.obj"
+         "Debug\152p 08번.obj"
+         "Debug\152p 09번.obj"
+         "Debug\156p 양수 판단 프로그램.obj"
+         "Debug\157p 절댓값 추출 프로그램.obj"
+         "Debug\161p 홀수 짝수 판단 프로그램.obj"
+         "Debug\163p 정수 간의 나눗셈 계산 프로그램.obj"
+         "Debug\164p 윤년 판단 프로그램.obj"
+         "Debug\168p 학점 출력 프로그램.obj"
+         "Debug\169p 문자 분류 프로그램.obj"
+         "Debug\170p 간단한 산술 계산기 프로그램.obj"
+         "Debug\176p 달의 일수 출력 프로그램.obj"
+         "Debug\178p 산술 계산 프로그램.obj"
+         "Debug\180p 구구단 출력 프로그램.obj"
+         "Debug\185p 01번.obj"
+         "Debug\185p 02번.obj"
+         "Debug\185p 03번.obj"
+         "Debug\186p 04번.obj"
+         "Debug\186p 05번(rand).obj"
+         "Debug\186p 05번(if).obj"
+         "Debug\186p 06번.obj"
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\150417 프밍기초 공부.exe.embed.manifest" /manifest "Debug\150417 프밍기초 공부.exe.intermediate.manifest"
+         모든 출력이 최신 상태입니다.
+       LinkEmbedManifest:
+         모든 출력이 최신 상태입니다.
+         150417 프밍기초 공부.vcxproj -> C:\Users\유석환\Desktop\150417 프밍기초 공부\Debug\150417 프밍기초 공부.exe
+       FinalizeBuildStatus:
+         "Debug\150417 프밍기초 공부.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+         "Debug\150417 프밍기초 공부.lastbuildstate"에 연결(touching)하고 있습니다.
+     1>"C:\Users\유석환\Desktop\150417 프밍기초 공부\150417 프밍기초 공부\150417 프밍기초 공부.vcxproj" 프로젝트를 빌드했습니다(build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:01.25

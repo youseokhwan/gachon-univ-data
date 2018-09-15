@@ -1,0 +1,8 @@
+160412 6주차 자료구조
+
+Linear List, Ordered List
+컴퓨터에서는 Linear List, Ordered List가 아니면 처리할 수 없다.
+Linear List를 만들기 위해서 C언어에서는 배열을 지원함
+컴퓨터의 목적 1. 대량의 Data 2. 빠르게 처리하기 위해
+배열에서 Insert하는 과정, Delete하는 과정 => 시간이 많이 걸리는 단점이 있다.
+Linked List에서 Insert, Delete하는 과정

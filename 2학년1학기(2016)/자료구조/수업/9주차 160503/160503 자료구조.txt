@@ -1,0 +1,21 @@
+<Stack> - First In Last Out
+동전을 넣을 때는 1번->2번->3번 순서
+꺼낼 때는 3번->2번->1번 순서
+=> 먼저 들어간 자료가 나중에 나온다 (나중에 들어간 자료가 먼저 나온다)
+=> First In Last Out / Last In First Out
+
+동전을 집어넣는 것 => Push
+꺼내는 것 => Pop
+
+top은 동전이 들어가있는 위치를 가리키는 포인터
+동전이 들어갈 위치를 먼저 정하고 들어가야한다(?)
+=> top = top+1 (Push하기 전), top = top-1 (Pop한 후)
+top = -1 이면 아무 것도 없다고 약속
+
+peek => 열람(?)
+
+연산자(operator), 피연산자(operand)
+
+A + B: Infix Notation (중위 표기법)
++ A B: Prefix Notation (전위 표기법)
+A B +: Postfix Notation (후위 표기법) => 컴퓨터가 선호

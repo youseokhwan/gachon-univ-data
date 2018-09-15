@@ -1,0 +1,1381 @@
+<zuiprezi>
+  <version>11</version>
+  <zui-table>
+    <settings>
+      
+      <autoplay>
+        
+        <delay>4000</delay>
+        
+      </autoplay>
+      
+      <bounds x="-142397.76642502996" y="-80067.89487785209" width="284795.5328500599" height="160135.78975570417"/>
+      <aspectratio>off</aspectratio>
+      <languages>
+        <language>ko</language>
+      </languages>
+      <mode type="normal"/>
+    </settings>
+    <object id="37_24309637" type="shape" x="10657.399401606388" y="-43217.534113521266" r="25.9121693260714" s="48.406177781649255" class="line1">
+      <geom type="line">
+        <sp>133.41155474464324 0</sp>
+        <ep>-133.41155474464324 0</ep>
+        <t>8</t>
+      </geom>
+      <meta>
+        <parentTemplate>social-network</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+    </object>
+    <object id="36_24309637" type="shape" x="42508.24383856826" y="-44539.441365414794" r="-40.3604093784701" s="48.40617778164927" class="line1">
+      <geom type="line">
+        <sp>-146.2899591496777 0</sp>
+        <ep>146.2899591496777 0</ep>
+        <t>8</t>
+      </geom>
+      <meta>
+        <parentTemplate>social-network</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+    </object>
+    <object id="30_24309637" type="shape" x="34573.04613465157" y="-18788.635690482115" r="-120.00000000000011" s="48.40617778164924" class="line1">
+      <geom type="line">
+        <sp>130.89541444122816 0</sp>
+        <ep>-130.89541444122813 0</ep>
+        <t>8</t>
+      </geom>
+      <meta>
+        <parentTemplate>social-network</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+    </object>
+    <object id="60_24309637" type="shape" x="-37352.83925023337" y="177.3313613515661" r="-45.000000000000036" s="48.40617778164912" class="line1">
+      <geom type="line">
+        <sp>-287.6810917447959 0</sp>
+        <ep>287.68109174479594 0</ep>
+        <t>8</t>
+      </geom>
+      <meta>
+        <parentTemplate>social-network</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+    </object>
+    <object id="114_24309637" type="button" x="5.071042025647244e-12" y="0" r="0" s="308.4873622725952" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>923.8363461640572</w>
+        <h>519.6579447172824</h>
+      </size>
+      <meta>
+        <parentTemplate>social-network</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+    </object>
+    <object id="61_24309637" type="shape" x="1188.924417654399" y="-23384.378278880784" r="-17.860684989450267" s="48.406177781649106" class="line1">
+      <geom type="line">
+        <sp>283.6339709696402 0</sp>
+        <ep>-283.6339709696402 0</ep>
+        <t>8</t>
+      </geom>
+      <meta>
+        <parentTemplate>social-network</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+    </object>
+    <object id="76_24309637" type="shape" x="-46881.09094805878" y="-20750.845474162863" r="-171.90837363505966" s="48.40617778164919" class="line1">
+      <geom type="line">
+        <sp>262.9526707381429 0</sp>
+        <ep>-262.95267073814284 0</ep>
+        <t>8</t>
+      </geom>
+      <meta>
+        <parentTemplate>social-network</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+    </object>
+    <object id="42_24309637" type="button" x="-46961.52090208021" y="9819.747856616192" r="0" s="18.732246977488444" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>942.5250396313932</w>
+        <h>600</h>
+      </size>
+      <meta>
+        <parentTemplate>social-network</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+    </object>
+    <object id="47_24309637" type="button" x="-59594.722634929974" y="-22785.889572187632" r="0" s="18.924920551853557" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>942.5250396313932</w>
+        <h>600</h>
+      </size>
+      <meta>
+        <parentTemplate>social-network</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+    </object>
+    <object id="43_24309637" type="text" x="-46577.98267465151" y="7042.424104253827" r="-3.6863195522332616e-16" s="13.001551939317798" class="strong strong-background">
+      <height>27.6</height>
+      <width>327.764807352207</width>
+      <p align="center">
+        <text><![CDATA[멀웨어란?]]></text>
+      </p>
+      <layout>
+        <layout-element role="body"/>
+      </layout>
+    </object>
+    <object id="2" type="image" x="-52335.301258334424" y="8587.835612024728" r="0" s="9.814719407756575">
+      <source w="590" h="376">3441478514<url>3441478514.png</url></source>
+      <sourceUrl>K-1.png</sourceUrl>
+    <resource><id>3441478514</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/8/a/7/3443a71142667fe7eab4523ed831ed1d9ad8e.png</url></resource></object>
+    <object id="44_24309637" type="text" x="-43181.96817373475" y="8161.176625430324" r="-3.686319552233265e-16" s="15.727581057120013" class="body">
+      <height>27.6</height>
+      <width>720.649258622854</width>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[컴퓨터를 손상시킬 목적으로 만들어진 S/W]]></text>
+      </p>
+      <layout>
+        <layout-element role="body"/>
+      </layout>
+    </object>
+    <object id="45_24309637" type="text" x="-46970.53027874824" y="5098.3057212273325" r="-2.928433401193429e-30" s="39.57347713691287" class="strong strong-background">
+      <height>27.6</height>
+      <width>427.7173757079804</width>
+      <p>
+        <text><![CDATA[멀웨어]]></text>
+      </p>
+    </object>
+    <object id="8" type="image" x="-65419.41773674498" y="-24242.19415971273" r="0" s="17.955552526554154">
+      <source w="282" h="224">3441511604<url>3441511604.png</url></source>
+      <sourceUrl>K-2.png</sourceUrl>
+    <resource><id>3441511604</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/b/2/c/0cac7005cb71257c59a361b294f95adba6118.png</url></resource></object>
+    <object id="50_24309637" type="text" x="-59612.10484345247" y="-27571.945193843265" r="-2.9284334011934328e-30" s="37.854841205293134" class="strong strong-background">
+      <height>27.6</height>
+      <width>454.10576459295976</width>
+      <p>
+        <text><![CDATA[웜]]></text>
+      </p>
+    </object>
+    <object id="58_24309637" type="button" x="-22758.310335494956" y="-16469.83250082911" r="0" s="27.283488988213243" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>942.5250396313932</w>
+        <h>600</h>
+      </size>
+      <meta>
+        <parentTemplate>social-network</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+    </object>
+    <object id="53_24309637" type="button" x="-2867.904371236818" y="-49486.576420682504" r="0" s="19.002130597860095" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>942.5250396313932</w>
+        <h>600</h>
+      </size>
+      <meta>
+        <parentTemplate>social-network</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+    </object>
+    <object id="56_24309637" type="text" x="-2864.8956751713326" y="-54309.371862724634" r="-2.928433401193431e-30" s="37.899581072745214" class="strong strong-background">
+      <height>27.6</height>
+      <width>454.10576459295976</width>
+      <p>
+        <text><![CDATA[멀웨어 !!!]]></text>
+      </p>
+    </object>
+    <object id="63_24309637" type="text" x="-22759.77362310176" y="-23402.823833571692" r="-2.9284334011934356e-30" s="54.32698785710296" class="strong strong-background">
+      <height>27.6</height>
+      <width>454.10576459295976</width>
+      <p>
+        <text><![CDATA[스파이웨어]]></text>
+      </p>
+    </object>
+    <object id="65_24309637" type="button" x="40960.36346178174" y="-7427.977012450157" r="0" s="23.07239713969424" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>942.5250396313932</w>
+        <h>600</h>
+      </size>
+      <meta>
+        <parentTemplate>social-network</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+    </object>
+    <object id="70_24309637" type="button" x="27160.88346428685" y="-32381.73081478657" r="0" s="28.921077684979885" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>942.5250396313932</w>
+        <h>600</h>
+      </size>
+      <meta>
+        <parentTemplate>social-network</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+    </object>
+    <object id="68_24309637" type="text" x="40963.9422149116" y="-13261.617774873272" r="-2.9284334011934335e-30" s="46.34638650641069" class="strong strong-background">
+      <height>27.6</height>
+      <width>454.10576459295976</width>
+      <p>
+        <text><![CDATA[애드웨어]]></text>
+      </p>
+    </object>
+    <object id="73_24309637" type="text" x="27163.77329338701" y="-39722.998881093234" r="-2.9284334011934328e-30" s="57.93485200851541" class="strong strong-background">
+      <height>27.6</height>
+      <width>454.10576459295976</width>
+      <p>
+        <text><![CDATA[트로이목마]]></text>
+      </p>
+    </object>
+    <object id="25" type="image" x="18314.352348612323" y="-34954.659377342236" r="0" s="16.522823331292845">
+      <source w="486" h="372">3441575078<url>3441575078.png</url></source>
+      <sourceUrl>K-8.png</sourceUrl>
+    <resource><id>3441575078</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/d/e/2/b9d8464cc98d9b84563610841255831a0d3e3.png</url></resource></object>
+    <object id="31_24309637" type="button" x="54212.83863500103" y="-53646.1018700592" r="0" s="19.002130597860095" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>942.5250396313932</w>
+        <h>600</h>
+      </size>
+      <meta>
+        <parentTemplate>social-network</parentTemplate>
+        <notModifiedByUser>from-template</notModifiedByUser>
+      </meta>
+    </object>
+    <object id="33_24309637" type="text" x="53547.420173752886" y="-52755.27115508429" r="-3.686319552233265e-16" s="13.413215336909644" class="body">
+      <height>690.0000000000002</height>
+      <width>1144.6238179243862</width>
+      <p>
+        <text><![CDATA[-멀웨어 제거 사이트]]></text>
+      </p>
+      <p>
+        <text><![CDATA[바이러스 백신 벤더사들이 공개하고 있는 Malware removal tools 링크들.]]></text>
+      </p>
+      <p>
+        <text><![CDATA[무료 / 부분 무료 / 간단한 개인 정보등을 요구 하는 자료]]></text>
+      </p>
+      <p>
+        <text><![CDATA[Eset]]></text>
+      </p>
+      <p>
+        <text><![CDATA[ http://kb.eset.com/esetkb/index?page=content&id=SOLN2372]]></text>
+      </p>
+      <p>
+        <text><![CDATA[Microsoft]]></text>
+      </p>
+      <p>
+        <text><![CDATA[ http://www.microsoft.com/security/pc-security/malware-removal.aspx]]></text>
+      </p>
+      <p>
+        <text><![CDATA[Sophos]]></text>
+      </p>
+      <p>
+        <text><![CDATA[https://secure2.sophos.com/en-us/products/free-tools/virus-removal-tool/free-download.aspx]]></text>
+      </p>
+      <p>
+        <text><![CDATA[kaspersky]]></text>
+      </p>
+      <p>
+        <text><![CDATA[ http://support.kaspersky.com/viruses/utility]]></text>
+      </p>
+      <p>
+        <text><![CDATA[Symantec – 수수료 기반이라고 표기 되어 있음]]></text>
+      </p>
+      <p>
+        <text><![CDATA[http://www.symantec.com/security_response/removaltools.jsp]]></text>
+      </p>
+      <p>
+        <text><![CDATA[Symantec – Norton]]></text>
+      </p>
+      <p>
+        <text><![CDATA[https://support.norton.com/sp/en/us/home/current/solutions/kb20100811171941EN_EndUserProfile_en_us]]></text>
+      </p>
+      <p>
+        <text><![CDATA[Mcafee]]></text>
+      </p>
+      <p>
+        <text><![CDATA[ http://www.mcafee.com/us/downloads/free-tools/index.aspx]]></text>
+      </p>
+      <p>
+        <text><![CDATA[BitDefender]]></text>
+      </p>
+      <p>
+        <text><![CDATA[64 bit version:]]></text>
+      </p>
+      <p>
+        <text><![CDATA[http://www.malwarecity.com/community/index.php?app=downloads&showfile=24]]></text>
+      </p>
+      <p>
+        <text><![CDATA[32 bit version:]]></text>
+      </p>
+      <p>
+        <text><![CDATA[http://www.malwarecity.com/community/index.php?app=downloads&showfile=23]]></text>
+      </p>
+      <p>
+        <text><![CDATA[Ahnlab]]></text>
+      </p>
+      <p>
+        <text><![CDATA[http://www.ahnlab.co.kr/kr/site/download/vacc/vaccList.do]]></text>
+      </p>
+      <layout>
+        <layout-element role="body"/>
+      </layout>
+    </object>
+    <object id="34_24309637" type="text" x="54215.84733106652" y="-58469.18900464843" r="-2.9284334011934314e-30" s="38.288504468864666" class="strong strong-background">
+      <height>27.6</height>
+      <width>454.10576459295976</width>
+      <p>
+        <text><![CDATA[멀웨어 제거 사이트 목록]]></text>
+      </p>
+    </object>
+    <object id="0" type="text" x="3326.1004710893058" y="38745.894199348106" r="0" s="670.9414450351702" class="head">
+      <height>24</height>
+      <width>-44.064</width>
+      <p>
+        <text><![CDATA[10조]]></text>
+      </p>
+    </object>
+    <object id="1" type="text" x="3335.591943554207" y="52500.98476970052" r="0" s="266.3115165030561" class="strong strong-background">
+      <height>27.6</height>
+      <width>-290.88</width>
+      <p>
+        <text><![CDATA[이아람 이헌기 맹승주 유석환]]></text>
+      </p>
+    </object>
+    <object id="3" type="text" x="-46588.54924286699" y="9788.915793486927" r="0" s="13.001551939317798" class="strong strong-background">
+      <height>27.6</height>
+      <width>-336.96</width>
+      <p align="center">
+        <text><![CDATA[멀웨어의 종류                             ]]></text>
+      </p>
+    </object>
+    <object id="4" type="text" x="-43796.37056587637" y="11034.807422519849" r="0" s="15.727581057120013" class="body">
+      <height>55.2</height>
+      <width>651.5978852025937</width>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[컴퓨터 바이러스, ]]></text>
+        <text color="16711680"><![CDATA[웜]]></text>
+        <text><![CDATA[, 웜 바이러스, ]]></text>
+        <text color="16711680"><![CDATA[트로이 목마]]></text>
+        <text><![CDATA[, ]]></text>
+        <text color="16711680"><![CDATA[스파이웨어]]></text>
+        <text><![CDATA[, ]]></text>
+        <text color="16711680"><![CDATA[애드웨어]]></text>
+        <text><![CDATA[, Hoax, 하이재커, 위장 백신 등]]></text>
+      </p>
+    </object>
+    <object id="9" type="text" x="-60272.60594988016" y="-25990.81543305412" r="0" s="11.702970054157172" class="strong strong-background">
+      <height>27.6</height>
+      <width>327.764807352207</width>
+      <p align="center">
+        <text><![CDATA[웜?]]></text>
+      </p>
+      <layout>
+        <layout-element role="body"/>
+      </layout>
+    </object>
+    <object id="10" type="button" x="-59286.953040063505" y="-25968.668663969343" r="0" s="0.15543762909749903" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>2199.478711555061</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="11" type="text" x="-59275.75796997671" y="-25965.261468725537" r="0" s="0.3598799840651367" class="body">
+      <height>27.6</height>
+      <width>933.1082016463656</width>
+      <p>
+        <text color="16777215"><![CDATA[웜 : 네트워크를 통해 스스로 복제하여 다른 컴퓨터로 전파하는 악성 컴퓨터 프로그램]]></text>
+      </p>
+    </object>
+    <object id="13" type="image" x="-56735.45054462703" y="-20206.61476450786" r="0" s="23.40765528463416">
+      <source w="459" h="165">3441534671<url>3441534671.png</url></source>
+      <sourceUrl>K-4.png</sourceUrl>
+    <resource><id>3441534671</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/7/2/9/9e8f18b9770688f865648d62a09328e12c91a.png</url></resource></object>
+    <object id="14" type="image" x="-30800.853833095774" y="-18748.091829068064" r="0" s="20.84450459583266">
+      <source w="361" h="244">3441549014<url>3441549014.png</url></source>
+      <sourceUrl>K-5.png</sourceUrl>
+    <resource><id>3441549014</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/9/3/2/959f0d8a41321427de24830ba373f953ccabb.png</url></resource></object>
+    <object id="15" type="text" x="-23177.977360546894" y="-20879.3614772106" r="0" s="16.87182008120577" class="strong strong-background">
+      <height>27.6</height>
+      <width>327.764807352207</width>
+      <p align="center">
+        <text><![CDATA[스파이웨어?]]></text>
+      </p>
+      <layout>
+        <layout-element role="body"/>
+      </layout>
+    </object>
+    <object id="16" type="button" x="-21515.27330935641" y="-21076.90977821264" r="0" s="0.2171927593041477" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>2317.837100659822</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="17" type="text" x="-21509.675774313004" y="-21073.01584079114" r="0" s="0.5267623542678287" class="body">
+      <height>27.6</height>
+      <width>717.3799613764866</width>
+      <p>
+        <text color="16777215"><![CDATA[스파이웨어: 사용자 모르게 사용자로부터 정보를 수집하는 멀웨어]]></text>
+      </p>
+    </object>
+    <object id="18" type="text" x="-16996.114621322165" y="-18714.410343216343" r="0" s="20.414902298258983" class="body">
+      <height>110.4</height>
+      <width>914.3896796092312</width>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[신용 카드와 같은 금융 정보 및 주민등록번호와 같은 각종 정보를 수집]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[미국 인터넷 광고 전문 회사인 '라디에이트'에서 시작]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[점차 나쁜 용도로 변질]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA['정보 빼내기 프로그램'으로 순화]]></text>
+      </p>
+    </object>
+    <object id="19" type="image" x="34218.16626236503" y="-8806.139478717452" r="0" s="22.93543393595044">
+      <source w="282" h="241">3441560660<url>3441560660.png</url></source>
+      <sourceUrl>K-6.png</sourceUrl>
+    <resource><id>3441560660</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/e/2/b/0d3054de46976b6bc76400b290e14cdfb3a2b.png</url></resource></object>
+    <object id="20" type="image" x="33469.55679308206" y="-3506.9773902365264" r="0" s="23.021087850984383">
+      <source w="216" h="213">3441560954<url>3441560954.png</url></source>
+      <sourceUrl>K-7.png</sourceUrl>
+    <resource><id>3441560954</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/5/8/d/0ab60a2ecc75db2d336752cdfd07605a8f02a.png</url></resource></object>
+    <object id="21" type="text" x="41778.35" y="-10935" r="0" s="19.974815793233233" class="strong strong-background">
+      <height>27.6</height>
+      <width>327.764807352207</width>
+      <p align="center">
+        <text><![CDATA[애드웨어?]]></text>
+      </p>
+      <layout>
+        <layout-element role="body"/>
+      </layout>
+    </object>
+    <object id="22" type="button" x="42602.95" y="-11224.65" r="0" s="0.1391540870258268" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>2502.776940747998</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="23" type="text" x="42607.08730851033" y="-11222.216289111568" r="0" s="0.34416486809902846" class="body">
+      <height>27.6</height>
+      <width>837.248063064739</width>
+      <p>
+        <text color="16777215"><![CDATA[애드웨어: 컴퓨터에서 광고를 자동으로 재생, 표시 또는 다운로드하는 소프트웨어]]></text>
+      </p>
+    </object>
+    <object id="24" type="text" x="44688.45" y="-8758.55" r="0" s="19.974815793233233" class="body">
+      <height>110.4</height>
+      <width>654.592611798655</width>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[프로그래머가 소프트웨어를 개발하면서 개발 비용을 애드웨어를 통해서 충당할 목적으로 사용]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[사용자가 저렴한 가격으로 프로그램을 사용하도록 하는 조건으로 광고를 삽입하기도 함]]></text>
+      </p>
+    </object>
+    <object id="26" type="image" x="18314.35234861233" y="-28614.112399699465" r="0" s="14.097454768901232">
+      <source w="588" h="436">3441575423<url>3441575423.png</url></source>
+      <sourceUrl>K-9.png</sourceUrl>
+    <resource><id>3441575423</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/1/2/5/0bff224c08b57da176e7680ad18f51bcf3696.png</url></resource></object>
+    <object id="27" type="text" x="26613.30647817968" y="-37633.931694421626" r="0" s="17.884487554592297" class="strong strong-background">
+      <height>27.6</height>
+      <width>327.764807352207</width>
+      <p align="center">
+        <text><![CDATA[트로이목마?]]></text>
+      </p>
+      <layout>
+        <layout-element role="body"/>
+      </layout>
+    </object>
+    <object id="28" type="button" x="28553.460798441" y="-37679.19871694653" r="0" s="0.21674302918356497" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>2373.6669744122473</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="29" type="text" x="28552.000571907934" y="-37672.38432645891" r="0" s="0.4510298624499324" class="body">
+      <height>55.2</height>
+      <width>1028.552415590525</width>
+      <p>
+        <text color="16777215"><![CDATA[트로이목마: 유용한 애플리케이션으로 위장하며 설치될 경우 컴퓨터를 손상시키거나 사용자 정보를 훔치는 악성 프로그램]]></text>
+      </p>
+    </object>
+    <object id="30" type="text" x="31840.800000000003" y="-35583.7" r="0" s="17.884487554592297" class="body">
+      <height>110.4</height>
+      <width>914.5910619767444</width>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[악성 루틴이 숨어있는 프로그램]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[겉보기에는 정상적인 프로그램으로 보임]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[트로이 목마 이야기에서 따온 것으로, 겉보기에는 평범한 목마 안에 사람이 숨어있었던 것에 비유]]></text>
+      </p>
+    </object>
+    <object id="31" type="text" x="26611.95" y="-33129.85" r="0" s="17.884487554592297" class="strong strong-background">
+      <height>27.6</height>
+      <width>327.764807352207</width>
+      <p align="center">
+        <text><![CDATA[대표적인 트로이 목마]]></text>
+      </p>
+      <layout>
+        <layout-element role="body"/>
+      </layout>
+    </object>
+    <object id="32" type="text" x="31453.6" y="-30563" r="0" s="15.238464251586976" class="body">
+      <height>193.2</height>
+      <width>1039.7410619767445</width>
+      <p>
+        <text><![CDATA[넷버스 (Netbus) - 12345번 포트 사용. 가장 사용하기 쉽고 퍼지기 쉬운 트로이 중의 하나.]]></text>
+      </p>
+      <p>
+        <text><![CDATA[백오리피스 (Back Orifice) - 31337번 포트 사용. 가장 유명하여 제거 툴이 가장 많은 트로이.]]></text>
+      </p>
+      <p>
+        <text><![CDATA[스쿨버스 (Schoolbus) - 54321번 포트 사용.]]></text>
+      </p>
+      <p>
+        <text><![CDATA[Executor - 80번 포트 사용. 감염된 컴퓨터의 시스템 파일을 삭제/시스템을 파괴하는 트로이 중의 하나.]]></text>
+      </p>
+      <p>
+        <text><![CDATA[Silencer - 1001번 포트 사용. 제거 툴은 나와 있지 않음.]]></text>
+      </p>
+      <p>
+        <text><![CDATA[Striker - 2565번 포트 사용. 감염된 컴퓨터를 무조건 고물로 만들어 버림. 이는 시스템 드라이브 등 하드디스크를 모두 파괴하여 아예 부팅이 안 되게 하는 트로이이기 때문.]]></text>
+      </p>
+    </object>
+    <object id="33" type="image" x="27746.6856389244" y="-26231.02269774277" r="0" s="17.842626447897473">
+      <source w="520" h="235">3441587834<url>3441587834.png</url></source>
+      <sourceUrl>K-10.png</sourceUrl>
+    <resource><id>3441587834</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/0/1/f/63ad552436b73e6d1133bed88a197126371f6.png</url></resource></object>
+    <object id="34" type="image" x="34963.87066077973" y="-26231.076295364663" r="0" s="6.955492097300691">
+      <source w="517" h="484">3441596702<url>3441596702.png</url></source>
+      <sourceUrl>K-12.png</sourceUrl>
+    <resource><id>3441596702</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/b/3/2/28cecb31a9ee2a49ab12e49390d9a0687e028.png</url></resource></object>
+    <object id="35" type="image" x="20565.0481782381" y="-32495.881266755165" r="0" s="12.495205206198309">
+      <source w="414" h="315">3441596933<url>3441596933.png</url></source>
+      <sourceUrl>K-11.png</sourceUrl>
+    <resource><id>3441596933</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/c/6/6/d89eb51ec2b6fc6858ceb1975179c3b37f989.png</url></resource></object>
+    <object id="36" type="text" x="-2238.296576469904" y="-50898.344580589626" r="0" s="17.30916785562465" class="body">
+      <height>138</height>
+      <width>1031.345839362264</width>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[무분별한 무료 소프트웨어 설치]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[감염된 웹사이트 접근]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[멀웨어 다운로드를 시작하는 허위 메시지 또는 팝업 창 클릭]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[스팸 메일]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[악성 광고 클릭]]></text>
+      </p>
+    </object>
+    <object id="37" type="text" x="-8934.691613763292" y="-52785.059558156165" r="0" s="11.750715927320492" class="strong strong-background">
+      <height>27.6</height>
+      <width>327.764807352207</width>
+      <p align="center">
+        <text><![CDATA[멀웨어 유포 수법]]></text>
+      </p>
+      <layout>
+        <layout-element role="body"/>
+      </layout>
+    </object>
+    <object id="38" type="text" x="-8934.691613763292" y="-48784.82452781577" r="0" s="11.750715927320492" class="strong strong-background">
+      <height>27.6</height>
+      <width>327.764807352207</width>
+      <p align="center">
+        <text><![CDATA[멀웨어 예방법]]></text>
+      </p>
+      <layout>
+        <layout-element role="body"/>
+      </layout>
+    </object>
+    <object id="39" type="text" x="-6308.717565140663" y="-47814.984945266275" r="0" s="15.735607141476953" class="head">
+      <height>24</height>
+      <width>611.5049319439912</width>
+      <p>
+        <text><![CDATA[1 꾸준한 업데이트를 통해 최신 상태로 유지]]></text>
+      </p>
+    </object>
+    <object id="40" type="text" x="-9057.337147825408" y="-47175.52527661713" r="0" s="15.735607141476953" class="head">
+      <height>24</height>
+      <width>-262.272</width>
+      <p>
+        <text><![CDATA[2 일반 사용자 계정 사용 권장]]></text>
+      </p>
+    </object>
+    <object id="41" type="text" x="-8419.10714585884" y="-46504.70915681759" r="0" s="15.735607141476953" class="head">
+      <height>24</height>
+      <width>-343.392</width>
+      <p>
+        <text><![CDATA[3 링크 클릭 혹은 파일 다운로드 시 주의]]></text>
+      </p>
+    </object>
+    <object id="42" type="text" x="-8233.300170525103" y="-45936.53639032162" r="0" s="15.735607141476953" class="head">
+      <height>24</height>
+      <width>-367.632</width>
+      <p>
+        <text><![CDATA[4 이메일 첨부파일, 스팸메일 열람 시 주의]]></text>
+      </p>
+    </object>
+    <object id="43" type="text" x="-8909.060158860178" y="-45406.47415882022" r="0" s="14.611929154787406" class="head">
+      <height>24</height>
+      <width>-304.368</width>
+      <p>
+        <text><![CDATA[5 S/W 다운로드 요구 팝업 창 의심]]></text>
+      </p>
+    </object>
+    <object id="44" type="text" x="-9664.304698300994" y="-44844.530314680305" r="0" s="15.735607141476953" class="head">
+      <height>24</height>
+      <width>-186.672</width>
+      <p>
+        <text><![CDATA[6 백신 프로그램 사용]]></text>
+      </p>
+    </object>
+    <object id="45" type="button" x="-8941.992746428601" y="-47413.79889960238" r="0" s="0.24247203026096617" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>1730.6303860178996</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="46" type="text" x="-8844.303205132928" y="-47422.13730068501" r="0" s="0.3877276452265084" class="body">
+      <height>110.4</height>
+      <width>552</width>
+      <p>
+        <text><![CDATA[Windows 사용자 - 'Windows Update']]></text>
+      </p>
+      <p>
+        <text><![CDATA[Mac 사용자 - '소프트웨어 갱신']]></text>
+      </p>
+      <p>
+        <text><![CDATA[]]></text>
+      </p>
+      <p>
+        <text><![CDATA[OS, S/W 최신 버전으로 유지]]></text>
+      </p>
+    </object>
+    <object id="47" type="image" x="-9093.85630586702" y="-47442.76005917477" r="0" s="0.23989274577338193">
+      <source w="354" h="262">3441633665<url>3441633665.png</url></source>
+      <sourceUrl>K-13.png</sourceUrl>
+    <resource><id>3441633665</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/c/1/d/4486e9b8f60e143ff1aa5bddef66d931ebd11.png</url></resource></object>
+    <object id="48" type="image" x="-9035.93398672224" y="-47391.16538833993" r="0" s="0.33577867476919543">
+      <source w="374" h="233">3441633827<url>3441633827.png</url></source>
+      <sourceUrl>K-14.png</sourceUrl>
+    <resource><id>3441633827</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/6/1/c/a5e05ac1ae5eb1ca8f4cc4e81498921a9546c.png</url></resource></object>
+    <object id="49" type="button" x="-2867.206997803069" y="-49485.6169789281" r="0" s="24.576298675061818" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>800</w>
+        <h>933.4993773349938</h>
+      </size>
+    </object>
+    <object id="50" type="button" x="-8946.860168205474" y="-46830.67330552475" r="0" s="0.19258874212294563" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>2359.2347200003096</w>
+        <h>963.8527485973704</h>
+      </size>
+    </object>
+    <object id="51" type="text" x="-8932.782251547618" y="-46831.316450309525" r="0" s="0.6244392499137442" class="body">
+      <height>110.4</height>
+      <width>552</width>
+      <p>
+        <text><![CDATA['관리자' 계정 - S/W 제한없이 설치]]></text>
+      </p>
+      <p>
+        <text><![CDATA['제한된' 계정, '일반' 계정 - S/W 설치 제한]]></text>
+      </p>
+      <p>
+        <text><![CDATA[]]></text>
+      </p>
+      <p>
+        <text><![CDATA['일반' 계정 사용하여 멀웨어 침투 방지]]></text>
+      </p>
+    </object>
+    <object id="52" type="button" x="-8943.209601872819" y="-46258.67242680546" r="0" s="0.20755755326313277" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>2324.3687093907643</w>
+        <h>908.71146897343</h>
+      </size>
+    </object>
+    <object id="54" type="image" x="-9099.453840910424" y="-46294.77863309943" r="0" s="0.4540822855414634">
+      <source w="326" h="192">3441653330<url>3441653330.png</url></source>
+      <sourceUrl>K-15.png</sourceUrl>
+    <resource><id>3441653330</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/9/4/4/525fb378ae854c65b9add13542275302dfde9.png</url></resource></object>
+    <object id="55" type="image" x="-9058.815189862573" y="-46211.11821879978" r="0" s="0.3444248780345524">
+      <source w="176" h="175">3441653435<url>3441653435.png</url></source>
+      <sourceUrl>K-16.png</sourceUrl>
+    <resource><id>3441653435</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/7/6/7/88879df9a18431d6331daa7231e14e40b58bd.png</url></resource></object>
+    <object id="53" type="text" x="-8861.517029287896" y="-46252.04107931002" r="0" s="0.567672045376131" class="body">
+      <height>82.80000000000001</height>
+      <width>552</width>
+      <p>
+        <text><![CDATA[다운로드는 멀웨어 유포의 대표적 방법]]></text>
+      </p>
+      <p>
+        <text><![CDATA[]]></text>
+      </p>
+      <p>
+        <text><![CDATA[-> S/W 설치 이전에 정보 검색 등 신중 기해야 함]]></text>
+      </p>
+    </object>
+    <object id="60" type="button" x="-8938.048846462589" y="-44487.677590775216" r="0" s="0.17494278373460645" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>2386.1597730773165</w>
+        <h>1180.9018294229645</h>
+      </size>
+    </object>
+    <object id="61" type="text" x="-8816.332189115312" y="-44488.17454826551" r="0" s="0.4936002958771388" class="body">
+      <height>110.4</height>
+      <width>552</width>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[백신을 통해 다운로드한 S/W 검사]]></text>
+      </p>
+      <p>
+        <text><![CDATA[]]></text>
+      </p>
+      <p>
+        <text><![CDATA[]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[컴퓨터를 정기적으로 검사]]></text>
+      </p>
+    </object>
+    <object id="62" type="image" x="-9092.30106145879" y="-44551.92043191386" r="0" s="0.32449185061266894">
+      <source w="288" h="186">3441669758<url>3441669758.png</url></source>
+      <sourceUrl>K-17.png</sourceUrl>
+    <resource><id>3441669758</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/a/8/5/f8d3cf353a272d9556881a97a9ac3752ebfc3.png</url></resource></object>
+    <object id="63" type="image" x="-9036.55161036887" y="-44513.656035938504" r="0" s="0.4387264713130165">
+      <source w="322" h="220">3441669914<url>3441669914.png</url></source>
+      <sourceUrl>K-18.png</sourceUrl>
+    <resource><id>3441669914</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/1/6/4/e615e3783e12935fdaa81ade840bf8cb83883.png</url></resource></object>
+    <object id="64" type="image" x="-9076.227843092604" y="-44446.937699341936" r="0" s="0.3421398030328125">
+      <source w="308" h="261">3441670034<url>3441670034.png</url></source>
+      <sourceUrl>K-19.png</sourceUrl>
+    <resource><id>3441670034</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/e/5/a/82d4d6a5aa888d3dd4bdf4fc759234a5cb947.png</url></resource></object>
+    <object id="65" type="button" x="-2867.476636904272" y="-49486.43467127485" r="0" s="20.846009164393006" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>1129.5238095238094</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="66" type="button" x="-2867.150828423876" y="-49486.108862794455" r="0" s="26.05751145549126" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>1129.5238095238094</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="67" type="button" x="-2867.476636904272" y="-49486.43467127485" r="0" s="20.846009164393006" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>1129.5238095238094</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="68" type="button" x="-2867.476636904272" y="-49486.43467127485" r="0" s="20.846009164393006" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>1129.5238095238094</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="69" type="button" x="-2867.476636904272" y="-49486.43467127485" r="0" s="20.846009164393006" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>1129.5238095238094</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="70" type="button" x="-2867.476636904272" y="-49486.43467127485" r="0" s="20.846009164393006" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>1129.5238095238094</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="71" type="text" x="-10059.118250431831" y="-44209.206111479914" r="0" s="14.611929154787406" class="head">
+      <height>24</height>
+      <width>-146.832</width>
+      <p>
+        <text><![CDATA[7 방화벽 활성화]]></text>
+      </p>
+    </object>
+    <object id="72" type="button" x="-2867.150828423876" y="-49485.565848660466" r="0" s="24.576298675061807" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>800</w>
+        <h>933.4993773349938</h>
+      </size>
+    </object>
+    <object id="0_138416869" type="text" x="-58988.3237965778" y="-23896.868963407003" r="0" s="16.05414799903342" class="body">
+      <height>165.6</height>
+      <width>-378.71999999999997</width>
+      <p>
+        <text><![CDATA[웜의 특징]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[컴퓨터 바이러스와 유사]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[독자적으로 실행]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[파일 전송 기능을 착취하도록 설계]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[스스로 전달 가능]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[네트워크 손상]]></text>
+      </p>
+    </object>
+  </zui-table>
+  <background>
+    <layer depth="42.78017366108453" fadescale="0.05142569119585539">
+      <object id="background1504768593" type="image" x="-6641.91151110537" y="-75440.26143778623" r="0" s="107.03763067907634">
+        <source w="3500" h="3500">1504768593<url>1504768593.png</url></source>
+        <sourceUrl>Comp%202_1.png</sourceUrl>
+      <resource><id>1504768593</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/e/6/9/2ebfe7572200299f76fbf005625236b733aa2.png</url></resource></object>
+    </layer>
+  </background>
+  <path>
+    <s>
+      <eagle o="114_24309637"/>
+    </s>
+    <s>
+      <eagle o="42_24309637"/>
+    </s>
+    <s>
+      <eagle o="10"/>
+    </s>
+    <s>
+      <eagle o="47_24309637"/>
+    </s>
+    <s>
+      <eagle o="16"/>
+    </s>
+    <s>
+      <eagle o="58_24309637"/>
+    </s>
+    <s>
+      <eagle o="22"/>
+    </s>
+    <s>
+      <eagle o="65_24309637"/>
+    </s>
+    <s>
+      <eagle o="28"/>
+    </s>
+    <s>
+      <eagle o="70_24309637"/>
+    </s>
+    <s>
+      <eagle o="53_24309637"/>
+    </s>
+    <s>
+      <eagle o="45"/>
+    </s>
+    <s>
+      <eagle o="65"/>
+    </s>
+    <s>
+      <eagle o="50"/>
+    </s>
+    <s>
+      <eagle o="67"/>
+    </s>
+    <s>
+      <eagle o="52"/>
+    </s>
+    <s>
+      <eagle o="68"/>
+    </s>
+    <s>
+      <eagle o="60"/>
+    </s>
+    <s>
+      <eagle o="72"/>
+    </s>
+    <s>
+      <eagle o="31_24309637"/>
+    </s>
+    <s>
+      <eagle o="114_24309637"/>
+    </s>
+  </path>
+  <style type="text/css"><![CDATA[
+@font-face
+{
+	src: url('NanumGothic-P.keg');
+	fontFamily: body;
+	font-class: body;
+	font-style: normal;
+	font-weight: normal;
+	font-family: NanumGothic-P;
+}
+
+@font-face
+{
+	src: url('SangSangTitleOTFM-P.keg');
+	fontFamily: head;
+	font-class: head;
+	font-style: normal;
+	font-weight: normal;
+	font-family: SangSangTitleOTFM-P;
+}
+
+@font-face
+{
+	src: url('NanumGothicBold-P.keg');
+	fontFamily: strong;
+	font-class: strong;
+	font-style: normal;
+	font-weight: normal;
+	font-family: NanumGothicBold-P;
+}
+
+.line1
+{
+	color: #004070;
+	gradEndColor: #004070;
+	gradStartColor: #004070;
+}
+
+.line2
+{
+	color: #99a9c8;
+	gradEndColor: #99a9c8;
+	gradStartColor: #99a9c8;
+}
+
+.line3
+{
+	color: #fff;
+	gradEndColor: #fff;
+	gradStartColor: #fff;
+}
+
+.line4
+{
+	color: #de6f47;
+	gradEndColor: #de6f47;
+	gradStartColor: #de6f47;
+}
+
+.line5
+{
+	color: #d8462e;
+	gradEndColor: #d8462e;
+	gradStartColor: #d8462e;
+}
+
+.poly1
+{
+	borderColor: #004070;
+	borderThickness: 0;
+	color: #abbdcb;
+	gradEndColor: #004070;
+	gradStartColor: #004070;
+}
+
+.poly2
+{
+	borderAlpha: 0;
+	borderColor: #99a9c8;
+	borderThickness: 0;
+	color: #abbdcb;
+	gradEndAlpha: 1;
+	gradEndColor: #99a9c8;
+	gradStartAlpha: 1;
+	gradStartColor: #99a9c8;
+}
+
+.poly3
+{
+	borderAlpha: 0;
+	borderColor: #fff;
+	borderThickness: 0;
+	color: #abbdcb;
+	gradEndColor: #fff;
+	gradStartColor: #fff;
+	thickness: 3;
+}
+
+.poly4
+{
+	borderAlpha: 0;
+	borderColor: #de6f47;
+	borderThickness: 0;
+	color: #abbdcb;
+	gradEndAlpha: 1;
+	gradEndColor: #de6f47;
+	gradStartAlpha: 1;
+	gradStartColor: #de6f47;
+}
+
+.poly5
+{
+	borderAlpha: 0;
+	borderColor: #d8462e;
+	borderThickness: 0;
+	color: #abbdcb;
+	gradEndAlpha: 1;
+	gradEndColor: #d8462e;
+	gradStartAlpha: 1;
+	gradStartColor: #d8462e;
+}
+
+Background
+{
+	gradEnd: #587c97;
+	gradStart: #fff;
+	gradType: radial;
+}
+
+Grid
+{
+	color: #818e99;
+}
+
+ZArrow
+{
+	gradEndAlpha: 1;
+	gradStartAlpha: 1;
+	lockTintAlpha: 0;
+}
+
+ZCircle
+{
+	borderAlpha: 1;
+	gradEndAlpha: 1;
+	gradStartAlpha: 1;
+	lockTintAlpha: 0;
+	radius: 0;
+	thickness: 100;
+}
+
+ZCurveLine
+{
+	color: #000;
+}
+
+ZFrame.bracket
+{
+	gradEndAlpha: 1;
+	gradEndColor: #004070;
+	gradStartAlpha: 1;
+	gradStartColor: #004070;
+	padding: 1.03;
+	thickness: 4;
+}
+
+ZFrame.circle
+{
+	gradEndAlpha: 1;
+	gradEndColor: #004070;
+	gradStartAlpha: 1;
+	gradStartColor: #004070;
+	padding: 1.03;
+	thickness: 8;
+}
+
+ZFrame.roundrect
+{
+	borderAlpha: 1;
+	borderColor: #004070;
+	borderThickness: 12;
+	gradEndAlpha: 1;
+	gradEndColor: #eee;
+	gradStartAlpha: 1;
+	gradStartColor: #eee;
+	padding: 1.03;
+	radius: 0;
+}
+
+ZLabel
+{
+	lockTintAlpha: 0.15;
+}
+
+ZLabel.body
+{
+	color: #484f54;
+	fontFamily: body;
+}
+
+ZLabel.body-background
+{
+	background-alpha: 0.9;
+	background-color: #f0f0f0;
+	background-padding: 4;
+}
+
+ZLabel.head
+{
+	color: #333;
+	fontFamily: head;
+}
+
+ZLabel.head-background
+{
+	background-alpha: 1;
+	background-color: #fff;
+	background-padding: 4;
+}
+
+ZLabel.strong
+{
+	color: #fff;
+	fontFamily: strong;
+}
+
+ZLabel.strong-background
+{
+	background-alpha: 1;
+	background-color: #004070;
+	background-padding: 8;
+}
+
+ZLine
+{
+	color: #333;
+	lockTintAlpha: 0;
+}
+
+ZMarker
+{
+	alpha: 0.3;
+	color: #d8462e;
+}
+
+ZPath
+{
+	alpha: 1;
+	color: #40abe6;
+	textColor: #fff;
+	thickness: 3;
+}
+
+ZPath Ball.base
+{
+	alpha: 1;
+	fillColor: #40abe6;
+	radius: 12;
+}
+
+ZPath Ball.mid
+{
+	alpha: .5;
+	fillColor: #40abe6;
+	radius: 8;
+}
+
+ZPoly
+{
+	borderAlpha: 1;
+	gradEndAlpha: 1;
+	gradStartAlpha: 1;
+	lockTintAlpha: 0;
+	radius: 0;
+	thickness: 100;
+}
+
+arrow
+{
+	borderColor: #fff;
+	borderThickness: -1;
+	gradEndColor: #fff808;
+	gradStartColor: #fff808;
+}
+
+background
+{
+	gradEnd: #808080;
+	gradStart: #808080;
+}
+
+circle
+{
+	borderAlpha: 1;
+	lockTintAlpha: 0.6;
+	radius: 0;
+	thickness: 100;
+}
+
+frame.bracket
+{
+	borderColor: #fff;
+	borderThickness: 0;
+	gradEndColor: #c5c3c3;
+	gradStartColor: #fff;
+	thickness: 7;
+}
+
+frame.circle
+{
+	borderColor: #999;
+	borderThickness: 0;
+	gradEndColor: #333;
+	gradStartColor: #333;
+}
+
+frame.rectangle
+{
+	borderColor: #fff;
+	borderThickness: 0;
+	gradEndColor: #000;
+	gradStartColor: #000;
+	radius: 0;
+}
+
+free-line
+{
+	color: #fff808;
+}
+
+free-marker
+{
+	alpha: 0.3;
+	color: #ffff0d;
+}
+
+grid
+{
+	color: #ddd;
+}
+
+line
+{
+	color: #fff808;
+}
+
+line-arrow.style1
+{
+	color: #fff;
+	gradEndColor: #fff;
+	gradStartColor: #fff;
+}
+
+line-arrow.style2
+{
+	color: #c5c3c3;
+	gradEndColor: #c5c3c3;
+	gradStartColor: #c5c3c3;
+}
+
+line-arrow.style3
+{
+	color: #fff808;
+	gradEndColor: #fff808;
+	gradStartColor: #fff808;
+}
+
+line-arrow.style4
+{
+	color: #333;
+	gradEndColor: #333;
+	gradStartColor: #333;
+}
+
+line-arrow.style5
+{
+	color: #000;
+	gradEndColor: #000;
+	gradStartColor: #000;
+}
+
+shape
+{
+	borderAlpha: 1;
+	gradEndAlpha: 0.8;
+	gradStartAlpha: 0.7;
+	lockTintAlpha: 0.6;
+	radius: 0;
+	thickness: 100;
+}
+
+shape.style1
+{
+	borderColor: #fff;
+	borderThickness: 0;
+	gradEndColor: #fff;
+	gradStartColor: #fff;
+}
+
+shape.style2
+{
+	borderColor: #c5c3c3;
+	borderThickness: 0;
+	gradEndColor: #c5c3c3;
+	gradStartColor: #c5c3c3;
+}
+
+shape.style3
+{
+	borderColor: #fff808;
+	borderThickness: 0;
+	gradEndColor: #fff808;
+	gradStartColor: #fff808;
+}
+
+shape.style4
+{
+	borderColor: #333;
+	borderThickness: 0;
+	gradEndColor: #333;
+	gradStartColor: #333;
+}
+
+shape.style5
+{
+	borderColor: #000;
+	borderThickness: 0;
+	gradEndColor: #000;
+	gradStartColor: #000;
+}
+
+text
+{
+	padding: 1.2;
+}
+
+text.body
+{
+	color: #fff;
+	fontFamily: body;
+}
+
+text.subtitle
+{
+	color: #fff;
+	fontFamily: strong;
+}
+
+text.title
+{
+	color: #fff808;
+	fontFamily: head;
+}
+
+]]></style>
+  <hash>-744cac75</hash>
+<sync><oid>ien1qgq9qyx_</oid><title>10</title><hash>-744cac75</hash></sync><config>fUyRTIyPvWLqPVOPEXPGTLV2fXWthFx7rSPjFQMhXXBbYaVHs6Z73eDck7ecauBTBkUNTv3WOpcPfbIffoQ9vPhU6Vm1v2LmgOq2huZezdw6AoMp2HnaAbt+Zh08dqNQ993IV9hq3YFc8syUJg7soZKWs/Ho5mATJxA6ZHaDog/VwqgC1ZyRu5hs/VISJBNlHwtJ1b1KChi0HfyKODb5sI9ay7S9mzY4skC86+jb5wy6uF4WVptyI9rxWy7ua64gNQaYIYEavcBpT2Yn+FiuyS88eeoSwlsKvBQ8qsoBM2utH3UOsiEhXd9MljDYUaVA7RHJ9axsaM1cxPNpb/yH/w==</config></zuiprezi>

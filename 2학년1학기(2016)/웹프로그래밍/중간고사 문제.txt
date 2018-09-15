@@ -1,0 +1,12 @@
+<웹프로그래밍(이복기) 중간고사 문제>
+1 단답형
+1-1. HTML을 만든 사람은? 팀 버너스리
+1-2. 줄바꾸는 태그? <br>
+1-3. <video> 태그에서 비디오파일을 지정하는 속성? src
+1-4. CSS는 어디 섹션에 정의? <head>
+1-5. 요소 사이의 간격을 정하는 속성? margin
+2. HTML5를 간략히 설명하시오.
+3. <audio>에서의 속성 5가지를 나열하고 설명 autoplay, controls, loop, src, volume, preload
+4. 선택자 5가지 나열하고 설명 타입, id, 클래스, 전체, 의사, 속성
+5. static, relative, absolute, fixed 설명
+6. <table>관련 문제

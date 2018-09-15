@@ -1,0 +1,126 @@
+1¹ø
+3¹ø
+<link rel="stylesheet" type="test/css" href="mystyle.css">
+
+2.
+2¹ø head¼½¼Ç
+
+3.
+2¹ø style
+
+4.
+1¹ø p{color:red;}
+
+5.
+2¹ø background-color
+
+6.
+4¹ø color
+
+7.
+<html>
+<head>
+<title>12</title>
+</head>
+<body>
+<h1 style="color: #00FF00"> 123 </h1>
+</body>
+</html>
+
+8.
+<html>
+<head>
+<title>12</title>
+<style>
+#special{	
+	background-color=yellow;
+	color:red;
+	}
+</style>
+</head>
+<body>
+<p id="special"> special </p> 
+</body>
+</html>
+
+9.
+<html>
+<head>
+<title>12</title>
+<style>
+	#special {	
+			font-family:Arial;
+			color:red;
+		}
+</style>
+</head>
+<body>
+<p id="special">123</p>
+</body>
+</html>
+
+10.
+
+<html>
+<head>
+<title>123</title>
+<style>
+	 p 	{
+				text-shadow: 1px 1px 3px #FF0000;
+				}
+</style>
+</head>
+<body>
+<p> 123</p>
+</body>
+</html>
+
+11.
+
+
+
+12.
+
+<html>
+<head>
+<title>12</title>
+<style>
+	h1 { color: red; }
+	strong{		color:yellow;	}
+	em{	color:yellow;	}
+	li{  	color:red; }
+</style>
+</head>
+<body>
+<h1>asdf</h1>
+<h1>1<strong>12536</strong>3d<em>1sdrfq</em>fsd</h1>
+<p>123</p>
+<h2>123</h2>
+<ul>
+<li>123</li>
+<li>123</li>
+</ul>
+</body>
+</html>
+
+13.
+
+<html>
+<head>
+<title>2</title>
+<style>
+	h1	{ 	front-style:'ÆæÈê¸²';	front-size:25pt;	 color:green;	}
+	strong,em	{	front-style='ÈÞ¸Õ±½ÀºÆÔÃ¼'; front-size="15pt" ;  color:yellow;	}
+	li	{	front-style:'ÈÞ¸Õ¸ÅÁ÷Ã¼';	front-size:18pt;	color:red;	}
+</style>
+</head>
+<body>
+<h1>123132<strong>asdfasdf</strong>13<em>asdfa</em>21</h1>
+<p>123132<strong>asdfasdf</strong>13<em>asdfa</em>21</p>
+<h1>asdadsfa</h1>
+<ul>
+<li>asdfasdf</li>
+<li>asdfasdf</li>
+</ul>
+</body>
+</html>

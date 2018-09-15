@@ -1,0 +1,61 @@
+* {
+	background-color: #fcffb0;
+	padding: 0px;
+	margin: 0px;
+}
+
+hr { 3px solid red; }
+
+header {
+
+}
+
+#header1 {
+	display: inline;
+	// MLB 글씨 수직 가운데로 정렬
+}
+
+aside#left {
+	width: 175px;
+	margin-top: 20px;
+	float: left;
+}
+
+#left ul {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFF;
+	list-style: none;
+	text-indent; 15px;
+}
+
+#left ul li {
+	background: #FFFFFF;
+	line-height: 50px;
+	text-align: center;
+	border-bottom: 1px solid #333;
+}
+
+#left ul li a {
+	text-decoration: none;
+	background-color: #000;
+	color: #FFF;
+	display: block;
+}
+
+#left ul li a:hover {
+	background: #d40203;
+}
+
+#left ul li#active {
+	background: #d40203;
+}
+
+aside#right {
+	float: left;
+	margin: 10px 10px 10px 10px;
+}
+
+footer {
+	clear: both;
+}

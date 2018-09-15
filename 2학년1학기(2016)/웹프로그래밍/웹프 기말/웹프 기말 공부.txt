@@ -1,0 +1,348 @@
+웹프로그래밍
+범위: 8장 ~ 12장
+
+===========================================
+
+8장 자바스크립트 기초
+
+자바스크립트: 동적인 웹 페이지를 구현하기 위한 언어
+브렌든 아이크 개발 (라이브스크립트 -> 자바스크립트 1.8.5)
+ECMA 표준
+
+특징
+1. 인터프리트 언어 (컴파일 X)
+2. 동적 타이핑 (자료형 관계 X)
+3. 구조적 프로그래밍 (제어문, 반복문 사용 가능)
+4. 객체 기반 (객체 지향 언어)
+5. 함수형 프로그래밍 지원 (함수 그 자체로 객체)
+6. 프로토타입-기반 (클래스 대신 프로토타입)
+
+var now = new Date(); // 현재 시간을 가지고 있는 객체 생성해서 now에 대입
+document.write(now); // now의 값을 화면에 출력
+
+용도
+1. 이벤트 구현
+2. HTML 요소의 스타일을 동적으로 변경
+3. 게임, 애니메이션 구현
+4. 입력 값 검증
+
+내부 자바스크립트: <head> 안에서 <script>로 구현
+외부 자바스크립트: <head>에 <script src="myscript.js"></script>쓰고 외부파일로 구현
+인라인 자바스크립트: onclick=alert(''); 등
+
+document.getElementById("x"); // html 내부에서 id가 x인 요소의 값
+
+낙타체: 식별자가 한 단어 이상일 때, 소문자+대문자로 표시하는 방법 (getElementById 등)
+
+typeof 연산자: "number", "string", "boolean", "object", "function", "undefined" 출력
+
+var s = "abc"; // s.length == 3
+
+var myCar = { model: "bmz", color: "red", hp: 100 }; // myCar 객체
+
+=== 연산자: 값과 자료형이 모두 같아야 참
+!== 연산자: 값이나 타입이 다르면 참
+
+parseInt() // 문자열을 숫자로 변환
+String() // 숫자를 문자열로 변환
+prompt() // 문자열로 사용자의 입력 받음
+295p js_parse.html
+296p js_parse1.html
+
+var time = new Date().getHours(); // 현재 시간을 얻어서 time 변수에 넣음
+
+for (var i = 0; i < fruits.length; i++) {}
+for (var i in myCar) {}
+
+var fruits = new Array(); // fruits 변수에 배열 생성
+
+무명 함수: 함수에 이름을 주지 않고 만들어서 한 번만 사용하는 경우
+
+document.getElementById("para1").innerHTML = sub();
+
+var user = confirm("답변"); // 전달 및 취소 버튼으로 입력
+
+===========================================
+
+9장 자바스크립트 객체
+
+내장 객체: 생성자가 미리 정의됨 (document, Date, Array 등)
+외장 객체: 사용자가 생성자 정의
+
+객체 상수로부터 생성하는 방법
+var myCar = {
+	model: "520d",
+	speed: 60,
+	brake: function () { this.speed -= 10; }
+}
+myCar.color = "yellow";
+myCar.brake();
+=> 싱글톤(객체가 하나만 생성)
+
+생성자 함수를 이용한 객체 생성 방법
+function Car(model, speed, color) {
+	this.model = model;
+	this.speed = speed;
+	this.brake = function () {
+		this.speed -= 10;
+	}
+}
+var myCar = new Car("520d", 60);
+myCar.color = "yellow";
+myCar.brake();
+
+객체 멤버: 객체 안의 속성과 메소드
+추가하는 법
+myCar.turbo = true;
+myCar.showModel = function () {
+	alert();
+}
+
+프로토타입: 여러 객체가 공유하는 메소드를 정의할 수 있도록 해주는 객체
+function Point(xpos, ypos) {
+	this.x = xpos;
+	this.y = ypos;
+}
+Point.prototype.getDistance = function () {
+	return Math.sqrt(this.x * this.x + this.y * this.y);
+}
+공유되는 속성과 메소드를 각각 클래스 속성, 클래스 메소드라고 함 <-> 인스턴스 속성, 인스턴스 메소드
+프로토타입 체인: 객체->객체 프로토타입->Object 프로토타입 순으로 탐색 (없으면 오류)
+Object 객체: 자바스크립트의 부모가 되는 객체
+
+Date 객체
+var today = new Date();
+0월부터 시작하는 점 주의
+getTime(); // 밀리초 단위 반환
+
+Math.floor(number); // number 버림
+Math.ceil(number); // number 올림
+Math.round(number); // number 반올림
+
+setTimeout(x, 10); // x를 10밀리초 후에 실행 (한 번)
+setInterval(x, 10); // x를 10밀리초마다 실행
+
+Number 객체: 수치형 값을 감싸서 객체로 만들어 주는 랩퍼 객체
+var num = new Number(7); // 7을 number 객체로 만듬
+num.toFixed(2); // 소수점 두자리수까지 반환
+num.toString(n); // n진법으로 반환
+
+String 객체
+var s = "";
+s.toUpperCase(); // 대문자로 변환
+s.toLowerCase(); // 소문자로 변환
+
+var s1 = "1";
+var s2 = "2";
+var s3 = s1.concat(s2); // "12"
+
+indexOf(): 특정 텍스트가 문자열에서 처음 등장하는 위치 반환
+match(): 문자열 안에서 일치하는 텍스트 자체를 반환
+replace(a, b): a 문자열을 b 문자열로 치환
+split(','): ,를 분리자로 분리한 후 각 항목을 배열로 반환
+
+Math 객체: new 통하여 생성할 필요없이 바로 사용 가능
+random(): 0과 1 사이의 난수 반환
+
+Array 객체
+push(), pop() // 스택
+shift(), unshift() // 큐
+sort() // 알파벳 순서 정렬
+slice(n) // 배열의 n번째 요소부터 끝까지 복사해서 배열로 반환
+join("+") // 배열의 요소들을 "+"로 구분지어서 문자열로 반환
+
+try-Catch (예외처리)
+try {
+	allert("Hello World!");
+}
+catch (error) {
+	msg = "다음과 같은 오류 발생: " + error.message;
+	alert(msg);
+}
+
+===========================================
+
+10장 DOM과 이벤트 처리, 입력 검증
+
+문서 객체 모델(DOM: Document Object Model): 문서를 객체로 표현한 것
+브라우저 객체 모델(BOM: Browser Object Model): 웹 브라우저를 객체로 표현한 것
+DOM은 BOM안에 포함
+
+379p get_elem.html
+381p get_elem1.html
+
+document.getElementById("id").value // id가 id인 요소의 값을 반환
+document.myform.text1.value; // id가 myform인 요소에서 name이 text1인 요소의 값 반환
+var eleArray = document.getElementByTagName("div"); // 문서 안 div태그를 모두 찾아서 배열로 반환
+eleArray[i].firstChild.data // 첫 번째 자식 노드의 data 필드 출력 (텍스트 데이터는 첫 번째 자식 노드로 저장됨)
+
+innerHTML: 요소의 시작 태그와 종료 태그 사이에 놓여진 모든 HTML 코드와 텍스트를 의미
+385p dom_elem_mod.html
+
+document.getElementById("test").src = "after.png" // 요소의 속성 변경
+document.getElementById("test").style.color = "red" // 요소의 CSS 변경(반드시 .style 삽입해야함)
+
+HTML 요소 생성
+var node = document.createTextNode("추가된 노드");
+var parent = document.getElementById("target");
+parent.appendChild(node); // 삭제는 parent.removeChild(child);
+
+windows.open('http://www.google.com', '_blank', 'width=300, height=300', true);
+
+setTimeOut(code, millisec) // millisec 이후 한 번 호출
+setInterval(code, millisec) // millisec 마다 호출
+id = setInterval(flashText, 500); // 정지시키기위해 id에 반환값을 저장
+clearInterval(id); // id에 저장된 setInterval 중지
+
+moveTo(0, 0); // 절대 위치 0, 0으로 창 옮김
+moveBy(10, 10); // 10, 10만큼 창 옮김
+크기변경: resizeTo(); resizeBy();
+스크롤위치변경: scrollTo(); scrollBy();
+객체.resizeTo(screen.availWidth, screen.availHeight); // 전체화면
+location.replace("http://www.google.com"); // 구글로 url 대체
+
+<이벤트>
+onload=""; // 웹페이지 진입
+onunload=""; // 웹페이지 떠남
+onchange=""; // 입력필드를 떠날 때 입력이 변경되면 발생
+
+onmouseover // HTML 요소 위에 마우스를 올림
+onmouseout // HTML 요소 위에서 마우스가 떠남
+onmousedown // 마우스 버튼 눌렸을 때
+onmouseup // 마우스 버튼 뗐을 때
+onclick // 클릭했을 때
+
+onfocus // 입력 필드에 진입
+onblur // 입력 필드에서 떠남
+</이벤트>
+
+eval(); // 문자열로 된 자바스크립트 코드를 실행
+
+정규식: 특정한 규칙을 가지고 있는 문자열을 표현하는 수식
+
+===========================================
+
+11장 자바스크립트와 캔버스로 게임 만들기
+
+캔버스: HTML 페이지 상에서 사각 형태의 영역
+<canvas id="myCanvas" width="300" height="100"></canvas>
+컨택스트: 자바 스크립트에서 물감과 붓을 모아놓은 객체
+var canvas = document.getElementById("myCanvas"); // 캔버스 요소 찾음
+var context = canvas.getContext("2d"); // 캔버스에서 컨텍스트를 찾음
+
+canvas <script>는 항상 <body> 태그의 끝에 작성해야함
+
+422p canvas1.html
+context.fillStyle = "lightgreen"; // 채우기 속성
+context.fillRect = (0, 0, 100, 50); // (0, 0)부터 (100, 50)까지 채우기
+
+424p canvas_line.html
+context.beginPath(); // 경로 초기화
+context.moveTo(x, y); // 시작점 정의
+context.lineTo(x, y); // 끝점 정의
+context.stroke(); // 실제 그리기
+
+rect(x, y, w, h); // (x, y)를 왼쪽 모서리, 가로w, 세로h인 사각형 그림
+context.stroke(); 대신에 context.fill(); 사용하면 채우기 속성에 정의된 색으로 채움
+context.arc(x, y, 반지름, 시작각도, 종료각도); // 원그리기
+
+beginPath(); moveTo(x, y); lineTo... closePath(); // 도형그리기
+fillText(text, x, y); // (x, y)에 텍스트 그림
+strokeText(text, x, y); // (x, y)에 텍스트 그림 (외곽선만)
+
+context.lineWidth = 20; // 선 두께를 20으로 지정
+context.lineCap = "round"; // butt, round, square 중 하나로 끝 모양 지정
+
+var gradient = context.createLinearGradient(0, 0, 200, 0); // 선형 그라디언트 생성
+gradient.addColorStop(0, "white");
+gradient.addColorStop(1, "red");
+context.fillStyle = gradient;
+context.fillRect(10, 10, 180, 90);
+
+var inputImage = new Image();
+context.drawImage(inputImage, 0, 0); // 이미지 삽입
+
+context.translate(50, 50); // (50, 50)만큼 좌표계 이동(다시 그려줘야 그려짐)
+context.rotate(Math.PI/4); // 회전
+context.scale(0.5, 0.5); // 신축 비율
+
+===========================================
+
+12장 jQuery, Ajax, JSON
+
+존 레식이 개발
+
+456p jq1.html
+$(document).ready(function() {
+	
+}); // 문서가 완전히 로드되기 전에 jQuery 코드가 실행하는 것을 방지
+
+mouseover 이벤트 // 마우스 진입
+mouseleave 이벤트 // 마우스 떠남
+mousedown 이벤트 // 마우스 버튼 누름
+mouseup 이벤트 // 마우스 버튼 뗌
+focus // 입력 필드가 키보드 포커스를 얻으면 발생
+blur // 입력 필드가 키보드 포커스를 잃으면 발생
+$(document).ready(function() {
+	$("input").focus(function() {
+		$(this).css("background-color", "yellow");
+	});
+	$("input").blur(function() {
+		$(this).css("background-color", "white");
+	});
+});
+
+465p event_info.html
+e.pageX, e.pageY // 마우스 좌표 (x, y)
+
+$(selector).show("slow"); // 느리게 selector 나타남
+467p jq_show.html
+$().toggle(); // 클릭을 하면 사라짐과 나타남을 반복함
+
+// position: relative; 주의
+$().animate({left:"100px"}); // left 속성을 100px로 만듬
+468p jq_animate.html
+
+$().stop(); // 애니메이션 중지
+$().fadeIn("slow"); // 천천히 페이드인
+$().fadeOut("slow"); // 천천히 페이드아웃
+$().slideUp("slow"); // 위로 올림
+$().slideDown("slow"); // 아래로 내림
+
+메소드 체이닝: 여러 개의 jQuery 메소드를 연결해서 한 문장에서 실행
+$().show().fadeOut("slow").slideDown("slow");
+
+$(selector).text(); // selector의 텍스트 반환
+$(selector).html(); // selector의 html 코드 반환
+$(selector).val(); // selector의 값 반환
+$(selector).css(); // css 속성 반환
+$(selector).attr(); // 요소의 속성 반환
+$(selector).position(); // 요소의 위치 반환
+
+$(selector).attr("src"); // selector의 src 속성 값 반환
+$(selector).attr("alt", "Best Dog"); // alt 속성을 Best Dog로 바꿈
+
+$(selector).append("<p>Test</p>"); // "<p>Test</p>"를 요소의 끝에 추가
+$().prepend(); // 요소의 시작 부분에 추가
+$().after(); // 요소의 끝 부분에 추가
+$().before(); // 요소의 시작 부분에 추가
+// append()와 after()의 차이점: append()는 자식노드로 추가, after()는 형제노드로 추가
+
+$(selector).remove(); // selector와 자식 요소 모두 삭제
+$(selector).empty(); // selector의 자식 요소들만 삭제
+
+$(selector).css("background-color"); // selector의 css값인 background-color 값 반환
+$(selector).css("background-color", "red"); // red로 변환
+$().addClass(); // 클래스 추가
+$().removeClass(); // 클래스 제거
+
+$(window).width(); // 브라우저의 폭
+$(document).width(); // HTML 문서의 폭
+
+Ajax(Asynchronous JavaScript and XML): 서버와 데이터를 교환하는 기술
+JSON(JavaScript Object Notation): 텍스트-기반의 데이터 교환 형식
+
+로딩: 메인 메모리에 적재하는 것
+
+Asynchronous: 동시에 발생하지 않는 - 페이지의 일부만 업데이트
+Synchronous: 동시 발생하는 - 페이지 전체를 업데이트

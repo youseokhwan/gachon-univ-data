@@ -1,0 +1,45 @@
+﻿빌드 시작: 2016-04-07 오후 12:07:42
+     1>2 노드의 "C:\유석환\가천대학교\2016년 2학년 1학기\C++ (원어강의)\예제 실습\6장\6장.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt "6-06.cpp" "6-07.cpp" "6-08.cpp" "6-09.cpp" "6-10.cpp" "6-11.cpp" "6-12.cpp" "6-13.cpp" "6-14.cpp" "6-15.cpp" "6-16.cpp" "6-17.cpp" "6-18.cpp" "6-19.cpp"
+         6-19.cpp
+         6-18.cpp
+         6-17.cpp
+         6-16.cpp
+         6-15.cpp
+         6-14.cpp
+         6-13.cpp
+         6-12.cpp
+         6-11.cpp
+         6-10.cpp
+         6-09.cpp
+         6-08.cpp
+         6-07.cpp
+         6-06.cpp
+         코드를 생성하고 있습니다...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\유석환\가천대학교\2016년 2학년 1학기\C++ (원어강의)\예제 실습\Debug\6장.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\유석환\가천대학교\2016년 2학년 1학기\C++ (원어강의)\예제 실습\Debug\6장.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\유석환\가천대학교\2016년 2학년 1학기\C++ (원어강의)\예제 실습\Debug\6장.lib" /MACHINE:X86 "Debug\6-01.obj"
+         "Debug\6-02.obj"
+         "Debug\6-03.obj"
+         "Debug\6-04.obj"
+         "Debug\6-05.obj"
+         "Debug\6-06.obj"
+         "Debug\6-07.obj"
+         "Debug\6-08.obj"
+         "Debug\6-09.obj"
+         "Debug\6-10.obj"
+         "Debug\6-11.obj"
+         "Debug\6-12.obj"
+         "Debug\6-13.obj"
+         "Debug\6-14.obj"
+         "Debug\6-15.obj"
+         "Debug\6-16.obj"
+         "Debug\6-17.obj"
+         "Debug\6-18.obj"
+         "Debug\6-19.obj"
+         6장.vcxproj -> C:\유석환\가천대학교\2016년 2학년 1학기\C++ (원어강의)\예제 실습\Debug\6장.exe
+     1>"C:\유석환\가천대학교\2016년 2학년 1학기\C++ (원어강의)\예제 실습\6장\6장.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:04.10

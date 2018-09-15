@@ -1,0 +1,146 @@
+1번
+2번 / src
+
+2번
+3번 / poster
+
+3번
+<video src="move.mp4" autoplay controls width="300" height="200">
+
+4번
+<body>
+<video width=640 height="480" controls>
+<source src="trailer.mp4" type='video/ogg'>
+<source src="trailer.ogv" type='video/ogg'>
+</video>
+
+5번
+
+<html>
+<head>
+<title>12</title>
+</head>
+<body>
+<video controls="" preload="" style="width:640px;height:480px;">
+<source src="http://media.w3.org/2010/05/bunny/movie.ogv">
+</video>
+</body>
+</html>
+
+
+6번
+
+<html>
+<head>
+<title>6번</title>
+</head>
+<body>
+<iframe src ="" name="iframe1"></iframe>
+<p><ul>
+<p><li><a href="http://www.naver.com" target="iframe1">네이버</a></li></p>
+<p><li><a href="http://www.daum.com" target="iframe1">다음</a></li></p>
+<p><li><a href="http://www.nate.com" target="iframe1">네이트</a></li></p>
+</ul>
+</body>
+</html>
+
+7번
+
+<html>
+<head>
+<title>123</title>
+</head>
+<body>
+<h1>html5 요소 데모 화면</h1>
+<form action="adduser.jsp" lmethod="post">
+이름:
+<input type="text" name="name"/><br/>
+주소:
+<input type="text" name="address"/><br/>
+email :
+<input type="email" name="email"/><br/>
+웹사이트 :
+<inpuy type="url" name="url" /> <br/>
+정수 : 
+<input type="number" name="number" min="1" max="10" step:"2" / ><br/>
+범위 :
+<input type="range" name="range" min="1" max="10" step:"2" /><br/>
+메세지:
+<textarea name="feedback" rows="5" cols="15"></textarea><br/>
+<input type="submit" vlaue="제출" />
+</form>
+</body>
+</html>
+
+8번
+
+<html>
+<head>
+<title>123</title>
+</head>
+<body>
+<from>
+<fieldset>
+<legend>신상정보</legend>
+<ol>
+<p><li>이름 : <input type="text"></li></p>
+<p><li>이메일 : <input type="email"></li></p>
+<p><li>휴대전화 : <input type="text"></li></p>
+</ol>
+</from>
+</body>
+</html>
+
+9번
+
+<html>
+<head>
+<title>123</title>
+</head>
+<body>
+<form>
+<fieldset>
+<legend>배송지 주소</legend>
+<ul>
+<p><li>주소<textarea name="address" rows="5" cols="15"></textarea> </li></p>
+<p><li>우편번호<input type ="text" name ="text1"> </li> </p>
+<p><li>국가<input type="text" name="text"></li></p>
+</ul>
+</fieldset>
+</form>
+</body>
+</html>
+
+10번
+
+<html>
+<head>
+<title>123</title>
+</head>
+<body>
+<form>
+<form>
+<filedset>
+<filedset>
+<legend>카드정보입력</legend>
+<ol>
+<ol>
+<from> <filedset> <legend>카드타입</legend> 
+<p><li> <input type="radio" name="name4">visa</li></p>
+<p><li> <input type="radio" name="name5">Amex</li></p>
+<p><li> <input type="radio" name="name6">Amex</li></p>
+</ol>
+</filedset>
+</form>
+
+<p><li>카드번호 : <input type="number" min="0" max="300" step="1" value="0" name="name3"></li></p>
+<p><li>CRC넘버 : <input type="number" min="0" max="300" step="1" value="0" name="name2"></li></p>
+<p><li>카드 소유자 이름 : <input type="text" name="name1"></li></p>
+</ol>
+
+</filedset>
+<p><input type="submit" value="구매"></p>
+
+</form>
+</body>
+</html>

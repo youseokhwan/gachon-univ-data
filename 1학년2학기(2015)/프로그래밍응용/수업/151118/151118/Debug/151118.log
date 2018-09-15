@@ -1,0 +1,22 @@
+﻿빌드 시작: 2015-11-18 오후 12:28:49
+     1>2 노드의 "C:\Users\유석환\Desktop\151118\151118\151118.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:prompt "08 bit_field.c"
+         08 bit_field.c
+     1>c:\users\유석환\desktop\151118\151118\08 bit_field.c(19): warning C4477: 'printf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 1 has type 'product'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\유석환\Desktop\151118\Debug\151118.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\유석환\Desktop\151118\Debug\151118.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\유석환\Desktop\151118\Debug\151118.lib" /MACHINE:X86 "Debug\01 macro1.obj"
+         "Debug\02 macro2.obj"
+         "Debug\04 mainarg.obj"
+         "Debug\05 mile2km.obj"
+         "Debug\06 bit_op.obj"
+         "Debug\07 bit_shift.obj"
+         "Debug\08 bit_field.obj"
+         Debug\power.obj
+         Debug\main.obj
+         151118.vcxproj -> C:\Users\유석환\Desktop\151118\Debug\151118.exe
+     1>"C:\Users\유석환\Desktop\151118\151118\151118.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:01.25

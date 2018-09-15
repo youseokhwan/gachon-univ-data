@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+	<div id="log"></div>
+	<script>
+		$(document).ready(function() {
+			$(document).mousemove(function(e) {
+				$('#log').text("e.pageX: " + e.pageX + ", e.pageY: " + e.pageY);
+			});
+		});
+	</script>
+</body>
+</html>

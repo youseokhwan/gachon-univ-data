@@ -1,0 +1,128 @@
+﻿빌드 시작: 2016-04-16 오후 1:22:29
+     1>2 노드의 "C:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\151120 기말프로젝트.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:prompt card.c
+         card.c
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(55): warning C4047: '초기화 중': 'char'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(56): warning C4047: '초기화 중': 'char'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(134): warning C4047: '=': 'int *'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(149): warning C4047: '=': 'int *'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(79): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1270): note: 'scanf' 선언을 참조하십시오.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(212): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'int'
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(213): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'int'
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(213): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'int'
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(213): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'int'
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(219): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1270): note: 'scanf' 선언을 참조하십시오.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(255): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'int'
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(255): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'int'
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(256): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'int'
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(256): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'int'
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(256): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'int'
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(256): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 4 has type 'int'
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(262): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1270): note: 'scanf' 선언을 참조하십시오.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(298): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'int'
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(298): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'int'
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(299): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'int'
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(299): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'int'
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(299): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'int'
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(299): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 4 has type 'int'
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(299): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 5 has type 'int'
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(305): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1270): note: 'scanf' 선언을 참조하십시오.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(359): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'int'
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(369): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'int'
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(75): warning C4101: 'card_select' :참조되지 않은 지역 변수입니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(75): warning C4101: 'temp' :참조되지 않은 지역 변수입니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(392): warning C4047: '=': 'int'의 간접 참조 수준이 'int *'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(396): warning C4047: '>': 'int *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(397): warning C4047: '=': 'int'의 간접 참조 수준이 'int *'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(402): warning C4047: '==': 'int *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(404): warning C4047: '==': 'int *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(406): warning C4047: '==': 'int *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(408): warning C4047: '==': 'int *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(415): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(423): warning C4047: '=': 'int'의 간접 참조 수준이 'int *'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(427): warning C4047: '>': 'int *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(428): warning C4047: '=': 'int'의 간접 참조 수준이 'int *'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(433): warning C4047: '==': 'int *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(435): warning C4047: '==': 'int *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(437): warning C4047: '==': 'int *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(439): warning C4047: '==': 'int *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(446): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(466): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(486): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(506): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(526): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(536): warning C4047: '>=': 'int *'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(536): warning C4047: '<=': 'int *'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(540): warning C4047: '>=': 'int *'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(540): warning C4047: '<=': 'int *'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(549): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(559): warning C4047: '>=': 'int *'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(559): warning C4047: '<=': 'int *'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(563): warning C4047: '>=': 'int *'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(563): warning C4047: '<=': 'int *'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(572): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(555): warning C4101: 'max' :참조되지 않은 지역 변수입니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(587): warning C4047: '>=': 'int *'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(587): warning C4047: '<=': 'int *'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(589): warning C4047: '=': 'int'의 간접 참조 수준이 'int *'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(590): warning C4047: '=': 'int'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(580): warning C4047: '초기화 중': 'int'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(624): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(639): warning C4047: '>=': 'int *'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(639): warning C4047: '<=': 'int *'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(641): warning C4047: '=': 'int'의 간접 참조 수준이 'int *'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(642): warning C4047: '=': 'int'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(632): warning C4047: '초기화 중': 'int'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(676): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(692): warning C4047: '=': 'int'의 간접 참조 수준이 'int *'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(693): warning C4047: '=': 'int'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(710): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(726): warning C4047: '=': 'int'의 간접 참조 수준이 'int *'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(727): warning C4047: '=': 'int'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(744): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(764): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(784): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(800): warning C4047: '=': 'int'의 간접 참조 수준이 'int *'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(801): warning C4047: '=': 'int'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(818): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(834): warning C4047: '=': 'int'의 간접 참조 수준이 'int *'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(835): warning C4047: '=': 'int'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(852): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(868): warning C4047: '==': 'int *'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(878): warning C4047: '==': 'int *'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(884): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(899): warning C4047: '==': 'int *'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(909): warning C4047: '==': 'int *'의 간접 참조 수준이 'char **'과(와) 다릅니다.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(915): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+     1>c:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\card.c(920): warning C4101: 'select' :참조되지 않은 지역 변수입니다.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\Debug\151120 기말프로젝트.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\Debug\151120 기말프로젝트.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\Debug\151120 기말프로젝트.lib" /MACHINE:X86 Debug\card.obj
+         151120 기말프로젝트.vcxproj -> C:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\Debug\151120 기말프로젝트.exe
+     1>"C:\유석환\가천대학교\2015년 1학년 2학기\프로그래밍응용\기말프로젝트\151120 기말프로젝트\151120 기말프로젝트\151120 기말프로젝트.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:02.87

@@ -1,0 +1,15 @@
+1 컴퓨터의 5대 기능 (input, output, memory, control, arithmetic)
+2 Object
+3 최근 지향? OOP (Object Oriented Programming - 객체 지향 프로그래밍)
+4 과정: 알고리즘 (procedure: 절차식)
+5 C언어에서 조립식 스타일로 가져다 쓰는 것(OOP 스타일, 과거 COBOL엔 없었음): 라이브러리 함수
+6 컴퓨터를 사용하는 목적: 대량의 Data, 속도를 증가
+7 C에서는 대량 Data (배열 제공), 속도를 증가(포인터 제공)
+8 구조체
+	주소록 (이름, 전화번호, 주소 - field)
+	(정우재 123-4567 복정동 - record)
+	record가 모인 것: file
+9 Structured Programming을 해야 좋은 프로그램
+10 오브젝트를 찍어내는 틀: 클래스
+11 구조체(Structured Statement)
+12 OOP를 사용하는 이유: 프로그램을 재사용하기 위해서 (모듈)

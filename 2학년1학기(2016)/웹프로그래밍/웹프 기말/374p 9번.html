@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function find(_arr, _value) {
+			for(var i in _arr)
+				if(_value == _arr[i])
+					return i;
+		}
+
+		arr = ["Hello", 10, 32.6, true];
+		var value = prompt("배열 요소 값 입력:");
+		var indexReturn = find(arr, value);
+		document.write(indexReturn);
+	</script>
+</head>
+<body>
+</body>
+</html>

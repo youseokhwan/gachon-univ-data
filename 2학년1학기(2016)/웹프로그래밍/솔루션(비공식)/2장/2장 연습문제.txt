@@ -1,0 +1,316 @@
+2번 연습문제
+
+1번
+2번 <br>
+
+2번
+4번 <tl>
+
+3번
+<pre> 2번
+
+4번
+1번<&nbp>
+
+5번
+3번<하이퍼 링크>
+
+6번
+<p>
+<img src="images/toy1.jpg" width="300" height="200" alt = "00">
+</p>
+
+7번
+<a href="http://www.gogle.com" target="_blank"> </a>
+
+8번
+<html>
+<head>
+<title>loclahost</title>
+</head>
+<body>
+<table border="1">
+<tr>
+<th>123</th>
+<th>123</th>
+<th>123</th>
+</tr>
+
+<tr>
+<td rowspan="2"> 123</td>
+<td> 123 </td>
+<td> 123 </td>
+</tr>
+
+<tr>
+<td>123</td>
+<td>123</td>
+</tr>
+
+
+<tr>
+<td colspan="3"> 123</td>
+</tr>
+</body>
+</html>
+
+9번
+
+<html>
+<head>
+<title>123</title>
+</head>
+<body>
+<h1>scrambled</h1>
+<p>다음은 에그</p>
+<h2>재료</h2>
+<ul>
+<li>2</li>
+<li>2</li>
+<li>2</li>
+</ul>
+
+<h2>123</h2>
+<ol>
+<li>123</li>
+<li>123</li>
+<li>123</li>
+<li>123</li>
+<li>123</li>
+</ol>
+</body>
+</html>
+
+
+10번
+
+<html>
+<head>
+<title>123</title>
+</head>
+<body>
+<table border="1">
+<tr>
+<th> </th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+</tr>
+
+<tr>
+<td>123</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+
+<tr>
+<td>123</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+
+<tr>
+<td>123</td>
+<td> </td>
+<td> </td>
+<td> 123 </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+
+<tr>
+<td>123</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> 123 </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+
+<tr>
+<td>123</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> 123 </td>
+<td> </td>
+<td> </td>
+</tr>
+</table>
+</body>
+</html>
+
+11번
+
+<html>
+<head>
+<title>123</title>
+</head>
+<body>
+<p>
+on the 4<sup>th</sup> of sepfember you will learn about E=MC<sup>2</sup>
+</p>
+
+<p>
+the amount of co<sub>2</sub> in the atmosphere grew by 2ppm in 2013<sub>1</sub>.
+</p>
+</body>
+</html>
+
+12번
+
+<html>
+<head>
+<title>123</title>
+</head>
+<body>
+<a href="mailto:manyfinish@google.com?subject=Feedback">
+mantfinish@naver.com</a>
+<p>
+<em>서울시 종로구 1번지</em>
+</p>
+</body>
+</html>
+
+13번
+
+<html>
+<head>
+<title>123</title>
+</head>
+<body>
+<a href="http://www.naver.com">
+<img src = "images/1.jpg" width="100" height="200"></a>
+</body>
+</html>
+
+14번
+
+<html>
+<head>
+<title>1</title>
+</head>
+<body>
+<table border="1">
+
+<tr>
+<td rowspan="4">
+<img src ="images/1.jpg" width="100" height="200" rlt="non">
+<td colspan="4"> 이 력 서 </td>
+</tr>
+
+<tr>
+<td rowspan="2">성명</td>
+<td rowspan="2"> </td>
+<td colspan="2"> 주민등록번호 </td>
+</tr>
+
+<tr>
+<td colspan="2"> </td>
+</tr>
+
+<tr>
+<td colspan="6"> 생년월일     19    년   월    일생  (만세) </td>
+</tr>
+
+<tr>
+<td> 주소 </td>
+<td colspan="6"> </td>
+</tr>
+
+<tr>
+<td rowspan="2"> 연락처 </td>
+<td> 집 </td>
+<td> </td>
+<td rowspan="2"> 전자우편 </td>
+<td rowspan="2"> </td>
+</tr>
+
+<tr>
+<td> 핸드폰 </td>
+<td> </td>
+</tr>
+
+</table>
+</body>
+</html>
+
+15번
+
+<html>
+<head>
+<title>my</title>
+</head>
+<body>
+<h1>my homep</h1>
+<p> 
+<img src = "images/1.jpg" width="100" height="100" rlt="no">
+컴퓨터 프로그래머를 꿈꾸며 열심히 공부하고 이써는 1인입니다</p>
+<h2> 현재 학습하고 있는 과목<h2>
+<lu>
+<li> 언어 </li>
+<li> 언어 </li>
+<li> 언어 <a href="http://www.3w.org"> w3c </a>사이트</li>
+</lu>
+
+<h2>이번학기 시간표</h2>
+<p>
+<table border="1">
+<caption>시간표</caption>
+<tr>
+<th> </th>
+<th> 123 </th>
+<th> 123 </th>
+<th> 123 </th>
+</tr>
+
+<tr>
+<td> 123 </td>
+<td> 123 </td>
+<td> 123 </td>
+<td> 123 </td>
+</tr>
+
+<tr>
+<td> 123 </td>
+<td> 123 </td>
+<td> 123 </td>
+<td> 123 </td>
+</tr>
+
+
+</table>
+</p>
+</body>
+</html>

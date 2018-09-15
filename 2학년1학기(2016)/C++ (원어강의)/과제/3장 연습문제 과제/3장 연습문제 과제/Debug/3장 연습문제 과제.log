@@ -1,0 +1,36 @@
+﻿빌드 시작: 2016-04-21 오전 9:35:04
+     1>2 노드의 "C:\유석환\가천대학교\2016년 2학년 1학기\C++ (원어강의)\과제\3장 연습문제 과제\3장 연습문제 과제\3장 연습문제 과제.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt "10번.cpp" "12번.cpp" "14번.cpp" "15번.cpp" "17번.cpp" "18번.cpp" "21번.cpp" "24번.cpp" "27번.cpp" "29번.cpp" "9번.cpp" test.cpp
+         test.cpp
+         9번.cpp
+         29번.cpp
+         27번.cpp
+         24번.cpp
+         21번.cpp
+         18번.cpp
+         17번.cpp
+         15번.cpp
+         14번.cpp
+         12번.cpp
+         10번.cpp
+         코드를 생성하고 있습니다...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\유석환\가천대학교\2016년 2학년 1학기\C++ (원어강의)\과제\3장 연습문제 과제\Debug\3장 연습문제 과제.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\유석환\가천대학교\2016년 2학년 1학기\C++ (원어강의)\과제\3장 연습문제 과제\Debug\3장 연습문제 과제.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\유석환\가천대학교\2016년 2학년 1학기\C++ (원어강의)\과제\3장 연습문제 과제\Debug\3장 연습문제 과제.lib" /MACHINE:X86 "Debug\10번.obj"
+         "Debug\12번.obj"
+         "Debug\14번.obj"
+         "Debug\15번.obj"
+         "Debug\17번.obj"
+         "Debug\18번.obj"
+         "Debug\21번.obj"
+         "Debug\24번.obj"
+         "Debug\27번.obj"
+         "Debug\29번.obj"
+         "Debug\9번.obj"
+         Debug\test.obj
+         3장 연습문제 과제.vcxproj -> C:\유석환\가천대학교\2016년 2학년 1학기\C++ (원어강의)\과제\3장 연습문제 과제\Debug\3장 연습문제 과제.exe
+     1>"C:\유석환\가천대학교\2016년 2학년 1학기\C++ (원어강의)\과제\3장 연습문제 과제\3장 연습문제 과제\3장 연습문제 과제.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:03.90

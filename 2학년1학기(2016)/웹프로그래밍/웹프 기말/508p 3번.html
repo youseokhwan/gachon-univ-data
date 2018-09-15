@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#rect {
+			width: 100px;
+			height: 100px;
+			position: relative;
+		}
+	</style>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+	<input type="button" id="leftButton" value="<<" />
+	<input type="button" id="rightButton" value=">>" /> <br />
+	<image id="rect" src="rect.png" />
+
+	<script>
+		$(document).ready(function() {
+			$("#leftButton").click(function() {
+				$("#rect").animate({left:'0px'});
+			});
+			$("#rightButton").click(function() {
+				$("#rect").animate({left:'100px'});
+			});
+		});
+	</script>
+</body>
+</html>

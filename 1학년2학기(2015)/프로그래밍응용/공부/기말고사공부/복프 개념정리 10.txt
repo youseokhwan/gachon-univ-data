@@ -1,0 +1,64 @@
+10 문자와 문자열
+1. 문자열의 끝에는 항상 NULL 문자가 들어가야 한다.
+2. NULL 문자의 필요성: 정상적인 데이터와 쓰레기 값을 분리하기 위해서이다.
+3. 문자 배열에서는 각 문자들을 변경할 수 있다.
+4. getchar(), putchar()
+  - 하나의 문자를 입력, 출력 (에코 O)
+  - 버퍼를 사용하기때문에 엔터키를 쳐야 진행
+5. getch(), putch()
+  - conio.h 필요
+  - 하나의 문자를 입력, 출력 (에코 X)
+  - 버퍼를 사용하지않기때문에 곧바로 진행
+6. getche(), putche()
+  - conio.h 필요
+  - 하나의 문자를 입력, 출력 (에코 O)
+  - 버퍼를 사용하지않기때문에 곧바로 진행
+7. gets(), puts()
+  - 문자열 한 줄을 입력, 출력
+  - 입력되는 문자열의 크기를 검사하지 않기 때문에 데이터 손실 발생 가능성
+8. 문자를 처리하는 함수
+  - ctype.h 필요
+  - 참이면 0이 아닌 다른 값, 거짓이면 0 반환
+  - isalpha(c) c가 영문자인가?
+  - isupper(c) c가 대문자인가?
+  - islower(c) c가 소문자인가?
+  - isdigit(c) c가 숫자인가?
+  - isalnum(c) c가 알파벳이나 숫자인가?
+  - isxdigit(c) c가 16진수 숫자인가?
+  - isspace(c) c가 공백 문자인가?
+  - ispunct(c) c가 구두점 문자인가?
+  - isprintf(c) c가 출력 가능한 문자인가?
+  - iscntrl(c) c가 제어 문자인가?
+  - isascii(c) c가 아스키 코드인가?
+  - toupper(c) c를 대문자로 바꾼다.
+  - tolower(c) c를 소문자로 바꾼다.
+  - toascii(c) c를 아스키 코드로 바꾼다.
+9. EOF (End Of File): 파일의 끝, 입력의 끝 (Ctrl + Z)
+10. 문자열을 처리하는 함수
+  - string.h 필요
+  - strlen(a) 문자열 a의 길이를 구한다.
+  - strcpy(a, b) b를 a에 복사한다.
+  - strcat(a, b) b를 a의 끝에 붙여넣는다.
+  - strcmp(a, b) a와 b를 비교한다. (사전적으로 a가 먼저면 음수, 같으면 0, b가 먼저면 양수 반환)
+  - strncpy(a, b, n) b의 최대 n개의 문자를 a에 복사한다.
+  - strncat(a, b, n) b의 최대 n개의 문자를 a의 끝에 붙여넣는다.
+  - strncmp(a, b, n) 최대 n개의 문자까지 a와 b를 비교한다.
+  - strchr(a, c) 문자열 a안에서 처음 나오는 c를 찾는다.
+  - strrchr(a, c) 반대 방향으로 문자열 a안에서 처음 나오는 c를 찾는다.
+  - strstr(a, b) 문자열 a안에서 문자열 b를 찾는다.
+11. 토큰: 문법적으로 더 이상 나눌 수 없는 기본적인 언어 요소
+  - strtok(s, " ") 문자열 s에서 토큰을 찾는다.
+  - strtok(NULL, " ") 다음 토큰을 찾는다.
+12. 371p token.c (토큰)
+13. sscanf(s, "%d", &i)
+  - string + scanf
+  - 문자열 s에서 정수형을 추출하여 변수 i에 저장 (문자열 -> 숫자)
+14. atoi(s), atof(s)
+  - stdlib.h 필요
+  - sscanf()와 기능 동일
+  - i = atoi(s) s에서 정수형을 추출하여 변수 i에 저장 (문자열 -> 숫자)
+  - d = atof(s) s에서 실수형을 추출하여 변수 d에 저장 (문자열 -> 숫자)
+15. sprintf(s, "%f", buffer)
+  - string + printf
+  - 변수 buffer에 있는 실수 값을 문자열 s에 저장 (숫자 -> 문자열)
+16. 377p dic.c (한영 사전의 구현)

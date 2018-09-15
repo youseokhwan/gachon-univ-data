@@ -1,0 +1,64 @@
+1장
+1번
+비주얼 베이직
+2번
+팀 버너스리
+3번 
+html4.01 1999
+4번
+<!DOCTYPE html>
+5번
+html은
+hyper text markup language
+6번
+html의 최신버전은 html 5
+완전한 css3 지원
+비디오와 오디오 지원
+2, 3d 그래픽 지원
+로컬저장소 지원
+로컬 SQL 데이터베이스 지원
+웹 애플리케이션 지원
+
+7번
+
+8번
+WWW.3W.ORG
+
+9번
+<HTML>
+</HTML>
+
+10번
+<!--   -->
+
+11번
+<a href="http://www.w3.org"> 콘서시엄</a>
+hredf : 속성의 이름
+"http://www.w3.org" 속성의 값
+<a 시작태크
+</a> 종료 태그
+<a href="http://www.w3.org"> 콘서시엄</a> 이자체가 요소
+콘서시엄 요소의 내용
+
+12번
+<html>
+<head>
+<title> My first page </title>
+</head>
+<body>
+<h1>알아서 잘해</h1>
+<img src="1.jpg">
+<p>홍길동니잘났다</p>
+<p>짜증나<em>즐랙사</em>짜증나</p>
+
+<h2>알아서 잘해 2</h2>
+<img src="1.jpg">
+<p>
+<a href="http://www.3w.org">컨소시엄</a>
+</p>
+<a>홍길동</a>
+<p>sky<em>skty</em>adsf</p>
+</body>
+</html>
+
+

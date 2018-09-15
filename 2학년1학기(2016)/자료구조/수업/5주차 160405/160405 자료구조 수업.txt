@@ -1,0 +1,26 @@
+컴퓨터의 5대기능 => Object
+문(Object)을 눈에 보이는 대로 표현 => 가로 몇cm, 세로 몇cm 등
+Object는 Property(속성)로 구성되어 있다
+
+OOP Objected-Oriented Programming 객체지향 프로그래밍
+(손잡이을 잡아당긴다 -> 문이 열렸다) => method(메소드)
+method가 발생하려면 event(ex> 문을 잡아당기는 것) 필요
+
+컴퓨터를 사용하는 이유
+1.대량의 Data
+2.빠르게 처리
+
+Linear List
+장점: 구현이 쉽다(의도하지 않아도 자연스럽게 구현된다)
+단점: Insert/Delete가 비효율적이다
+
+Linear List의 단점을 해결하기 위해 Linked List 사용
+
+-----
+
+하드디스크
+arm,track,header,node,data 등 용어
+
+-----
+
+Master File, Transaction File - 책x,시험x, 그냥 알아두면 좋음

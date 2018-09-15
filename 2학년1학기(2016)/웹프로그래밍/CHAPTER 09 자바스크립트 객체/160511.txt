@@ -1,0 +1,11 @@
+160511 웹프 수업
+
+컴퓨터의 5대 기능 - input, output, memory, control, arithmetic
+이러한 기능들은 어디서 모델링을 해왔는가? - 인간 (인간을 만들고자하는게 궁극적 목표)
+모두 묶어서 무엇? - object
+강의실 문짝 표현 - 세로 2m, 가로 1m, 두께 5cm 등 묘사
+앞서 설명한 것 통칭해서? - 속성(property, attribute)
+무엇이 발생? - 이벤트(event, 손잡이를 잡아당긴다, 함수)
+이벤트에 따라서 메소드가 다른 것이 발생
+OOP (object oriented programming)
+클래스에서 객체를 찍어내는 것 - 인스턴스(instance)

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+	<p id="test">이것은 p요소입니다.</p>
+	<input type="button" id="hideButton" value="감추기" />
+	<input type="button" id="showButton" value="보이기" />
+	<script>
+		$(document).ready(function() {
+			$("#hideButton").click(function() {
+				$("#test").hide();
+			});
+			$("#showButton").click(function() {
+				$("#test").show();
+			});
+		});
+	</script>
+</body>
+</html>

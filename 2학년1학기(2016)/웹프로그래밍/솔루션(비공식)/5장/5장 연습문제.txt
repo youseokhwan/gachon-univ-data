@@ -1,0 +1,36 @@
+1.
+2.
+1번 border: 1px solid red;
+3.
+2번 마진
+4.
+3번 border-style:italic
+
+5.
+4번 background-image:url('image.jpg')
+6.
+
+
+7.
+
+
+8.
+
+
+9.
+
+<html>
+<head>
+<title>asdf</title>
+<style>
+a:link{ color:red; background:black;}
+a:visited{ color:green; background:black;}
+a:hover{color:blue;background:black;}
+a:active{color:yellow;background:black;}
+</style>
+</head>
+<body>
+<p><a href="http://www.w3.org" target="">durlrk</a></p>
+</body>
+</html>
+
