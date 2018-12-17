@@ -1,0 +1,37 @@
+Ch 12장
+
+분석: SW Product를 정확하게 개발, 유지보수를 쉽게 하기위해
+(목적) 요구사항들의 세부적인 이해를 달성하기 위해
+       요구사항 분석(specification, 명세화)하고 정제
+
+- 요구사항 -> specification(명세화)
+- client와 개발자 간의 협약서
+
+* Informal Specification
+  - 자연 언어로 작성: - 애매모호
+                      - 표현력 부족
+      -> 자연 언어로 명세: 좋은 방법이 아님
+
+* 구조적 System 분석
+  - Graphical 명세 방법
+  - 9단계 진행
+
+i) DFD(Data Flow Diagram) 작성: - 논리적 Data 흐름
+                                - 정보의 흐름
+ii) 어떤 부분 전산화?
+iii) 대형 project: DD(Data Dictionary)
+iv) Process들의 logic 정의
+  - Dicision tree
+v) Data 저장소 정의: DIAD
+vi) 물리적 자원 결정
+vii) 입력-출력 명세결정: Hipo Diagram
+viii) 규모 결정
+x) H/W 요구사항 결정
+
+* Semi-Informal Technique
+  - ERD(Entity Relationship Diagram)
+    - Database modeling
+* formal specification
+
+* 결론: 비정형 기법 -- 정형 기법
+                (trade off)

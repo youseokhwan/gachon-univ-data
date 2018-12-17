@@ -1,0 +1,22 @@
+Ch 11 필기
+
+2부: CASE Study
+11장: 요구사항: Client의 Needs(요구사항)를 파악(결정)
+                           ->
+                    새로운 Product 함수 ???? (기능) 뭐냐?
+                           ->
+                     요구사항 work flow
+
+- Domain : Application Domain 이해
+                     "Data Dictionary" : DD
+- Business Model 구축 : user CASE Diagram
+                     (요구사항이 무엇인지 결정)
+- iteration(반복) : clients <----(합의)----> 개발자
+                    (Actor 사람 그림은 사진 참조)
+
+* 고전적 요구사항: clients의 need를 결정
+         - 요구사항 추출
+         - 요구사항들의 목록(list)
+         - Rapid Prototype 구축(니즈)
+* 요구사항 WF(Workflow) 척도
+* 요구사항 WF(Workflow) 난제

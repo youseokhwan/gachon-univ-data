@@ -1,0 +1,11 @@
+Ch8 - Reuse & Portability (재사용 & 이식성)
+
+1 재사용 ?
+2 Two Types of Reuse
+  - opportunistic(accidental) reuse (우연적 재사용)
+  - systematic(deliberate) reuse (고의적 재사용)
+3 재사용 제약 사항(Impediment of Reuse)
+4 Design pattern: Wrapper, Adapter, Bridge, Iterator(반복자)
+5 Portability (이식성) ?
+  - why?
+  - technique

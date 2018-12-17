@@ -1,0 +1,25 @@
+Ch 10 필기
+
+- Summary
+* SE? : Infra 통합: 융합서비스: SW Complex
+        => 유지보수: 60 ~ 70%
+        공학적 Approach: systematic(1understandable 2modifiable 3reliable 4use-friendly)
+* Software Life Cycle
+       : Waterfall model(폭포수형 Model): 6단계
+         요구사항, 분석, 설계, 구현, 테스트/유지보수, 폐기
+* Unified Process: SW를 개발하는 과정
+                   -> 객체지향: Unified Process라함(반복과 점진)
+                      - 핵심적인 Workflow: 요구사항, 분석, 설계, 구현, Test
+                      - UP단계: 도입, 정제, 구축, 전이
+* Team: - 민주적(Democratic)      -> (인적요소
+        - Chief Programmer Team   ->          )
+* Tool: CASE, Builder Tool
+* Testing: - 실행기반 테스트
+           - 비실행기반 테스트
+* Module과 Object: module program  - structed programming
+                                   - top-down approach
+                                   - 응집도(cohesion)
+                                   - 결합도(coupling)
+                   good program: 응집도 최대 / 결합도 최소
+                   object: 상속성, 다형성
+* 계획수립과 추정: 척도/평가 기준: 인적요소: 추정

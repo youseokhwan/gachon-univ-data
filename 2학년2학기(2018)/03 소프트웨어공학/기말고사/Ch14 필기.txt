@@ -1,0 +1,36 @@
+Ch14 필기
+
+설계
+- 분석: Specification(명세화): 무엇(What)을 수행하는 product
+- 설계: 그 무엇을 어떻게(How) 수행하는지 보여줌
+- 목적: Spec 명세를 programmer들이 구현할 수 있는 형태가 될 때까지 반복과 점진
+
+* 설계의 기본적인 두가지 기법
+- operation 중심 설계
+- data 중심 설계
+
+* 고전적 기법: Activity
+i) Achitecture 설계
+- product의 product?
+- Modular decomposition(모듈 분해)
+ii) 상세 설계
+- Modular Design
+- 세부: 알고리즘, 데이터구조 정의
+- 각 모듈 세부적으로
+iii) Design Testing
+- 설계 WF(Worflow)와 동시 진행
+
+I. Operation-Oriented Design
+i) Data Flow Analysis(DFA)
+  - DFD를 완성: 입력, 출력 정의
+  - Architecture 설계 완료
+ii) Detailed Design
+  - Tabular Format
+  - PDL(Program Description Language)
+
+II. Data Oriented Design(OOD, Object Oriented Design)
+i) Class Diagram 완성
+  - Operation Method(?)  -> (객체
+  - Attribute(?) 할당    ->      )
+ii) 상세설계
+  - PDL(Pseudocode, 의사코드)

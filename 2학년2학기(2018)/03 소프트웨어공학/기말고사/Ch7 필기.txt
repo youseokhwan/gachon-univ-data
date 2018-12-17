@@ -1,0 +1,12 @@
+ch 7 모듈에서 객체까지
+
+Concept of OOP Terms
+- Module
+- Cohesion : 7 category // 응집도
+- Coupling : 5 category // 결합도
+- Data Capsulation
+- Abstract Data Type
+- Information Hiding
+- Objects
+- 상속성, 다형성, 동적 바인딩
+- 객체지향 패러다임 -> AOP

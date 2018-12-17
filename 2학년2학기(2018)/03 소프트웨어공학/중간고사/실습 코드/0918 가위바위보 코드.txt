@@ -1,0 +1,77 @@
+#include <stdio.h>
+#include <conio.h>
+#include <time.h> // srand() 사용
+#include <stdlib.h>
+
+// 주먹 0, 가위1, 보2
+
+int main() {
+	int userSelect, comSelect;
+	int userVictoryCount = 0, comVictoryCount = 0;
+
+	srand((int)time(NULL));
+
+	while (1) {
+		if (userVictoryCount == 3) {
+			printf("유저의 3회 승리로 게임을 종료합니다.\n");
+			break;
+		}
+		else if (comVictoryCount == 3) {
+			printf("컴퓨터의 3회 승리로 게임을 종료합니다.\n");
+			break;
+		}
+		else {
+			printf("주먹(0), 가위(1), 보(2) 선택 >> ");
+			scanf("%d", &userSelect);
+			comSelect = rand()%3;
+
+			if (userSelect == 5) {
+				printf("5 입력으로 프로그램을 종료합니다.\n");
+				
+				exit(0);
+			}
+
+			if (comSelect == 0) { // 컴퓨터가 주먹
+				if (userSelect == 0) {
+					printf("비겼습니다.\n");
+				}
+				else if (userSelect == 1) {
+					printf("졌습니다.\n");
+					comVictoryCount++;
+				}
+				else {
+					printf("이겼습니다.\n");
+					userVictoryCount++;
+				}
+			}
+			else if (comSelect == 1) {
+				if (userSelect == 0) {
+					printf("이겼습니다.\n");
+					userVictoryCount++;
+				}
+				else if (userSelect == 1) {
+					printf("비겼습니다.\n");
+				}
+				else {
+					printf("졌습니다.\n");
+					comVictoryCount++;
+				}
+			}
+			else {
+				if (userSelect == 0) {
+					printf("졌습니다.\n");
+					comVictoryCount++;
+				}
+				else if (userSelect == 1) {
+					printf("이겼습니다.\n");
+					userVictoryCount++;
+				}
+				else {
+					printf("비겼습니다.\n");
+				}
+			}
+		}
+	}
+
+	return 0;
+}

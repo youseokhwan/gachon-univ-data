@@ -1,0 +1,21 @@
+Ch 9 Planning
+
+1 계획 : 기간과 비용 추정
+  - Human factor: 전문가, 초심자
+2 Product size(metrics)
+  - LOC
+  - FFP
+  - Functional point
+3 비용추정
+  - 전문가에 의한 추정
+  - 상향식 접근 방법: each component
+  - 알고리즘 이용 추정: COCOMO
+
+4 Software Project Management Plan(SPMP)
+  - 3개의 주요 Component: 작업, 자원, 돈
+  - 3개의 업무 Category: 작업 component 1) Project
+                                                     2) Activiting
+                                                     3) Task
+5 Testing Plan: black test
+  - Education(교육)
+  - Documentation(문서화)

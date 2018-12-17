@@ -1,0 +1,13 @@
+ch.5 Tool
+
+Analytical tool :
+- step-wise refinement
+- cost-benefit analysis
+- divide-conquer
+- concern separation
+:software metrics
+
+Software Tool : case (대규모)
+- computer-aided software engineering
+- sw : 계획-요구-설계-구현-유지보수,,
+sw 전 단계에 sw 개발하는 support
