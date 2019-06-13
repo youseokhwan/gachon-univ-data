@@ -1,0 +1,77 @@
+--- 14장 LAMP (+Gnuboard) ---
+
+1. LAMP(Linux, Apache, MySQL, PHP)
+- LAMP로 인터넷 상에서 웹서비스가 가능한 시스템 구축
+
+Q. LAMP 구축 순서를 서술하시오.
+1) yum install httpd
+2) systemctl start httpd
+3) yum install php
+4) systemctl stop httpd : 웹 서버 중단
+5) yum install php-gd php-mbstring
+6) systemctl start httpd
+7) yum install mariadb mariadb-server
+8) systemctl start mariadb
+9) MariaDB 환경 설정
+10) yum install php-mysql
+11) systemctl restart httpd
+12) systemctl enable httpd mariadb
+13) vi /var/www/html/index.html
+14) ... 너무 길다
+
+2. 데이터베이스 개념
+- DB : 연관된 데이터들을 중복을 최소화해서 모아놓은 것
+- DBMS(DataBase Management System) : DB를 관리하기 위한 SW
+- SQL(Structured Query Language) : 구조적 질의어
+
+Q. 데이터베이스를 구축하는 과정을 설명하시오
+1) 데이터베이스 생성
+2) 테이블 생성 및 업무분석
+3) 튜플 삽입
+4) 조회, 검색, 연산
+
+Q. MariaDB를 구축하는 과정을 설명하시오
+1) show databases;
+2) create database st_db;
+3) use st_db;
+4) create table st_info(ST_ID int, NAME varchar(20) ... )
+5) alter table st_info modify ST_ID int not null;
+6) alter table st_info modify column ST_ID int primary key;
+7) insert into st_info values(201901, '김을순' ... ) ...
+8) select * from st_info;
+
+- "mysqladmin -u root -p status" : mysql 상태 정보 출력
+
+3. SQL 구문
+
+4. SQL 실습
+
+5. MariaDB 설치 및 운영
+
+6. Apache web server 설치 및 운영
+- Apache : HTTP를 전송하기 위한 프로토콜
+
+Q. Apache의 주요 디렉토리를 설명하시오
+1) conf : Apache 환경 설정
+2) Htdocs : 클라이언트가 실제로 보는 HTML 소스
+3) logs : 접속 기록 및 에러 로그
+4) cgi-bin : CGI 스크립트
+
+7. Web program PHP 설치 및 운영
+
+Q. PHP(Personal Home Page)의 특징을 서술하시오.
+- HTML에 내장되어 동작하는 스크립트
+1) HTML을 출력하는데 많은 명령어가 필요없음
+2) 서버에서 해석되는 스크립트 언어(Server Side Program)
+3) 많은 데이터베이스 지원
+
+8. Gnuboard
+  - 리눅스 APM 환경에서 동작하는 오픈소스 게시판
+
+Q. Gnuboard를 구축하는 과정을 서술하시오.
+1) http://sir.co.kr에서 그누보드 다운로드 및 설치
+2) 디렉토리 생성 및 권한 설정
+3) PHP 환경 설정
+4) 웹 서버에 접속하여 그누보드 설치
+5) MySQL 정보 입력
+6) 관리자 모드로 접속하여 게시판 생성 및 글쓰기

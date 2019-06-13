@@ -1,0 +1,106 @@
+--- 13장 FTP Server ---
+
+1. FTP의 개요
+- File Transper Protocol
+- 인터넷 상에서 파일을 교환하기 위한 표준 규약
+
+1-1. OSI(Open Systems Interconnection)
+- ISO(International Standard Organization) : 국제표준화기구
+- TCP는 연결형 지향(Three-way Handshaking)
+- UDP는 비연결형 지향, 속도 매우 빠름
+
+2. FTP의 방식
+
+Q. FTP의 방식 2가지를 서술하시오
+1) Active Mode
+  - FTP 클라이언트 프로그램들의 기본값
+  1) 클라이언트가 서버의 21번 포트로 접속 후 사용할 포트를 서버에 전송
+  2) 서버가 Ack보내고 서버의 20번 포트가 전송받은 포트로 접속
+  - 방화벽 등 외부 접속을 허용하지 않으면 문제 발생
+2) Passive Mode
+  - 웹브라우저의 기본값
+  1) 클라이언트에서 서버의 21번 포트로 접속
+  2) 서버가 사용할 포트를 클라이언트에 전달
+  3) 클라이언트는 다른 포트를 열어 해당 포트에 접속
+  - 20번 포트가 아닌 1024 이후의 비특권 포트(미리 결정되지 않은 포트) 사용
+  - 서버의 비특권 포트를 모두 미리 열어두어야 하는 문제점
+  
+Q. Vsftpd FTP Server에 대해 서술하시오
+- 리눅스의 Free FTP Server(GPL 라이선스)
+- 주요 기능
+1) 가상 IP별 별도의 환경설정 기능
+2) 가상 사용자 설정
+3) 전송 대역폭 지정
+4) PAM 지원
+5) 상세한 로그 지원
+6) standalone, xinetd 모두 지원
+7) IP별 다른 환경설정 파일 지정
+
+3. FTP의 개요
+
+4. Linux log file
+- 시스템 로그 파일 : 시스템에 접속하고 있는 컴퓨터의 정보를 기록하는 파일
+1) secure log(/var/log/secure) : telnet, ssh 접속에 관한 로그
+2) dmesglog(/var/log/dmesg) : 부팅 관련 로그
+3) messages(/var/log/messages) : 로그인, 설정 등 전체적인 로그
+4) utmp(/var/run/utmp) : 현재 로그인한 사용자의 상태 저장(w, who)
+5) wtmp(/var/log/wtmp) : 로그인, 로그아웃 등의 누적 정보(last)
+6) lastlog(/var/log/lastlog) : 계정의 마지막 로그인한 정보 기록(lastlog)
+7) boot.log(/var/log/boot.log) : 부팅 시 데몬들의 상태 기록
+8) cron(/var/log/cron) : cron 작업이 실행되었는지 기록
+9) xferlog(/var/log/xferlog) : FTP 전송에 관한 기록
+10) anaconda(/var/log/anaconda/anaconda.log) : 리눅스 설치시 install된 패키지 정보 기록
+11) history(/root/.bash_history) : 실행한 명령어 기록
+12) btmp(/var/log/btmp) : 로그인에 실패한 기록(lastb) 
+
+5. Vsftpd FTP Server 설치
+- Vsftpd(Very Secure FTP Daemon)
+
+Q. Vsftpd FTP Server를 구축하는 과정을 서술하시오.
+1) yum install vsftpd
+2) /var/ftp/pub/에 파일 복사(anonymous 사용자)
+3) firewall-cmd --permanent --add-port=21/tcp
+4) firewall-cmd --permanent --add-service=ftp
+5) firewall-cmd --reload
+6) systemctl restart vsftpd (+enable)
+7) 클라이언트에서 접속
+
+6. CentOS7 client에서 FTP Server 접속
+
+7. MS-Windows client에서 FTP Server 접속
+- Filezilla 사용
+
+8. Extra 저장소 설치
+- "yum install epel-release"
+
+9. 텍스트 모드 FTP 명령어 사용
+- "yum install ftp"
+- "ftp 192.168.100.133" : 서버의 IP주소로 텍스트 모드 접속
+- "get exam1.txt" : 파일 다운로드
+- "put exam2.txt" : 파일 업로드
+
+10. Vsftpd FTP Server 환경설정
+
+11. Vsftpd FTP 명령어 해설
+- cdup : change directory up. 상위 디렉토리로 이동
+- hash : 전송 상태를 #으로 표시
+- lcd : local change directory
+- mdelete : 여러 개를 한 번에 지울 때 사용
+- mget : 여러 개를 한 번에 다운로드
+- mput : 여러 개를 한 번에 업로드
+- open : ftp 접속 시도
+- prompt : 파일 전송 시 확인 과정을 거침
+- rstatus : remote status. 원격 상태 확인
+- rmdir : 디렉토리 삭제
+- status : 현재 연결된 ftp에 대한 설정 출력
+- type : 전송 모드를 설정
+
+12. 명령어 프롬프트에서 FTP Server 접속
+
+13. Winscp를 이용한 서버 접속
+- Windows용 GUI FTP 클라이언트
+- 오픈소스 프리웨어
+
+Q. ProFTP란 무엇인지 서술하시오.
+
+Q. SCP, SFTP란 무엇인지 서술하시오.

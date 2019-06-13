@@ -1,0 +1,87 @@
+--- 12장 Network & Telnet Server ---
+
+0. Network 개요
+- TCP/IP(Transmission Control Protocol / Internet Protocol) : 컴퓨터 간의 인터넷 통신 규약
+- Gateway : 네트워크 간 정보를 전송하는 컴퓨터 또는 장비
+- Router : 네트워크 간 경로를 지정해주는 장비
+- Netmask : 네트워크의 규모를 결정
+- 리눅스 네트워크 장치 이름 : ens33 (구 eth0, eth1)
+
+- "nmtui" : Network Manager TUI. 텍스트 모드에서 네트워크 관리
+- "rdate -s time.bora.net" : remote date. 타임서버의 시간 정보와 로컬을 동기화
+- 국내 타임서버 리스트 NTP (Netowrk Time Protocol) : 무결성 인증
+
+- /etc/sysconfig/network : 네트워크의 기본 정보가 담긴 파일
+- /etc/sysconfig/network-scripts/ifcfg-ens33 : ens33의 정보 파일
+- /etc/resolv.conf : DNS 서버 및 호스트 이름이 저장된 파일
+- /etc/hosts : 현재 컴퓨터의 호스트 이름 및 FQDN(Fully Qualified Domain Name, www.abc.com처럼)이 있는 파일
+- 리눅스는 ifconfig 사용(윈도우는 ipconfig)
+- UUID(Universally Unique Identifier: 범용 고유 식별자)
+  : 각각의 고유한 이름
+
+Q. 표준 시간 3가지를 설명하시오
+1) UTC(Universal Time Coordinated) : 세계 협정시
+2) GMT(Greenwich Mean Time) : 그리니치 표준시
+3) KST(Korean Standard Time) : 한국 표준시
+
+1. Telnet Server 개요
+- Telnet : 원격으로 리눅스 서버를 사용할 수 있는 서비스를 제공하는 프로그램
+
+2. Telnet Server 설치 요약
+
+Q. Telnet Server를 설치하는 과정을 서술하시오
+1) yum install telnet-server
+2) systemctl start telnet.socket
+3) adduser teluser, passwd teluser
+4) firewall-cmd --permanent --add-port=23/tcp
+5) firewall-cmd --reload
+6) systemctl restart telnet.socket (+ enable)
+7) 클라이언트에서 서버의 ip로 telnet 접속
+
+3. Telnet Server 설치
+
+4. Telnet Client에서 접속하기
+
+5. Telnet Server 공지사항 작성
+- "vi /etc/motd" : 공지사항 작성
+
+6. OpenSSH Server 개요
+- Open Secure SHell
+- 텔넷의 스니핑 우려를 보완하여 강화된 서버
+
+7. OpenSSH Server 설치요약
+
+Q. OpenSSH Server를 구축하는 과정을 설명하시오
+1) yum install openssh-server
+2) systemctl start sshd
+3) ssh teluser@192.168.100.133
+  - teluser의 IP주소
+
+8. OpenSSH Server 설치
+
+9. MS-Windows OpenSSH client
+- Windows에서 접속하려면 '한글 putty' 사용
+
+10. VNC Server 개요
+- telnet 및 OpenSSH와 다르게 X윈도우 기능 제공
+- 성능은 보다 낮음
+
+11. VNC Server 설치요약
+
+Q. VNC Server를 구축하는 과정을 설명하시오
+1) yum install tigervnc-server
+2) yum groupinstall "GNOME Desktop"
+3) 설정 파일 복사 및 디스플레이 번호 할당
+4) 방화벽 설정
+5) vncserver 접속하여 비밀번호 설정
+6) systemctl restart vncserver@1.service (+enable)
+7) 클라이언트에선 "vncviewer 192.168.100.133:1"로 접속(IP주소 + 디스플레이번호)
+
+12. VNC Server 접속(리눅스 -> 리눅스 서버)
+
+13. VNC Server 접속(윈도우 -> 리눅스 서버)
+
+14. Telnet Server별 장단점 비교
+
+Q. Telnet Server 3가지의 장단점을 비교하시오.
+

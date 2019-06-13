@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/tmontium"
+                    android:text="S"
+                    android:textSize="45dp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:fontFamily="@font/tmontium"
+                    android:text="MART"
+                    android:textSize="35dp"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/tmontium"
+                    android:text="S"
+                    android:textSize="45dp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:fontFamily="@font/tmontium"
+                    android:text="OUND "
+                    android:textSize="35dp"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/tmontium"
+                    android:text="C"
+                    android:textSize="45dp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:fontFamily="@font/tmontium"
+                    android:text="ONTROLLER"
+                    android:textSize="35dp"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 현재 미디어 볼륨 레이블과 미디어 볼륨 bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/tmonmonsori"
+                android:textSize="20dp"
+                android:text="현재\n미디어 볼륨"
+                android:textColor="#000000" />
+
+            <SeekBar
+                android:id="@+id/currentVolumeSeekBar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:max="100"
+                android:progress="30" />
+
+        </LinearLayout>
+
+        <!-- 실시간 소음 및 dB값 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:fontFamily="@font/tmonmonsori"
+                android:textSize="20dp"
+                android:text="실시간 소음"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/currentDecibelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center|right|bottom"
+                android:fontFamily="@font/tmonmonsori"
+                android:textSize="20dp"
+                android:text="75"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center|bottom"
+                android:fontFamily="@font/tmonmonsori"
+                android:textSize="20dp"
+                android:text="dB"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <!-- 설정 버튼 -->
+        <Button
+            android:id="@+id/settingButton"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/tmonmonsori"
+            android:textSize="20dp"
+            android:text="설    정"/>
+
+        <!-- 종료 버튼 -->
+        <Button
+            android:id="@+id/exitButton"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/tmonmonsori"
+            android:textSize="20dp"
+            android:text="종    료"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

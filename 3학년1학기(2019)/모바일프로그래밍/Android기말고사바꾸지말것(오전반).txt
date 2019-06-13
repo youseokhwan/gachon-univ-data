@@ -1,0 +1,51 @@
+성명
+삭제버튼	
+
+1. Ralyout 소스코드를 완성하시오.5
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp">
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="삭제" />
+</LinearLayout>
+
+
+2. main.java 버튼 이벤트 소스코드를 완성하시오.5
+btnDelete.setOnClickListener(new OnClickListener() {
+			public void onClick(View arg0) {
+			SQLiteDatabase db = helper.getWritableDatabase();
+			String name = edtName.getText().toString();
+			String sql = "delete from phone where name=?";
+			db.execSQL(sql,new String[] {name});	
+			}
+});
+
+
+3. GYRO 센서값 서버에 출력 MAIN.JAVA    SERVER.JAVA 5 
+4. Layout 화면 설계, 계산, 전송, 평균, \ 15점   
+디비 임계값 지정 알람 정상범위 카운트, 정상내의 10이상이면 알람진동
+
+
+-> 레이아웃 구성
+-> 서버는 3번에서 참고하고
+-> 디비, 임계값, 진동, 토스트, 핸들러(what쓰는 ReceiveThread)
+
+진동
+Vibrator mVib;
+mVib = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+mVib.vibrate(1000);
+
+토스트
+Toast.makeText(MainActivity.this, "test", Toast.LENGTH_LONG).show();
+
+
+
+
+
+

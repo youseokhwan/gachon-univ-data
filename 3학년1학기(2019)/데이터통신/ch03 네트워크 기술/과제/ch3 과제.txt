@@ -1,0 +1,32 @@
+201533792 데이터통신 Ch3
+
+p2
+4번. You have successfully accessed the home page for Web Server. 문구 출력
+2번. 1. The HTTP client sends a HTTP request to the server. // HTTP 클라이언트는 서버에 HTTP 요청을 보낸다.
+
+p3
+3번. 80
+4번. 192.168.1.254
+5번. Ethernet II Header
+0001.96C8.CB76 >> 00E0.B041.8C1C
+6번.
+Src IP, Dest IP / Layer 3와 연관
+TCP Src Port, Dest Port / Layer 4와 연관
+www.osi.local / Layer 7과 연관
+8번. Src와 Dest의 값들이 반대로 되어있음
+9번. HTTP Data: Connection: close
+10번. 2개의 탭, 메시지를 주지 않고 받기만 하기 때문
+
+p4
+2번. DNS, ARP, TCP
+4번. NAME, TYPE, CLASS, TTL, LENGTH
+5번. Web Client
+Dest의 IP(192.168.1.254)
+6번.
+4. The TCP connection is successful. // TCP 연결이 성공적으로 되었다.
+5. The device sets the connection state to ESTABLISHED. // 디바이스의 연결 상태가 ESTABLISHED로 설정되었다.
+7번. The device sets the connection state to CLOSED. // 디바이스의 연결 상태가 CLOSED로 설정되었다.
+
+p5
+80 / 마지막 TCP 클릭 후 In Layer 4의 Dest Port 참조하였습니다.
+53 / Web Server로 도착하는 DNS 클릭 후 In Layer 4의 Dest Port 참조하였습니다.

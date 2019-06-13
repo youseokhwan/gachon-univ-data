@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a190509_project01.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/gyro_x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="자이로 x" />
+        <TextView
+            android:id="@+id/acc_x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/gyro_y"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="자이로 y" />
+        <TextView
+            android:id="@+id/acc_y"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/gyro_z"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="자이로 z" />
+        <TextView
+            android:id="@+id/acc_z"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/accr_x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="가속도 x" />
+        <TextView
+            android:id="@+id/ori_x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/accr_y"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="가속도 y" />
+        <TextView
+            android:id="@+id/ori_y"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/accr_z"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="가속도 z" />
+        <TextView
+            android:id="@+id/ori_z"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/mSteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="걸음" />
+
+        <TextView
+            android:id="@+id/mDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="거리" />
+
+        <EditText
+            android:id="@+id/editShakeHold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="800" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="걸음초기화" />
+        <EditText
+            android:id="@+id/ip_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="IP주소를입력하세요" />
+
+        <EditText
+            android:id="@+id/port_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PORT주소를입력하세요" />
+
+        <Button
+            android:id="@+id/connect_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="연결" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

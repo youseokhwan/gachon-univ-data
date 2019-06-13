@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="190411 실습" />
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="340dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/btnProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="상품" />
+
+        <Button
+            android:id="@+id/btnAddrbook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="주소록" />
+    </LinearLayout>
+
+</LinearLayout>

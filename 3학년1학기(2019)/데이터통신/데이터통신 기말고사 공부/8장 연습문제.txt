@@ -1,0 +1,23 @@
+①②③④⑤
+
+8장
+1 128
+2 Hop Limit
+3 Flow Label
+4 캡슐
+5 ① COA
+  ② 터널
+6 ① ARP
+  ② RARP
+7 ICMP, 송신
+8 같은, IP 패킷
+9 ① Checksum(체크섬)
+  ② Group Address(그룹 주소)
+10 ②③④⑤
+11 ①③④
+12 ①②④
+13 ②
+14 ②⑤
+15 ①②③⑤
+16 ③
+17 ②⑤
