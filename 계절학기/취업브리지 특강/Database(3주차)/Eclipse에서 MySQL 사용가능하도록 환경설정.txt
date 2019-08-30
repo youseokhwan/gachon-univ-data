@@ -1,0 +1,19 @@
+
+<Connectot/J 설치 및 압축풀고 Eclipse에 설정>
+
+1. 다운로드 받아서 압축풀기
+
+2. 프로젝트명 오른쪽 클릭-> Build Path -> Configure Build Path... -> 
+   Java Build Path의
+   Liararies 탭 -> Classpath에 mysql-connector-java-8.0.17.jar 파일 찾아서 열어 연결함
+   Order and Export 탭에서 JRE와 mysql-connector 항목 체크하고 Apply 함
+  
+3. Window -> Show View -> Other -> Data Management -> Data Source Explorer 확인(open) 클릭
+   Database Connections 선택후 옆 손가락표시 클릭 (혹은 New 클릭)
+   Connection Profile에서 MySql 선택 -> Next 클릭
+   URL: jdbc:mysql://localhost:3306/mysql?useSSL=false&serverTimezone=Asia/Seoul  복사
+   Database 이름, Password 입력 -> Test Connection 확인 -> Ping succeeded! 확인하면 성공!!
+   
+   
+
+ 

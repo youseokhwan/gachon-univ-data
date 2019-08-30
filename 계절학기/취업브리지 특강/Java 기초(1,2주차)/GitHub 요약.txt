@@ -1,0 +1,51 @@
+19.08.12(월) GitHub 강의 영상 요약
+
+강의내용: git, github
+
+1. GitHub 설치, 회원가입
+  * Windows 환경에서는 PowerShell 사용
+  * git --version 명령어로 설치 확인
+  * git config --global user.name "youseokhwan"
+  * git config --global user.email "tjrghks115@naver.com" -> 초기 설정
+  
+2. GitHub 간단 실습
+  * testrepo 생성
+  * git clone https://github.com/youseokhwan/testrepo.git -> 로컬 저장소로 복사
+  * test.txt 파일 추가
+  * git status
+  * git add test.txt
+  * git commit -m "add test.txt"
+  * git show : 작업 기록을 볼 수 있음
+  * git push : remote repository로 전송
+  * GitHub 홈페이지에서 README 파일 추가
+  * readme.md : markdown (html을 사용하지 않고도 웹 상의 문서를 만드는 문법)
+  * git fetch : remote의 변경 여부 확인
+  * git diff HEAD origin/master : 변경 내용 확인
+  * git pull : remote의 변경 내용 local로 동기화
+  * type .\README.md : 윈도우 환경에서? 이걸로 확인
+  
+3. 충돌
+  * 홈페이지와 로컬에서 각각 다르게 test.txt 수정
+  * add, commit 까지는 문제 없으나 push 단계에서 rejected 발생
+  * git pull : auto merging (다시 수정해야함)
+  * 파일 수정
+  * git add, commit, push
+
+4. 브랜치
+  * git checkout -b branch_a : branch_a라는 새로운 브랜치 생성
+  * branch_a 브랜치에서 작업한 후 git checkout master로 다시 바꾼 뒤 ls 명령 실행해보면 추가한 문서가 보이지 않음
+  * 각 브랜치가 다른 내용을 가지고 있을 경우 -> Compare & pull request
+  * 웹 상에서 머지를 하고 삭제를 하더라도 로컬 상의 브랜치는 남아있음
+  * git branch -d branch_a : branch_a 브랜치를 로컬에서 삭제
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

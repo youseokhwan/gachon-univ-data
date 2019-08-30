@@ -1,0 +1,8 @@
+<Fork한 Repository 최신으로 동기화하기>
+1. git remote -v : remote 2개 확인
+2. git remote add upstream (원본 주소)
+3. git remote -v : remote 4개 확인
+4. git fetch upstream
+5. git checkout master
+6. git merge upstream/master
+7. git push origin master

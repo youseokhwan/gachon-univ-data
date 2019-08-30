@@ -1,0 +1,131 @@
+19.08.21(수) DB 시험공부
+
+<용어>
+1) 릴레이션 : 행과 열로 구성된 테이블
+2) 관계
+  - 릴레이션 내 데이터 간의 관계
+  - 릴레이션 간의 관계
+3) 속성(애트리뷰트) / 차수 : 애트리뷰트의 개수 / 도메인 : 속성이 가질 수 있는 값의 집합
+4) 튜플, 카디널리티 : 튜플의 개수
+5) 스키마(내포), 인스턴스(외연)
+
+<키>
+1) 기본키 : 튜플을 구별할 수 있는 가장 효율적인 후보키
+2) 후보키 : 튜플을 구별할 수 있는 애트리튜브의 조합(유일성, 최소성) - 최소성이 빠지면 슈퍼키
+3) 대체키 : 기본키를 제외한 나머지 후보키
+4) 외래키 : 다른 테이블의 행을 식별할 수 있는 키
+
+<무결성 제약조건>
+- 데이터 무결성 : 데이터의 일관성과 정확성
+1) 도메인 무결성 제약조건 : 튜플들이 도메인에 맞는 값을 가져야 함
+2) 개체 무결성 제약조건 : 기본키는 NULL일 수 없고, 유일한 값을 가져야 함
+3) 참조 무결성 제약조건 : 자식의 외래키와 부모의 기본키는 같은 도메인
+  - 자식 릴레이션을 변경할 때 부모 릴레이션의 제약을 받음
+
+<이상현상>
+1) 삭제이상 : 의도치 않은 데이터도 삭제되는 현상
+2) 삽입이상 : 불필요한 데이터를 함께 삽입해야하거나, 삽입을 못하는 현상
+3) 갱신이상 : 속성의 일부만 갱신하여 모순이 일어나는 현상
+
+<정규화>
+- 하나의 릴레이션에 하나의 종속성만 존재하도록 릴레이션을 분해하는 과정
+- 데이터의 중복이 이상현상의 원인
+- 함수적 종속 : A가 B의 결정자일 때, B가 A에 함수적으로 종속되어있다고 표현
+  - A의 진부분집합에는 종속되지않으면, 완전한 함수종속이라고 표현
+  // A는 복합 애트리뷰트이고, A의 모든 요소가 있어야 B를 알 수 있을 때
+1) 제1정규형(1NF)
+  - 모든 애트리뷰트의 값이 원자값만을 가져야 함
+  - 갱신 이상 : 모든 학생들의 값을 수정하지 않으면 일관성 유지 X
+  - 삽입 이상 : 학생을 입력하지 않으면 학과 정보 입력 불가
+  - 삭제 이상 : 마지막 학생을 삭제하면 소속된 학과에 대한 정보도 삭제
+2) 제2정규형(2NF)
+  - 제1정규형 만족 + 모든 애트리뷰트가 완전한 함수종속이 되도록 분해
+  - 갱신, 삽입, 삭제 이상 : 마찬가지
+3) 제3정규형(3NF)
+  - 제2정규형 만족 + 키가 아닌 애트리뷰트가 기본 키에 이행적으로 종속하지 않도록 분해
+  - 갱신, 삽입, 삭제 이상 : 마찬가지
+4) BCNF
+  - 제3정규형 + 모든 결정자가 후보 키여야 함
+  
+<설계>
+1) 무결성과 일관성
+2) 회복, 보안 정책
+3) 생명주기(요구조건 분석, 설계, 구현, 운영, 감시 및 개선)
+
+<설계 단계>
+1) 요구조건 분석 단계
+  - 제약조건, 요구조건 수집
+  - 명세서 작성 및 검토(DFD 등)
+2) 개념적 설계 단계
+  - DBMS에 독립적인 고차원 데이터 모델 설계(ER 다이어그램)
+  - 트랜잭션 모델링
+3) 논리적 설계 단계
+  - DBMS에 맞는 개념 스키마 생성
+4) 물리적 설계 단계
+  - 저장 방법 등 물리적인 DB 설계(성능 영향)
+5) 구현 단계
+  - DDL로 DB 생성
+  - 데이터 적재, 트랜잭션 구현
+  
+<SQL>
+1) DDL(Data Definition Language) : 테이블 생성, 제거(CREATE, DROP)
+2) DML(Data Manipulation Language) : 레코드 삽입, 조회, 삭제, 수정(INSERT INTO, SELECT, DELETE, UPDATE)
+3) DCL(Data Control Language) : 사용자 권한(GRANT, REVOKE)
+
+<JDBC>
+- Java DataBase Connectivity
+- 자바를 이용하여 데이터베이스에 접근하기 위한 API
+- 연결 방법
+1) import java.sql.*;   // SQL 관련 클래스 import
+2) Class.forName("com.mysql.cj.jdbc.Driver");   // 드라이버 로딩
+3) Connection con = DriverManager.getConnection("url", "id", "password");   // 연결 객체 생성
+4) Statement stmt = con.createStatement();  // SQL문을 사용하기 위한 문장 객체 생성
+  - 혹은 preparedStatement 객체 생성(값을 변수로 지정하는 경우)
+5) ResultSet rs = stmt.executeQuery("SELECT * FROM Student");  // 결과집합 객체 생성
+    // rs.next() or rs.getString(1) 등으로 결과 얻음
+  - executeQuery() : select문 사용하여 ResultSet 객체를 반환
+  - executeUpdate() : insert, update, delete, create 사용(정수 반환)
+  - execute() : 모두 사용 가능하나 boolean 값 반환
+6) rs.close(), stmt.close(), con.close()
+
+
+---------------
+<SQL 예시>
+1) 테이블 생성
+CREATE TABLE 학생 (
+  학번 INT NOT NULL,
+  성명 VARCHAR(15) NOT NULL,
+  지도교수코드 CHAR(4),
+  PRIMARY KEY(학번),
+  FOREIGN KEY(지도교수코드) REFERENCES 교수,
+  CHECK(학번 >= 1000 AND 학번 <= 9999)
+);
+
+2) 테이블 제거
+DROP TABLE 학생;
+
+3) 데이터 조회
+  (1) SELECT 학번, 이름 FROM 학생;
+  (2) SELECT DISTINCT 학번, 이름 FROM 학생  -> 중복 제거;
+  (3) SELECT * FROM 학생 WHERE 학과='컴공';
+  (4) SELECT * FROM 학생 WHERE 학과 LIKE '컴%';
+  (5) SELECT * FROM 학생 WHERE 학번 BETWEEN 10 and 20;
+  (6) SELECT * FROM 학생 WHERE 학과 IN('컴공', '전자');
+  (7) SELECT * FROM 학생 WHERE 학과='컴공' ORDER BY 학번 (DESC);
+  (8) SELECT AVG(학점) FROM 학생 GROUP BY 학과;
+  (9) SELECT AVG(학점) FROM 학생 GROUP BY 학과 HAVING AVG(학점) >= 2.5;
+  
+4) 데이터 갱신
+UPDATE 학생 SET 학과='기계' WHERE 학번=3;
+
+5) 데이터 삽입
+INSERT INTO 학생 VALUES(10, 홍길동, 컴공, 3.1);
+INSERT INTO 학생 (select문);
+
+6) 데이터 삭제
+DELETE FROM 학생 WHERE 학번=3;
+DELETE FROM 학생;  // 전체 삭제
+
+
+
+

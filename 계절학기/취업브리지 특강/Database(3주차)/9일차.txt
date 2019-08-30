@@ -1,0 +1,16 @@
+19.08.22(목) 지브릿지 9일차
+
+- 강의 후 실습결과 검사, 11시부터 필기 시험
+
+<뷰>
+- 목적 1. 사용자마다 다른 관점 제공 / 2. 사용자에 대한 데이터 접근 제한
+CREATE VIEW CI_학생 AS SELECT * FROM 학생
+WHERE 학과 = '컴퓨터정보과'
+WITH CHECK OPTION;
+
+- 수평 뷰, 수직 뷰
+
+<시험>
+- normalization, create 기술
+- sql query는 제외
+- 
