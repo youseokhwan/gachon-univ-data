@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--  Content (배너이미지) 부분 -->
+<div>
+  <img src="/images/banner1.png" class="img-fluid" alt="배너이미지" width="100%">
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="noDevModal" tabindex="-1" role="dialog" aria-labelledby="noDevModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="noDevModalLabel">알림</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        해당 기능은 곧 구현될 예정입니다!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">확인</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 컨텐츠(예, 쇼핑몰일경우 판매제품리스트)헤더부분 -->
+<div class="container-fluid" style="border: solid 20px white; border-radius: 1px">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">쇼핑몰</a></li>
+          <li class="breadcrumb-item">판매자</a></li>
+          <li class="breadcrumb-item active" aria-current="page">내 판매제품</li>
+        </ol>
+      </nav>
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <div class="form-inline">
+        <form method="get" action="/sellerprod/list">
+          <select class="form-control" id="prodtype" name="prodtype">
+            <option value=0 selected>-- 카테고리 선택 --</option>
+            <option value=1>선풍기</option>
+            <option value=2>에어컨</option>
+            <option value=3>냉풍기</option>
+            <option value=4>미니선풍기</option>
+            <option value=5>냉장고</option>
+          </select>&nbsp;
+          <button type="submit" class="btn btn-info btn-sm">검색</button>&nbsp;
+        </form>
+        <a href="/adminprod/reg" class="btn btn-primary btn-sm">신규등록</a>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th> 번호 </th>
+            <th> 제품분류 </th>
+            <th> 제조사 </th>
+            <th> 상품명 </th>
+            <th> 모델명 </th>
+            <th> 판매가 </th>
+            <th> 재고량 </th>
+            <th>  수정 </th>
+          </tr>
+        </thead>
+        <tbody>
+          <% prodata.forEach(function (item, index) { %>
+          <tr>
+            <td> <%= item.ITEMID %> </td>
+            <td> <%= item.CATEGORY %> </td>
+            <td> <%= item.MAKER %> </td>
+            <td> <%= item.PNAME %> </td>
+            <td> <%= item.MODEL %> </td>
+            <td> <%= item.PRICE %> </td>
+            <td> <%= item.AMOUNT %> </td>
+            <td>
+              <a class="btn btn-success btn-sm" href="/adminprod/update?pid=<%= item.ITEMID %>">수정</a>
+            </td>
+          </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+    <nav aria-label="...">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1" aria-disabled="true" data-toggle="modal" data-target="#noDevModal">Previous</a>
+        </li>
+        <li class="page-item active" aria-current="page">
+          <a class="page-link" href="#" data-toggle="modal" data-target="#noDevModal">1 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#" data-toggle="modal" data-target="#noDevModal">2</a></li>
+        <li class="page-item"><a class="page-link" href="#" data-toggle="modal" data-target="#noDevModal">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" data-toggle="modal" data-target="#noDevModal">Next</a>
+        </li>
+      </ul>
+    </nav>

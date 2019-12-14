@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<script language="javascript">
+  function validate() {
+    let item = document.getElementById("itemid").value;
+    if (item == '') {
+      alert("상품번호가 입력되지 않았습니다, 꼭 입력하세요");
+      return false;
+    }
+    return true;
+  }
+
+  $(document).ready(function() {
+    bsCustomFileInput.init();
+  });
+</script>
+
+<script>
+  function submitCheck(index) {
+    if(index == 1) { // 수정 버튼을 클릭했을 때
+      document.updateproduct.action = '/adminprod/update?_method=PUT';
+    }
+    if(index == 2) { // 삭제 버튼을 클릭했을 때
+      document.updateproduct.action = '/adminprod/deletion?_method=DELETE';
+    }
+    document.updateproduct.submit();
+  }
+</script>
+
+<!-- Modal -->
+<div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="updateModalLabel">알림</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        수정되었습니다!
+      </div>
+      <div class="modal-footer">
+        <button type="button" onclick="submitCheck(1)" class="btn btn-primary" data-dismiss="modal">확인</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="deletionModal" tabindex="-1" role="dialog" aria-labelledby="deletionModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deletionModalLabel">알림</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        삭제되었습니다!
+      </div>
+      <div class="modal-footer">
+        <button type="button" onclick="submitCheck(2)" class="btn btn-primary" data-dismiss="modal">확인</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>
+<div class="container">  <!-- container class 가 페이지의 컨텐츠영역을 지정 -->
+  <div class="jumbotron" style="width:800px; margin:auto">
+
+    <div class="bm-login-form" style='width:700px; margin-left:auto; margin-right:auto; border:1px'>
+
+      <div class="starter-template">
+        <h4>상품정보수정</h4>
+        <hr>
+      </div>
+
+      <form name="updateproduct" onsubmit="return validate()" method="post">
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">상품분류</label>
+          <input type="text" class="form-control" name="category" id="category" value="<%= category %>">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">상품번호</label>
+          <input type="text" class="form-control" aria-describedby="emailHelp" value="<%= itemid %>" disabled>
+          <input type="hidden" name="itemid" id="itemid" value="<%= itemid %>">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+          <div class="form-group">
+            <label for="exampleInputPassword1">상품명</label>
+            <input type="text" class="form-control" name="pname" id="pname" value="<%= pname %>">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword2">모델명</label>
+            <input type="text" class="form-control" name="modelnum" id="modelnum" value="<%= model %>">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">판매형태</label>
+            <input type="text" class="form-control" name="event" id="event" value="<%= event %>">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">판매가격(원)</label>
+            <input type="text" class="form-control" name="price" id="price" value="<%= price %>">
+          </div>
+          </div>
+          <div class="form-goup col-md-6">
+            <div class="form-group">
+              <label for="exampleInputEmail1">제조사</label>
+              <input type="text" class="form-control" name="maker" id="maker" value="<%= maker %>">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">수량</label>
+              <input type="text" class="form-control" name="amount" id="amount" value="<%= amount %>">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">할인율(%)</label>
+              <input type="text" class="form-control" name="dcrate" id="dcrate" value="<%= dcrate %>">
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#updateModal">수정</button>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deletionModal">삭제</button>
+        <a href="/adminprod/list" class="btn btn-success">취소</a>
+      </form>
+    </div>
+  </div>
+</div><!-- /.container -->
+
+<!-- Footer 영역 -->

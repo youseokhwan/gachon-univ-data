@@ -1,0 +1,22 @@
+<div class="row">
+	<div class="col-sm-6 col-md-4">
+		<div class="thumbnail">
+			{{#if student.photo}}
+				<img class="img-responsive" src="/uploads/{{student.photo.filename}}" alt="...">
+			{{else}}
+				<img class="img-responsive" src="/assets/img/empty.jpg" alt="...">
+			{{/if}}
+
+			<div class="caption">
+				<h3>{{student.name}}</h3>
+				<p>학번 {{student.stdId}}</p>
+				<p>나이 {{student.age}}</p>
+			</div>
+			<div class="action">
+				<a href="/" class="btn btn-default btn-block" role="button">목록으로</a>
+				<a href="/edit/{{student._id}}" class="btn btn-primary btn-block" role="button">수정</a>
+				<button data-id="{{student._id}}" class="btn btn-danger btn-block btn-delete" role="button">삭제</button>
+			</div>
+		</div>
+	</div>
+</div>

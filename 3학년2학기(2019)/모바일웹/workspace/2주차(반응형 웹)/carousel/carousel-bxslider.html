@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>Carousel using bxSlider.js</title>
+    
+    <!-- bxSlider 스타일 파일 링크 -->
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <!--[if lt IE 9]>
+		  <script src="js/html5shiv.min.js"></script>
+		<![endif]-->
+    <style>
+        /* 캐러셀 내용(이미지)이 화면 중앙에 오도록 스타일 설정 */
+        #wrapper {
+            width: 640px;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- 스크롤할 전체 내용을 div 묶는다 -->
+        <div class="bxslider">
+            <div>
+                <img src="img/things-1.jpeg" title="슬라이더 연습-1">
+            </div>
+            <div>
+                <img src="img/things-2.jpeg" title="슬라이더 연습-2">
+            </div>
+            <div>
+                <img src="img/things-3.jpeg" title="슬라이더 연습-3">
+            </div>
+            <div>
+                <img src="img/things-4.jpeg" title="슬라이더 연습-4">
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery 및 bxSlider 스크립트 파일 추가 -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+
+    <script>
+        $(function() {
+            /* bxSlider 메서드 실행 */
+            $('.bxslider').bxSlider({
+                slideWidth: 640, /* 슬라이더 너비 설정 */
+                captions: true, /* 각 이미지에 캡션을 추가 */
+                auto: true, /* 자동 실행 */
+                mode: 'fade',/* 스크롤 방향(fade, horizontal, vertical) */
+                autoControls: true, /* 컨트럴 버튼 표시 */
+                stopAutoOnclick: true, /* 클릭하면 자동실행 멈춤 */
+                autoHover: true /* 슬라이더 위에 마우스 올리면 일시 정지 */
+            });
+        });
+
+    </script>
+</body>
+
+</html>

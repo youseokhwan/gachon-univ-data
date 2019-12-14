@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>3주차 실습</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <script src='./js/app03.js'>
+        window.onload = function() {
+            // startButton
+            var startButton = document.getElementById('start');
+            // stopButton
+            var stopButton = document.getElementById('stop');
+            // 결과를 표시하는 요소
+            var display = document.getElementById('display');
+
+            var startTime;            
+            var timer;
+            // startButton 활성화
+            // startButton의 click 이벤트가 발생했을 때 start 함수를 호출
+            startButton.onclick = start;  // 함수 호출
+            function start() {
+                // startButton을 비활성화
+                startButton = null;
+                // stopButton을 활성화
+                stopButton = stop;
+                // 날짜를 생성한다.
+                startTime = new Date();
+                // 0.01초마다 경과한 시간을 표시
+                timer = setInterval(function() {
+                    var now = new Date();
+                    // 경과한 시간을 작성하기
+                    display.innerHTML = ((now-startTime)/1000).toFixed(2);
+                }, 10);
+            };
+
+            function stop() {
+                // 타이머 해제
+                clearInterval(timer);
+                // startButton 활성화
+                startButton.onclick = start;
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id='display'>0.00</div>
+    <input id='start' type='button' value='start'/>
+    <input id='stop' type='button' value='stop'/>
+</body>
+</html>

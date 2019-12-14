@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>실습문제 3</title>
+    </head>
+
+    <body>
+        <div id="app">
+            <sibling-component v-bind:propsdata="anotherData"></sibling-component>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script>
+            Vue.component('sibling-component', {
+                props: ['propsdata'],
+                template: '<p>{{propsdata}}</p>'
+            });
+
+            var app = new Vue({
+                el: "#app",
+                data: {
+                    message: "Hello Vue!",
+                    anotherData: "Another Data"
+                }
+            });
+        </script>
+    </body>
+</html>

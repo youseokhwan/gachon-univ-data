@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>jQuery Basic</title>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<style>
+			  p {  font-size: 20px;  width: 200px;
+			         color: blue;   font-weight: bold;    margin: 0 10px;  }
+	
+	  		  .hilite {   background: yellow;  }
+  	   </style>
+	</head>
+	<body>
+			<p>
+				  When the day is short
+				  find that which matters to you
+				  or stop believing
+			</p>
+			
+			<script type="text/javascript">	
+				var newText = $( "p" ).text().split( " " ).join( "</span> <span>" );
+				console.log(newText);
+				newText = "<span>" + newText + "</span>";
+				console.log(newText);
+
+				$( "p" ).html( newText )
+				  .find( "span" ) //선택된 jQuery객체에서 지정한 선택자를 찾음
+				  		.hover(function() {
+						      	$( this ).addClass( "hilite" );
+				    	}, function() {
+								$( this ).removeClass( "hilite" );
+				    }).end()//현재의 연속적인 chain을 종료하고 선택 집합의 이전 요소를 찾아 반환(스택에서 이전요소를 반환(<p>))'
+				    
+				  .find( ":contains('t')" )
+				   	 .css({
+				      "color": "red",
+				      "font-weight": "bolder"
+				    });		
+				    
+				    //======  find() 메서드==============
+				    // $("#nav").css("border", "solid 1px blue");  //문서전체에서 찾음
+				    // $("#nav > div").css("background-color", "red"); //문서전체에서 찾음
+				    //
+				    // $("#nav").css("border", "solid 1px blue").find("div").css("background-color", "red");
+				    // 문서전체에서 #nav를 선택한 후, #nav내에서 div 선택자를 찾음
+				    //
+				    // 문) id가 a 또는 
+				    
+		</script>		
+	</body>
+</html>
+

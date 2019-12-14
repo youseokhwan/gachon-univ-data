@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        window.onload = function(){
+            var element = document.getElementById("box");
+            element.addEventListener("click", function(e){
+                e.currentTarget.style.backgroundColor = "red";
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="box">click me!!!</div>
+</body>
+</html>

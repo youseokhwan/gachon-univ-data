@@ -1,0 +1,21 @@
+.fakeimg {
+	height: 200px;
+	background: #aaa;
+}
+
+.card {
+	margin-bottom: 10px;
+}
+
+@media all and (max-width: 575px) {
+	#cardimg {
+		width: 300px;
+		height: 300px;
+	}
+}
+
+@media all and (min-width: 576px) {
+	#map {
+		height: 200%;
+	}
+}

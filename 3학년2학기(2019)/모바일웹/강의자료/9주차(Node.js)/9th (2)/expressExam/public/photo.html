@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>파일업로드 테스트</title>
+	</head>
+<body>
+	<h1>파일업로드</h1>
+	<br>
+    <!-- method:전송방식, enctype:업로드 포맷, action:라우팅 함수 -->
+	<form method="post" enctype="multipart/form-data" action="/process/photo">
+		<table>
+			<tr>
+				<td><label>파일</label></td>
+                <!-- name 속성은 요청 파라미터 이름으로 사용 -->
+				<td><input type="file" name="photo" /></td>
+			</tr>
+		</table>
+		<input type="submit" value="업로드" name="submit"/>
+	</form>
+</body>
+</html>

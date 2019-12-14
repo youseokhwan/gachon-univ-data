@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FCEAC8">
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gachon"
+            android:textSize="40sp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_title2"
+            android:layout_below="@id/text_title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="right"
+            android:text="Music ♬"
+            android:textSize="40sp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_below="@id/text_title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"/>
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_below="@id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:inputType="textPassword"/>
+
+        <CheckBox
+            android:id="@+id/chk_autologin"
+            android:layout_below="@id/edt_password"
+            android:layout_alignLeft="@id/edt_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="자동 로그인"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_below="@id/chk_autologin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="로그인"
+            android:textSize="20sp"
+            android:background="#FCD37F"/>
+
+        <TextView
+            android:id="@+id/text_signup"
+            android:layout_below="@id/btn_login"
+            android:layout_alignLeft="@id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/text_findid"
+            android:layout_below="@id/btn_login"
+            android:layout_alignRight="@id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID/PW 찾기"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

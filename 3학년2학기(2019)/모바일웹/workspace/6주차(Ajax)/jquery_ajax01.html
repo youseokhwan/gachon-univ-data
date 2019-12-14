@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#btn1').click(function() {
+				$.ajax({
+					url: 'xml-data.xml',
+					type: 'get',
+					dataType: 'xml',
+					timeout: 10000,
+					success: function(xmlData) {
+						console.log(xmlData);
+						var tagList = "";
+						$(xmlData).find('player').each(function () {
+							tagList += "<li>" + $(this).find('name').text() + "</li>";
+						});
+						$('#listArea').empty();
+						$('#listArea').append(tagList);
+						$('#listArea').show();
+					},
+					error: function() {
+						$("#listArea").html("<p>Error!!</p>");
+					}
+				});
+			});
+			$('#btn2').click(function() {});
+			$('#btn3').click(function() {});
+		});
+	</script>
+</head>
+
+<body>
+	<div>
+		<div>
+			<h1>Ajax 활용</h1>
+		</div>
+		<div>
+			<button id="btn1">XML</button>
+			<button id="btn2">JSON</button>
+			<button id="btn3">HTML</button>
+		</div>
+		<hr>
+		<div>
+			<ul id="listArea">
+				<li id="item">데이터 로드 하기 전 ...</li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>

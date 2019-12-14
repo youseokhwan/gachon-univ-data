@@ -1,0 +1,148 @@
+
+/* ========= 태블릿용 CSS ================== */
+@media all and (min-width:768px) {
+
+    /* 기본 CSS */
+    .divider {
+        margin-top: 124px;
+    }
+
+    .m-divider {
+        margin-top: 124px;
+    }
+
+    /* 헤더 영역 CSS */
+    .header {
+        position: static;
+        /* 태블릿에서는 헤더영역이 더 이상 상대위치로 작동할 필요가 없기 때문에 기본값(static)으로 설정 */
+        padding: 28px 52px;
+    }
+
+    .header .gnb {
+        display: block !important;
+        position: static;
+        /* 태블릿에서는 메뉴목록이 더 이상 절대위치로 작동할 필요가 없기 때문에 기본값(static)으로 설정 */
+        float: right;
+        width: auto;
+        margin-top: 6px;
+        background: none;
+    }
+
+    .header .gnb li {
+        float: left;
+        margin-left: 21px;
+        border-bottom: 0;
+    }
+
+    .header .gnb li a {
+        padding: 0;
+        font-size: 16px;
+        color: #3f51b5;
+    }
+
+    .header .menu-toggle-btn {
+        display: none !important;
+    }
+
+    /* 디스플레이 영역 CSS */
+    .display-section {
+        margin-top: 95px;
+    }
+
+    /* 프로모션 영역 CSS */
+    .promotion-section {
+        margin-top: 110px;
+    }
+
+    .promotion-section .promo-list li {
+        float: left;
+        width: 23.046875%;
+        /* 177px ÷ 768px*/
+        margin-left: 2.604166666666667%;
+        /* 20px ÷ 768px*/
+        margin-top: 0;
+    }
+
+    .promotion-section .promo-list li:first-child {
+        margin-left: 0;
+    }
+
+    /* 최근 작업 영역 CSS */
+    .work-section {
+        margin-top: 118px;
+    }
+
+    .work-section .sec-tit {
+        margin-bottom: 76px;
+    }
+
+    .work-section .work-list li {
+        float: left;
+        width: 50%;
+    }
+
+    .work-section .work-list li .info {
+        left: 37px;
+    }
+
+    .work-section .work-list li a:hover .info {
+        transform: translateY(37px);
+    }
+
+    /* 최근 글 영역 CSS */
+    .blog-section {
+        margin-top: 124px;
+    }
+
+    .blog-section .sec-tit {
+        margin-bottom: 76px;
+    }
+
+    .blog-section .blog-list li {
+        float: left;
+        width: 31.59722222222222%;
+        /* 242.6666666666667px ÷ 768px*/
+        margin-left: 2.604166666666667%;
+        /* 20px ÷ 768px*/
+        margin-top: 0;
+    }
+
+    .blog-section .blog-list li:first-child {
+        margin-left: 0;
+    }
+
+    /* 연락처 영역 CSS */
+    .contact-section {
+        margin-top: 176px;
+    }
+
+    .contact-section .sec-tit {
+        margin-bottom: 76px;
+    }
+
+    .contact-section .form-box .form,
+    .contact-section .form-box .textarea {
+        float: left;
+        width: 48.69791666666667%;
+        /* 374px ÷ 768px*/
+    }
+
+    .contact-section .form-box .form {
+        margin-right: 2.604166666666667%;
+        /* 20px ÷ 768px*/
+    }
+
+    .contact-section .form-box .form input:last-child {
+        margin-bottom: 0;
+    }
+
+    /* 푸터 영역 CSS */
+    .footer iframe {
+        height: 432px;
+    }
+
+    .footer p {
+        margin: 34px 0;
+    }
+}
+

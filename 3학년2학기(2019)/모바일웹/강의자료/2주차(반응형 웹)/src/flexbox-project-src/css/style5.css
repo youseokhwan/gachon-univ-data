@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo:700');
+
+* {
+  margin:0;
+  padding:0;
+}
+
+
+/* === 내비게이션 영역 === */
+a:link, a:hover, a:visited {
+  color:#fff;
+  text-decoration:none;
+  text-shadow:1px 1px 0 #283744;
+}
+
+/* [#6-3 네비게이션(nav요소) 고정: position:fixed;  z-index:10000 설정] */
+nav {
+  /* Viewport width : 1vm = 1/100 : 뷰포트 너비에 꽉차게 너비 설정 */
+  width:100vw;
+  height:auto;
+  background:#34495e;
+  font-size:1.2em;
+  font-weight:bold;
+/*  position:relative;*/
+  position:fixed;
+  z-index:10000;
+}
+
+
+nav ul {
+  display: none;
+  height: auto;
+}
+nav ul li {
+  display: block;
+  width: 100%;
+  text-align:center;
+  border-bottom: 1px solid #576979;
+}
+nav ul li a {
+  line-height:50px;
+}      
+nav a#trigger {
+  display:block;
+  background-color:#283744;
+  width:100%;
+  padding-left:15px;
+  line-height:40px;    
+  position:relative;
+}
+
+/* 네비게이션 메뉴가 764px 이상에서 표시되도록 미디어쿼리 설정 */
+@media screen and (min-width:764px) {
+  nav {
+    height: 40px;
+    border-bottom:2px solid #34495e;
+  }
+  nav ul {
+    text-align: center;
+    display:block;
+    width:750px; 
+    height:40px;
+    padding: 0;
+    margin:0 auto;        
+  }
+  nav ul li {
+    display:inline-block; 
+    width:180px; / * 메뉴 항목 너비 */        
+    border-bottom:0;
+    border-right: 1px solid #576979;        
+    margin-right:-6px;
+  }
+  nav ul li:last-child {
+    border-right: 0;
+  } 
+  nav ul li a{
+    font-size:1em;
+    line-height:40px;
+  }
+  nav a#trigger {
+    display: none;
+  }          
+}
+/* === 내비게이션 영역 end === */
+
+/* === 섹션 === */
+section {
+  width:100vw;
+  position:relative;
+}
+section:nth-child(odd) {
+  background-color:#f3f3f4;
+}
+.section-title {
+  margin:30px auto 50px auto;
+}
+.section-title h3{
+  font-size:1.8em;
+  text-align: center;
+}
+.wrapper {
+  padding-top:60px;
+  padding-bottom:40px;
+  background:transparent;
+}
+/* === 섹션 end === */
+
+/*  === 헤더(캐러셀) 영역 === */ 
+.banner {
+  max-width:1300px;
+  margin:0 auto;  
+}
+/*  === 헤더(캐러셀) 영역 end === */ 
+
+/* === 섹션2, 왜 코딩 교육인가? 영역 === */
+.intro {
+  padding:20px 50px;
+}
+.text {
+	padding-left:50px;
+	padding-right:50px;
+}
+.text h3 {
+  font-size:1.6em;
+  margin-bottom:50px;  
+}
+.text p {
+  font-size:1.2em;
+  line-height: 1.8;
+}
+.img {
+  text-align:center;
+  display:none;
+}
+
+/* 텍스트와 이미지가 764px 이상에서 플렉스 박스 레이아웃으로 배치 - 미디어쿼리 설정 */
+@media screen and (min-width:764px) {
+  .intro {
+    padding:20px 50px;
+    display:flex;/* flex 컨테이너 설정 */
+    align-items:center;/* flex 컨테이너 아이템들을 center로 정렬 */
+  }
+  /* flex 아이템(.text)의 크기를 2로 설정(컨테이너 크기의 2/3) */
+  .text {
+    flex:2;
+  }
+  /* flex 아이템(.img)의 크기를 1로 설정(컨테이너 크기의 1/3) */
+  .img {
+    display:block;/* 이미지를 block 형태로 설정 */
+    flex:1;
+  }
+  .img > img {
+    max-width:250px;/* 이미지 최대 크기 설정 */
+  }
+}
+/* === 섹션2, 왜 코딩 교육인가? 영역 end === */
+
+/* === 섹션3, 명사 한마디 영역 === */
+.about{
+  line-height:1.8;
+  padding:20px 50px;
+}
+.msg p {
+  color: #ff6600;
+  font-size:1.4em;
+  font-style: italic;
+  text-align:center;
+  line-height:1.8;
+  margin-bottom:20px;  
+  font-family: 'Nanum Myeongjo', '맑은 고딕'; /* 글꼴 추가 */   
+}
+.msg span {
+  font-size:0.9em;
+  color:#aaa;
+}
+/* === 섹션3, 명사 한마디 영역 end === */
+
+/* === 섹션4, 교육 프로그램 영역 === */
+.program-list{
+  padding:20px 50px;
+}
+.program-list h4{
+  font-size:1.3em;
+  margin-bottom:20px;
+}
+.program{
+  padding:30px;
+  box-sizing:border-box;
+  margin-bottom:20px;
+  background-color:#fff;
+  border:1px solid #aaa;
+  font-family: 'Nanum Gothic', sans-serif; /* 글꼴 지정 */   
+}
+
+/* 764px 이상에서 한 줄에 4블럭이 나오도록 플렉스 박스 레이아웃으로 배치 - 미디어쿼리 설정 */
+@media screen and (min-width:764px) {
+  .program-list { /* 플렉스 컨테이너 */
+    display:flex;
+    justify-content: space-between;/* 플렉스 아이템을 space-between으로 배치 */
+  }
+  .program { /* 플렉스 아이템 */
+    flex-basis:22%;/* 기본 너비값 설정 */    
+  }
+}
+/* === 섹션4, 교육 프로그램 영역 end === */
+
+
+/* === 섹션5, 푸터 영역 === */
+.footer {
+  padding-top:30px;
+  padding-bottom:50px;
+  background-color:#34495e;
+}
+.footer-info {
+  padding-left:20px;
+  padding-right:20px;
+}
+.contact {
+  color:#fff;
+}
+.sns {
+  margin-top:50px;
+}
+.sns a {
+  margin-right:30px;
+}
+.sns a:last-child {
+  margin-right:0;
+}
+
+/* [#5-1]텍스트와 이미지가 764px 이상에서 플렉스 박스 레이아웃으로 배치 - 미디어쿼리 설정 */
+@media screen and (min-width:764px) {
+  .footer-info {
+    max-width:1300px;
+    display:flex; /* flex 컨테이너 설정 */
+  }
+  /* flex 아이템(.contact)의 크기를 2로 설정(컨테이너 크기의 2/3, 기본크기의 2배로 설정) */
+  .contact {
+    flex:2;
+  }
+  /* flex 아이템(.sns)의 크기를 1로 설정(컨테이너 크기의 1/3, 기본크기로 설정) */
+  .sns {
+    flex:1;
+  }
+}
+/* === 섹션5, 푸터 영역 end === */

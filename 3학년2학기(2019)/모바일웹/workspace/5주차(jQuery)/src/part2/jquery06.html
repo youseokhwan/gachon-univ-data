@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>jQuery Event</title>
+		<script src="./js/jquery-3.2.1.min.js"></script>
+		<script>
+				$(document).ready(function () {
+				  $("#user_id")
+					.keydown(function(e){ //키보드 자판을 눌렀을 때
+							$(this).css("background-color","skyblue");
+							$("p").text(e.keyCode);  //고유 키 코드 값을 출력
+				    })
+				    .keyup(function(){ //자판을 눌렀다 띄었을 때
+							$(this).css("background-color","white");
+			    	});
+			});
+		</script>
+	</head>
+	<body>
+		<div>
+			<input type="text" name="user_id" id="user_id" />
+		</div>
+
+		<h3> key-code </h3>
+		<p></p>
+	</body>
+</html>
+

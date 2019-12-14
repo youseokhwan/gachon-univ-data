@@ -1,0 +1,29 @@
+<!-- 
+81. Vue.js HelloWorld 실행하기
+    cdn 형태로 라이브러리를 호출한다. 
+    실제 보여질 위치를 지정하고
+    Vue 인스턴스를 생성하고 값을 셋팅한다. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Vue Sample</title>
+</head>
+<body>
+    <!-- 만들어질 영역 표시 -->
+    <div id="app">
+        {{message}}
+    </div>
+    <!-- cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        // 인스턴스 생성
+        new Vue({
+            el: "#app",
+            data: {
+                message: "Hello Vue.js"
+            }
+        });
+    </script>
+</body>
+</html>

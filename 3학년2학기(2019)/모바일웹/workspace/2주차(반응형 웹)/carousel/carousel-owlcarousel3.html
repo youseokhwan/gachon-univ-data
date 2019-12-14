@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+    <meta charset="utf-8">
+    <title>Owl Carousel</title>
+    <!-- owl.carousel 기본 스타일 시트 --> 
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <!-- 캐러셀에서 내비게이션을 사용하기 위한 스타일 시트 -->
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <!--[if lt IE 9]>
+		  <script src="js/html5shiv.min.js"></script>
+		<![endif]-->
+		
+    <style>
+        #wrapper {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+        .item {
+            height: 200px;
+            background: #4DC7A0;
+        }
+        h2 {
+            color: white;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="owl-carousel owl-theme"><!-- 캐러셀 영역 지정 -->
+            <div class="item"><h2>1</h2></div>
+            <div class="item"><h2>2</h2></div>
+            <div class="item"><h2>3</h2></div>
+            <div class="item"><h2>4</h2></div>
+            <div class="item"><h2>5</h2></div>
+            <div class="item"><h2>6</h2></div>
+            <div class="item"><h2>7</h2></div>
+            <div class="item"><h2>8</h2></div>
+            <div class="item"><h2>9</h2></div>
+            <div class="item"><h2>10</h2></div>
+            <div class="item"><h2>11</h2></div>
+            <div class="item"><h2>12</h2></div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.autoplay.js"></script><!-- 자동 스크롤 -->
+    <script src="js/owl.navigation.js"></script><!-- 네비게이션 표시 -->
+
+    <script>
+        $(function() {
+           $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                responsiveClass: true,
+                responsiveRefreshRate: true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    768:{
+                        items:3
+                    },
+                    960:{
+                        items:5
+                    },
+                    1200:{
+                        items:7
+                    }
+                }
+           })
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Ajax</title>
+	<link type="text/css" rel="stylesheet" href="./ajax/css/custom.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<section class="content-wrapper">
+		<h2>날씨검색 웹</h2>
+		<div class="input-wrapper">
+			<input id="city" type="text"><!-- 검색할 도시 입력창 -->
+			<button class="confirm">날씨 확인</button>
+		</div>
+		
+		<div class="result-wrapper">
+			<img id="result-image" src="./ajax/img/clear.png" alt="">
+		</div>
+		
+		<h2 id="result-text">도시를 입력해주세요.</h2>
+		
+		<div id="weather-info">
+		</div>
+	</section>
+	
+	<script type="text/javascript" src="./js/promise_api.js"></script>
+</body>
+</html>

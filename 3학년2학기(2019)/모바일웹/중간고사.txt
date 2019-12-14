@@ -1,0 +1,237 @@
+중간고사(9시, 503호)
+- HTML5, CSS3는 간단히 훑어보기
+
+
+[1주차 - HTML5, CSS3, FORM, 브라켓 에디터 설치]
+- em, rem : 부모(혹은 최상위 요소)의 폰트 크기를 기준으로 폰트 크기 지정
+- CSS 선언 방식 : 내부, 외부, 인라인, 임포트
+- 선택자
+  * : 전체
+  tagName, .className, #idName : 각 이름 선택자
+  > + ~ : 자손 선택자
+  선택자:hover : 조건 명세
+- 벤더 프리픽스 : 브라우저 명시(-webkit-)
+
+
+[2주차 - 반응형 웹, 플렉스 박스, 반응형 웹을 위한 레이아웃 제작]
+- 반응형 웹 : 기기의 화면이나 환경에 맞게 자유자재로 변하는 웹
+  미디어 쿼리 : 기기의 크기 또는 종류에 따라 레이아웃을 변경해주는 CSS3 모듈
+  CSS 프레임워크 : 부트스트랩 등
+- 미디어 쿼리
+  @media [ONLY|NOT] 미디어 유형 [AND 또는 콤마] (조건문) {실행문}
+  ex) @media all and (min-width: 768px) { ... }
+      @media screen and (min-width: 768px) and (max-width: 1024px) { ... }
+- 뷰포트 : 화면에서 실제 내용이 표시되는 영역
+- 반응형 웹은 요소들이 화면 크기에 따라 옮겨질 수 있음을 고려해야 함
+- 플렉스 박스 : 그리드 레이아웃을 기반으로 플렉스 아이템을 원하는 위치에 배치하는 레이아웃
+
+
+[3주차 - Bootstrap]
+- 부트스트랩 : 다양한 디자인과 테마를 제공하는 반응형 웹 제작을 위한 프레임워크
+- reboot : 웹 페이지 스타일을 초기화하여 크로스 브라우징 문제 해결
+- 한 행은 12개로 구성
+
+
+[4주차 - Javascript]
+1. 자바스크립트로 할 수 있는 일
+- 자바스크립트 : 웹 문서를 동적으로 제어하기 위한 언어
+- 웹 서버 개발, 모바일 개발(페이스북 React), 데스크톱 앱 개발(Electron), 게임 개발(Unity), 데이터베이스(MongoDB)
+
+2. var
+- 함수 레벨 scope (블록 레벨 scope 지원 X)
+  * 반드시 function 블록인지 그냥 { } 블록인지 잘 체크할 것 !
+- 함수 외부에 선언하거나 var 키워드 생략하면 전역 변수
+- 내부에 선언한 var 변수는 외부에서 참조 불가능
+
+3. let, const
+- 블록 레벨 scope
+- 호이스팅 X, 중복 선언 X
+
+4. 스코프(scope)
+- 선언된 변수, 함수, 객체 등을 접근할 수 있는 유효범위
+- ES6부터 블록 레벨 스코프 지원
+- global scope > outer scope > inner scope
+- 렉시컬 특성 : 호출 시점이 아닌 선언 시점에 scope가 적용되는 특성
+- 스코프 체인 : 중첩 함수일 때 상위 함수의 스코프를 참조하는 것
+
+5. 실행 컨텍스트 : 코드를 실행하기 위해 필요한 환경
+- 변수, 함수, scope, this 등의 정보
+
+6. 호이스팅
+- 선언문 전에 호출할 경우 호이스팅(undefined)
+- 함수 선언문에서만 가능하고 함수 표현식에서는 불가능
+
+7. 클로저(closure)
+- 외부 함수가 종료되더라도 내부 함수가 실행되는 상태면 외부 함수는 닫히지 못함
+- 외부에서 내부 변수에 접근할 수 있도록 하는 함수
+- 전역 변수의 오남용을 줄일 수 있음
+- 한 객체 안에서는 메모리 공유, 다른 객체에선 각자 메모리 사용
+- for문에서는 최종 값을 참조하기 때문에 중첩된 클로저를 사용해야 함
+
+8. 콜백 함수
+- 다른 함수의 인자로 전달되어, 나중에 실행하는 함수
+
+9. 비동기 처리
+- 연산이 끝날 때까지 기다리지 않고 다음 코드를 실행하는 기법
+1) setTimeout(sec, function) : 지정한 시간만큼 기다렸다가 실행
+2) Promise
+- 성공하면 resolve, 실패하면 reject로 처리
+~~~
+function getData(callback) {
+  return new Promise(function (resolve, reject) {
+    $.get('url', function (response) {
+	  if(response)
+	    resolve(response);
+	  else
+	    reject(new Error());
+	}); 
+  });
+};
+
+getData().then(function (data) {
+  console.log(data);
+}).catch(function (err) {
+  console.log(err);
+});
+~~~
+3) async, await(ES8)
+- callback 지옥 해결, Promise의 복잡함 해결
+- function 앞에 async 붙여주고, 비동기처리 할 부분 앞에만 await 붙여줌
+~~~
+function delayP(sec) {
+  return new Promise(function(resolve, reject) {
+    setTimeout(function() {
+	  resolve(new Date().toISOString());
+	}, sec*1000);
+  });
+};
+
+async function myAsync() {
+  const time = await delayP(3);
+  return time;
+};
+
+myAsync.then(function(result) {
+  console.log(result);
+});
+~~~
+- 여러 개의 Promise 실행시킬 땐 Promise.all 사용
+
+10. 문서 객체 모델
+- DOM(Document Object Model) : 웹 문서의 구조화된 표현 제공
+- document.body.innerHTML = '<h1>Hello</h1>';
+- var header = document.getElementById('header-1');
+- header.setAttribute('class', 'box');
+- header.onclick = function() { alert ... };
+
+
+[5주차 - jQuery]
+- $(document).ready() : 문서 객체 생성완료 이벤트
+- CSS의 선택자 방식을 사용하여 DOM에 접근
+  $('*'), $('foo'), $('#foo'), ...
+- 객체 탐색 : $('h1').parent(), $('h1').find('i')
+            $('h1').get(i) // i번째 h1 요소
+- $('#wrap li') : 하위 요소 모두 선택
+  $('body').children() : 자식 요소 선택
+  $('.second').prev() / .next() : 이전/다음 요소 선택
+  $('#menu li:first') : id가 menu인 요소의 하위 요소인 li 중 첫 번째 요소
+  $('li:nth-child(2n)') : 2의 배수 요소만 선택
+- $('h2').html() : html 태그를 집어넣거나 요소를 읽어옴 (읽어올 땐 1개만)
+  $('h2').text() : 텍스트를 가져오거나 수정 (전부 읽어옴)
+  $('#image').attr('src') : image의 src 값을 읽어옴
+  $('#image').attr('src', 'http://...') : image의 src를 'http...'로 수정
+  $('#image').removeAttr('src') : image의 src 속성을 제거
+- attr, prop의 사용법은 같지만 prop은 동적 처리된 내용도 반영됨
+- $('#image').removeClass().addClass('spring');
+- $('h2').val() : value 값을 가져오거나 수정
+- 배열은 $(selector).each(function(index, item) { ... }); 로 사용
+
+
+[5주차 - jQuery 이벤트 처리]
+- 단독 이벤트 메소드 : $('#btn').click(function() { ... });
+  그룹 이벤트 메소드 : $('#btn').on("click", function() { ... });
+  2개 이상 연결할 땐 :로 연결
+  off()로 이벤트 제거
+- 마우스 : click(), dbclick()
+          mouseover(), mouseout(), hover()
+		  mouseenter(), mouseleave() // 버블링 발생 X
+  키보드 : keydown(), keyup(), keypress()
+  change() : 입력 요소의 값이 바뀌고 포커스가 변경될 때
+  index() : 이벤트가 발생한 요소의 인덱스 값 반환
+- 동적으로 추가된 요소에는 이벤트가 적용되지 않기 때문에 부모로 위임
+  $('body').on('click', 'h1', function() {});
+  $('#wrap').on({ mouseover : function() {}, click : function() {}}, ".box");
+- trigger() : 강제로 이벤트 발생
+  $box.trigger('mouseover', $(this));
+- 이벤트 네임스페이스
+  $('#first').on({'click.one' : function() {}, 'click.two' : function() {}});
+- 기본 이벤트 실행 중지
+  $('#google').on('click', function(e) {
+    e.preventDefault();
+  });
+- 이벤트를 한 번만 실행
+  $('#google').one('click', function() { ... });
+- 이벤트 버블링 멈추기
+  $('#box').on('click', function(e) {
+    e.stopPropagation();
+  });
+- error 이벤트
+  $('#img').attr('src', function(i) {
+    return 'img/' + images[i];
+  }).on('error', function() {
+    $(this).attr('src', 'noimage.jpg');
+  });
+- show(), hide(), toggle()
+
+
+[6주차 - ajax]
+- Asynchronous Javascript And Xml : 비동기 통신
+- 화면 일부분만 갱신 가능
+- XHR(XmlHttpRequest) 객체를 이용해 페이지 단위가 아닌 데이터 단위로 갱신
+- XHR를 jQuery를 통해 이용
+- $.ajax({
+    url: 'xml-data.xml',
+	type: 'get',
+	dataType: 'xml',
+	success: function(data) {
+	  $(data).find('player').each(function() {
+	    ...
+	  });
+	},
+	error: function() {
+	  $('#listArea').html("<p>Error!</p>');
+	},
+	complete: function() { ... }
+	});
+  });
+- $('#btn2').click(function() {
+    $.getJSON('json-data.json', function(jsonData) {
+	  $.each(jsonData.tagName . .. 
+	});
+  });
+- fetch(url)
+
+
+[7주차 - Node.js]
+- 자바스크립트 기반으로 만들어진 서버 사이드 프레임워크
+- 비동기, 이벤트 기반
+- exports.module1 = function() { ... };
+  var module1 = require('module1');
+1) calc 객체 생성하고 함수를 속성으로 추가
+2) module.exports = calc;
+3) var calc = require('./calc2');
+* 내장 모듈은 상대 경로, 외장 모듈은 상대 경로 사용 x
+- nconf 모듈 : 시스템 환경 변수 접근 가능
+- package.json : 프로젝트에 대한 정보, 모듈에 대한 정보
+  package-lock.json : 모듈 간 의존성 명시
+- crypto : 단방향 암호화 알고리즘
+- 이벤트 : on() 이벤트리스너 등록 / emit() 이벤트 발생
+  process.on('tick', function(count) {
+    ...
+  });
+  setTimeout(function() {
+    process.emit('tick', 2);
+  }, 2000);
+
+
+

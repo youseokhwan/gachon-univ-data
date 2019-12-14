@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+    <meta charset="utf-8">
+    <title>Owl Carousel</title>
+    <!-- owl.carousel 기본 스타일 시트 --> 
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <!-- 캐러셀에서 내비게이션을 사용하기 위한 스타일 시트 -->
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <!--[if lt IE 9]>
+		  <script src="js/html5shiv.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="owl-carousel owl-theme"><!-- 캐러셀 영역 지정 -->
+            <div class="item"><img src="img/puppy-1.jpeg"></div>
+            <div class="item"><img src="img/puppy-2.jpeg"></div>
+            <div class="item"><img src="img/puppy-3.jpeg"></div>
+            <div class="item"><img src="img/kitten-1.jpeg"></div>
+            <div class="item"><img src="img/kitten-2.jpeg"></div>
+            <div class="item"><img src="img/kitten-3.jpeg"></div>
+            <div class="item"><img src="img/puppy-1.jpeg"></div>
+            <div class="item"><img src="img/puppy-2.jpeg"></div>
+            <div class="item"><img src="img/puppy-3.jpeg"></div> 
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.autoplay.js"></script><!-- 자동 스크롤 -->
+    <script src="js/owl.navigation.js"></script><!-- 네비게이션 표시 -->
+
+    <script>
+        $(function() {
+            $('.owl-carousel').owlCarousel({
+                margin: 10,                 /* 항목간 마진 */
+                loop: true,                 /* 무한 루프 */
+                nav: true,                  /* nav 설정 */
+                navText: ['이전', '다음'],   /* nav 버튼 지정 */
+                autoplay: true,             /* 자동 스크롤 */
+                autoplayTimeout: 3000,      /* 자동 스크롤 간격 */
+                autoplayHoverPause: true,    /* 내용 위로 마우스 up시 스크롤 일시 멈춤 */
+                responsive:{ /* breakpoint 기준으로 items  설정 */
+                    0:{ /* 0 ~ 767px */
+                        items:1
+                    },
+                    768:{ /* 768 ~ 959px */
+                        items:3
+                    },
+                    960:{/* 960 ~ 1119px */
+                        items:5
+                    },
+                    1200:{/* 1200px ~ */
+                        items:7
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

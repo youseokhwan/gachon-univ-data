@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+</head>
+<body>
+ <ul class='list'>
+     <li>List-1</li>
+ </ul>
+ <ul class='list2'>
+     <li>List-2</li>
+ </ul>
+ <script src="js/jquery-3.2.1.min.js"></script>
+ <script>
+    (function($) {
+        $('ul.list').click(function() {
+            $('li', this).css('background-color', 'blue');
+        });
+    })(jQuery)
+ </script>
+</body>
+</html>

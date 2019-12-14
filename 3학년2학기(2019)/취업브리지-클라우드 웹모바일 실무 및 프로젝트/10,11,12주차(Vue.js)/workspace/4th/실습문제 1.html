@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>실습문제 1</title>
+    </head>
+
+    <body>
+        <div id="app">
+            <header>
+                <h3>{{message}}</h3>
+            </header>
+            <todo-footer></todo-footer>
+            <todo-list></todo-list>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script>
+            Vue.component('todo-footer', {
+                template: '<p>This is another global child component</p>'
+            });
+
+            var cmp = {
+                template: '<p>This is another local child component</p>'
+            }
+
+            new Vue({
+                el: "#app",
+                data: {
+                    message: 'This is a component'
+                },
+                components: {
+                    'todo-list': cmp
+                }
+            });
+        </script>
+    </body>
+</html>

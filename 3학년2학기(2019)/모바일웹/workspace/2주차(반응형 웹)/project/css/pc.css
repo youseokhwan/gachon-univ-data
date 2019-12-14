@@ -1,0 +1,93 @@
+
+/* =============== PC용 CSS ================= */
+@media all and (min-width:1132px) {
+
+    /* 디스플레이 영역 CSS */
+    .display-section {
+        text-align: left;
+    }
+
+    .display-section .sec-tit {
+        float: left;
+        margin-bottom: 0;
+    }
+
+    .display-section .desc {
+        position: relative;
+        float: right;
+        padding-left: 20px;
+        font-family: 'PT Serif';
+        color: #616161;
+        line-height: 1.9;
+    }
+
+    .display-section .desc:before {
+        display: block;
+        position: absolute;
+        top: 9px;
+        left: 0;
+        width: 2px;
+        height: 44px;
+        background: #e0e0e0;
+        content: "";
+    }
+
+    /* 프로모션 영역 CSS */
+    .promotion-section .promo-list li {
+        width: 23.67491166077739%;
+        /* 268px ÷ 1132px*/
+        margin-left: 1.76678445229682%;
+        /* 20px ÷ 1132px*/
+    }
+
+    /* 최근 작업 영역 CSS */
+    .work-section .sec-tit {
+        text-align: left;
+    }
+
+    .work-section .work-list li {
+        width: 25%;
+    }
+
+    /* 최근 글 영역 CSS */
+    .blog-section .sec-tit {
+        float: left;
+        margin-bottom: 0;
+    }
+
+    .blog-section .blog-list {
+        float: right;
+        width: 74.5583038869258%;
+        /* 844px ÷ 1132px*/
+    }
+
+    .blog-section .blog-list li {
+        width: 31.75355450236967%;
+        /* 268px ÷ 844px*/
+        margin-left: 2.369668246445498%;
+        /* 20px ÷ 844px*/
+    }
+
+    /* 연락처 영역 CSS */
+    .contact-section .sec-tit {
+        float: left;
+        margin-bottom: 0;
+    }
+
+    .contact-section .form-box {
+        float: right;
+        width: 74.5583038869258%;
+        /* 844px ÷ 1132px*/
+    }
+
+    .contact-section .form-box .form,
+    .contact-section .form-box .textarea {
+        width: 48.81516587677725%;
+        /* 412px ÷ 844px*/
+    }
+
+    .contact-section .form-box .form {
+        margin-right: 2.369668246445498%;
+        /* 20px ÷ 844px*/
+    }
+}

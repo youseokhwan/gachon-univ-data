@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>풀-스크린 웹 디자인</title>
+		<link href="css/bs.css" rel="stylesheet">	
+		<!-- IE9 이전 버전에서 HTML5 요소의 스타일링이 가능하도록 conditional comment 처리 -->	
+		<!--[if lt IE 9]>
+		  <script src="js/html5shiv.min.js"></script>
+		<![endif]-->		
+	</head>
+	<body>
+		<div id="content">
+			<h1>Startup Company</h1>				
+		</div>
+    
+        <!-- jQuery 및 backstretch 플러그인을 웹 문서에 포함 -->			
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery.backstretch.min.js"></script>			
+		<script>
+			$(function(){
+                /* $.backstretch() 메서드로 풀-스크린 구현
+                  - backstretch("이미지 파일명") */
+				$.backstretch("img/office-1.jpg");			
+			});
+		</script>   
+	</body>
+</html>

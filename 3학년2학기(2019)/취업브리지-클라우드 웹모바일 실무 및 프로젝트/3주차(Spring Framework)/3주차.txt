@@ -1,0 +1,136 @@
+2019.09.20(금) 지브릿지 3주차
+
+[공지]
+- 면접 결과 다음주 월요일 정도에 알려주실 듯
+- 오후 1시부터 기업설명회
+- 오늘은 스프링 프레임워크 진행할 예정
+  부족한 부분들은 막판에 프로젝트에서 보충
+- 다음주 부터 안드로이드 김성훈 교수님
+  3주 연속 시험,, 마지막 날에 오늘 수업한 내용 포함해서 중간고사
+  
+  
+[공지2]
+- 회사에 대해서 확실하게 알고 가도록 하고, 간 본다는 마음으로 면접보지 말 것
+- 2차 매칭은 상담 후에 추천하는 방식으로? 진행될 것
+
+
+[스프링 프레임워크]
+- spring.io/tools 에서 이클립스용 STS 다운로드 및 설치
+- 이클립스에서 확장 기능 설치를 해도 되는데 사용하지 않을 때 불필요해 질 수가 있음
+
+
+[1 스프링 시작하기]
+http://dinfree.com/blog/2019/02/01/spring-1.html
+- Enterprise 대형 프로젝트에서 주로 쓰기때문에 공감하기 어려울 수 있다
+- 경량 컨테이너 -> 라이프 사이클
+- IoC(Inversion of Control, 제어의 역행) : 프로그램의 컨트롤이 사용자가 아닌 프레임워크에 있다
+    Member m = new Member(); -> 스프링에선 이 코드에 문제가 있다고 바라봄
+    Member라는 클래스가 없다면 문제가 있음(?) - 종속성 문제(이 코드를 포함하는 클래스는 Member 클래스에 종속됨)
+	Enterprise 시스템이기 때문에 언제든 수정되고 유지보수하는 상황을 대비하는 것임
+	이 종속성을 제거하기 위해 노력
+	내가 만든 코드도 스프링이 호출함
+- DI(Dependency Injection, 의존성 주입) : 코드가 연결돼있으면 프로그램 안에서 코딩하는 것이 아닌 바깥에서 주입
+    코드를 자꾸 바꾸는 것은 좋지 않음
+- AOP(Aspect-Oriented Programming, 관점 지향 프로그래밍) : 
+    쇼핑몰에서 결제나 상품목록을 보려면 그때마다 로그인했는 지를 검사해야 함(중복해서 코드를 넣어야 함)
+	그런 부분(로깅, 보안 등)들을 외부에서 코드를 밀어넣는 방식?으로
+	실제 작성하지 않았지만 실행 시점에서 모듈들의 공통 부분(횡단 관심사, cross ?)들을 개발
+- 간단한 개발의 경우는 node.js 혹은 firebase가 적합하고, 대형 프로젝트에 적합한 것이 스프링
+
+
+[버전]
+- 3.x -> XML 기반 설정
+- 4.x -> XML이 너무 많아지고 복잡해져서 Annotation 방식 도입
+         컨테이너가 너무 많으면 이것도 복잡함 -> Spring Boot(스프링을 쉽게 사용하게 해주는 도구)
+- 5.x -> 지금은 절대적으로 Spring Boot를 사용하고 있다.
+		 (새로 배우는 입장에서는 Spring Boot를 기반으로 배운다.)
+         (다만 현업에서는 3버전 4버전도 아직 많다.)
+- 5버전으로 오면서 Servlet Stack, Reactive Stack 2가지로 분리(용도에 맞게 선택해서 사용)
+- Servlet은 MVC, Synchronous Blocking I/O 사용
+  (동기 : 요청한 다음에 결과가 나올 때까지 기다리는 것)
+  JDBC는 대형 프로그램은 잘 안쓰고 JPA 사용함
+  NoSQL 사용
+- Reactive는 Non-blocking(비동기)
+  동시 접속자 수가 많고 신속한 DB 처리, 멀티 CPU를 활용한 병렬 처리 등의 작업을 할 때 적합
+
+
+[IoC, 제어의 역행]
+- 객체들이 스프링 프레임워크를 통해 생성되고 사용되기 때문에
+  전체적인 흐름에 의한 if문은 절대 사용되지 않음
+- 과거엔 XML, 현재는 Annotation
+- IoC를 구현하는 방법으로 DL(Dependency Lookup) 방식과 DI가 있음
+  DL : FindById 등 필요한 객체를 id값을 통해 찾아오는 방식
+  DI : 클래스의 외부에서 메소드를 호출하여 필요한 변수(객체)를 공급해주는 방식
+  -> 스프링에서는 좀 더 간결한 코드를 사용(Annotation 사용)
+  
+* 팩토리패턴 : 클래스의 인스턴스를 직접 생성하지 않고 팩토리에 위임(홈페이지 참고)
+
+
+[실습]
+- Spring Starter Project으로 생성
+- Maven이나 Gradle처럼 도구를 선택해야 함(앞으로는 Gradle이 더 강세지만 더 어려운 듯)
+  Gradle은 Groovy로 구성됨
+- Jar는 단독 실행파일, War는 다른 곳에 삽입
+  스프링은 톰캣을 자체에 포함시킬 수 있기 때문에 Jar
+- 언어는 Java, kotlin, groovy 사용 가능(셋 다 결국 JVM에서 실행되는 언어)
+- 일단 지금은 demo 패키지 사용
+
+- 어떤 모듈을 사용할건지 선택해야 함(Developer Tools - Spring Boot DevTools 체크(톰캣 사용하기 편함))
+  Template Engines - Thymeleaf, Web - Spring Web 선택(총 3개)
+- 다운로드 시간 필요
+
+- porm.xml
+- application.properties : DB 등 더 필요한 정보? 추가
+- test : 프로그램의 규모가 커질수록 테스트의 비용이 많이 듬
+  기계적으로 코드 작성하여 해결
+
+
+[애너테이션]
+- @Component
+- @Controller
+- @Service
+- @Repository
+- @Bean
+- @Configuration
+- @Autowired
+
+
+[실습]
+- Weapon 인터페이스 만들고 간단한 fire() 구현
+
+- Configuration 실습
+- autowired 할 때 만들어진 component가 2개 여서 에러 발생
+
+
+[라이프 사이클]
+- @PostConstruct
+- @PreDestroy
+- @Scope
+
+
+[웹프로그래밍]
+- Restful API 사이트 만들기
+- 스프링을 깊게 공부하고 싶다면 공식 홈페이지의 가이드를 참고
+- @RestController, @Repository 자주 사용
+
+- GET방식에서 request를 통해 정보를 받아옴
+  Rest에서는 2가지 방식이 있다.
+  1 url 방식
+  2 path 방식 : api/hello/홍길동 << 이런 식으로 경로 상에 값이 전달되는 방식이 있고, Rest API는 이 방식을 더 선호
+  
+- 테스트 도구? hostman
+  getpostman.com
+  
+- 
+
+
+
+
+
+
+
+
+
+
+
+

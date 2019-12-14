@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>풀-스크린 웹 디자인</title>
+	<link href="css/vg.css" rel="stylesheet">
+
+	<!-- vegas 플러그인 CSS 파일 추가 -->
+	<link href="css/vegas.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+	<div id="content">
+		<h1>Fullscreen Background Image</h1>
+		<p><strong><a href="http://vegas.jaysalvat.com/">Vegas.js</a></strong> 플러그인을 이용한<br>풀스크린 배경 이미지.</p> 
+	</div>
+
+	<!-- jQuery 및 vegas 스크립트 파일 추가 -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/vegas.min.js"></script>
+	<script>
+		$(function() {            
+			/* vegas 플러그인을 사용한 슬라이드 쇼 효과 주기 */ 
+
+			$('body').vegas({ /* 문서 전체에 플러그인 적용 */
+				slides: [ /* 적용할 배경이미지 파일 배열 */ 
+						{src: 'img/nature-1.jpg'},
+						{src: 'img/nature-2.jpg'},
+						{src: 'img/nature-3.jpg'}
+				],
+				delay: 3500 /* 슬라이드 전환 속도 */
+			});
+		});
+	</script>
+</body>
+</html>

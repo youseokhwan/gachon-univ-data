@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dom</title>
+	<style>
+		.img {
+			width:60px; height:40px;
+		}
+		.img-list img {
+			border:1px solid #ccc;
+		}
+		.img-list img:hover {
+			border-color:tomato;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(function() {
+			$('#sel').change(function(e) {
+				let str = $(this).val();
+				$('#txt').attr('value', str);
+				$('#pic').attr('src', '../../5th/images/'+str+'.png');
+			});
+		});
+		
+	</script>
+</head>
+<body>
+	<section>
+		<h1> DOM Control </h1>
+		<div>
+			<input type="text" id="txt" value="spring"/>
+			<select id="sel">
+				<option value="spring" selected>spring</option>
+				<option value="summer">summer</option>
+				<option value="fall">fall</option>
+				<option value="winter">winter</option>
+			</select>
+		</div>
+		<br>
+		<div>
+			<img class="current-img" src="../../5th/images/spring.png" id="pic" alt="">
+		</div>
+	</section>
+</body>
+</html>

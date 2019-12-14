@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tubular 플러그인 연습(유튜브 동영상으로 풀 스크린 배경)</title>
+    <link href="css/tb-result.css" rel="stylesheet">
+</head>
+
+<body>
+   <!-- tubular.js 플러그인은 #wrapper라는 id로 문서 전체를 감싼 후,
+        그 요소에 유튜브 동영상을 배경으로 설정함 -->
+    <div id="wrapper">
+        <a href="#" class="tubular-play">재생</a>
+        <a href="#" class="tubular-pause">일시정지</a>
+        <a href="#" class="tubular-volume-up">소리 키우기</a>
+        <a href="#" class="tubular-volume-down">소리 줄이기</a>
+        <a href="#" class="tubular-mute">소리 끄기</a>
+    </div>
+    
+    <!-- jQuery 및 tubular 스크립트 파일 추가 -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.tubular.1.0.js"></script>
+    <script>
+        $("document").ready(function() {
+            /* tubular option 설정 */
+            var options = {
+                /* 유튜브 동영상 id (.../watch?v=TNWMZIf7eSg) */
+                videoId: '8KNw7q4OSac',
+                start: 0 /* start 시점 */
+            };
+
+            /* tubular 메서드 실행 */
+            $('#wrapper').tubular(options);
+        });
+
+    </script>
+</body>
+</html>
