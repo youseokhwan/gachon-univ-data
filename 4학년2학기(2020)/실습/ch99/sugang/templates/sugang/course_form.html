@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load widget_tweaks %}
+{% block title %}course_form.html{% endblock %}
+
+{% block content %}
+    <h1>Course-Sugang Create/Update - {{user}}</h1>
+    <p class="font-italic">CourseInlineFormSet을 이용하여 Course를 추가하거나 수정하는 폼입니다.</p>
+
+    {% if form.errors %}
+        <div class="alert alert-danger">
+            <div class="font-weight-bold">Wrong! Please correct the form error(s) below.</div>
+            {{ form.errors }}
+        </div>
+    {% endif %}
+
+    {% if formset.errors %}
+        <div class="alert alert-warning">
+            <div class="font-weight-bold">Wrong! Please correct the formset error(s) below.</div>
+            {% for formerrors in formset.errors %}
+                {{ formerrors }}
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <form action="." method="post">
+        {% csrf_token %}
+        <h4>create or update course contents</h4>
+
+        <fieldset class="card pt-3">
+            <div class="form-group row">
+                {{ form.title|add_label_class:"col-form-label col-sm-3 ml-3 font-weight-bold" }}
+                <div class="col-sm-5">
+                    {{ form.title|add_class:"form-control" }}
+                </div>
+            </div>
+
+            <div class="form-group row">
+                {{ form.professor|add_label_class:"col-form-label col-sm-3 ml-3 font-weight-bold" }}
+                <div class="col-sm-5">
+                    {{ form.professor|add_class:"form-control" }}
+                </div>
+            </div>
+        </fieldset>
+        <br>
+
+        <h4>create or update sugang contents</h4>
+        <fieldset class="card pt-3">
+            {{ formset.management_form }}
+            {% for form in formset %}
+                {{ form.id }}
+                <div class="form-group row">
+                    {{ form.student_id|add_label_class:"col-form-label col-sm-3 ml-3 font-weight-bold" }}
+                    <div class="col-sm-5">
+                        {{ form.student_id|add_class:"form-control" }}
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    {{ form.name|add_label_class:"col-form-label col-sm-3 ml-3 font-weight-bold" }}
+                    <div class="col-sm-5">
+                        {{ form.name|add_class:"form-control" }}
+                    </div>
+                </div>
+                <hr>
+            {% endfor %}
+        </fieldset>
+
+        <div class="form-group card py-1">
+            <div class="offset-sm-3 col-sm-5">
+                <input type="submit" value="Submit" class="btn btn-info"/>
+            </div>
+        </div>
+    </form>
+{% endblock %}

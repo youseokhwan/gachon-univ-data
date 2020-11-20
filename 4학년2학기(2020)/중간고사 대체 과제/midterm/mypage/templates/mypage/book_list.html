@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}book_list.html{% endblock %}
+
+{% block extra-style %}
+    <style type="text/css">
+        {# card hover #}
+        .card-img, .card-body {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+        .card:hover .card-img, .card:hover .card-body {
+            opacity: 0.3;
+        }
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .card:hover .middle{
+            opacity: 1;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    {# 제목 #}
+    <h4>내 전체 도서</h4>
+
+    <hr>
+
+    {# 도서 목록 #}
+    {% if object_list %}
+        <div class="row row-cols-2 row-cols-md-3">
+            {% for item in object_list %}
+                <div class="col mb-3">
+                    <div class="card mb-3" style="max-width: 540px; max-height: 200px;">
+                        <div class="row no-gutters">
+                            {# 썸네일 이미지 #}
+                            <div class="col-md-4">
+                                <img src="{{ item.image }}" class="card-img" alt="{{ item.isbn }}" style="margin: 0 auto;">
+                            </div>
+
+                            {# 제목, 저자, 출판사 정보 #}
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h6 class="card-title">{{ item.title }}</h6>
+                                    <p class="card-text text-truncate"><small class="text-muted">{{ item.author }}, {{ item.publisher }}</small></p>
+                                </div>
+                            </div>
+
+                            {# hover시 '추가' 버튼 표시 #}
+                            <div class="middle">
+                                <a class="btn btn-outline-success" href="{{ item.get_absolute_url }}">상세정보</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        {# 페이지네이션 #}
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-end">
+                {# 이전 페이지 #}
+                {% if page_obj.has_previous %}
+                    <li class="page-item">
+                        <a class="page-link text-success" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+                    </li>
+                {% else %}
+                    <li class="page-item disabled" data-toggle="tooltip" data-placement="bottom" title="첫 페이지입니다">
+                        <a class="page-link" href="#">Previous</a>
+                    </li>
+                {% endif %}
+
+                {# 현재 페이지 of 전체 페이지 #}
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" style="color: black">{{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</a>
+                </li>
+
+                {# 다음 페이지 #}
+                {% if page_obj.has_next %}
+                    <li class="page-item">
+                        <a class="page-link text-success" href="?page={{ page_obj.next_page_number }}">Next</a>
+                    </li>
+                {% else %}
+                    <li class="page-item disabled" data-toggle="tooltip" data-placement="bottom" title="마지막 페이지입니다">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </nav>
+    {% else %}
+        <p>검색된 내 도서가 없습니다.</p>
+        <p><a href="{% url 'book:index' %}">도서 검색</a>에서 도서를 추가해주세요!</p>
+    {% endif %}
+{% endblock %}

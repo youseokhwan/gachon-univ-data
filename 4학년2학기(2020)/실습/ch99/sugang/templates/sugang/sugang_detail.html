@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}sugang_detail.html{% endblock %}
+{% block content %}
+    <h2 class="mt-5">{{ object.name }}</h2>
+
+    <hr style="margin: 0 0 20px 0;">
+
+    <div class="container">
+        <p class="h5">학번: {{ object.student_id }}</p>
+        <p class="h5">신청일: {{ object.create_dt }}</p>
+        <p class="h5">수강강좌명:
+            <a href="{% url 'sugang:course_detail' object.course.id %}">{{ object.course.title }}</a>
+        </p>
+    </div>
+{% endblock %}

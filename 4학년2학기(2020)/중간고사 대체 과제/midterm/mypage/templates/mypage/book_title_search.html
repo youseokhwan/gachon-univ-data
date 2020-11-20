@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}book_title_search.html{% endblock %}
+
+{% block extra-style %}
+    <style type="text/css">
+        {# card hover #}
+        .card-img, .card-body {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+        .card:hover .card-img, .card:hover .card-body {
+            opacity: 0.3;
+        }
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .card:hover .middle{
+            opacity: 1;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    {# 도서 검색 form #}
+    <form action="" method="post">
+        <h5 for="book-search">제목 검색</h5>
+        {% csrf_token %}
+        {{ form.as_table }}
+        <button type="submit" class="btn btn-warning" hidden>검색</button>
+    </form>
+
+    {# 도서 목록 #}
+    {% if object_list %}
+        <hr>
+
+        <div class="row row-cols-2 row-cols-md-3">
+            {% for item in object_list %}
+                <div class="col mb-3">
+                    <div class="card mb-3" style="max-width: 540px; max-height: 200px;">
+                        <div class="row no-gutters">
+                            {# 썸네일 이미지 #}
+                            <div class="col-md-4">
+                                <img src="{{ item.image }}" class="card-img" alt="{{ item.isbn }}" style="margin: 0 auto;">
+                            </div>
+
+                            {# 제목, 저자, 출판사 정보 #}
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h6 class="card-title">{{ item.title }}</h6>
+                                    <p class="card-text text-truncate"><small class="text-muted">{{ item.author }}, {{ item.publisher }}</small></p>
+                                </div>
+                            </div>
+
+                            {# hover시 '추가' 버튼 표시 #}
+                            <div class="middle">
+                                <a class="btn btn-outline-success" href="{{ item.get_absolute_url }}">상세정보</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endblock %}

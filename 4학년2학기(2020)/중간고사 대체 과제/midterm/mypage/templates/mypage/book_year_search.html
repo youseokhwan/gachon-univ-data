@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}book_year_search.html{% endblock %}
+
+{% block content %}
+    {# 제목 #}
+    <h4>연도별 검색</h4>
+
+    <hr>
+
+    {# 데이터가 있을 경우 #}
+    {% if date_list %}
+        {% for date in date_list %}
+            <a class="btn btn-success" href="{% url 'mypage:year_archive' date|date:"Y" %}">{{ date|date:"Y" }}</a>
+        {% endfor %}
+    {# 데이터가 없을 경우 #}
+    {% else %}
+        <p>검색된 내 도서가 없습니다.</p>
+        <p><a href="{% url 'book:index' %}">도서 검색</a>에서 도서를 추가해주세요!</p>
+    {% endif %}
+{% endblock %}

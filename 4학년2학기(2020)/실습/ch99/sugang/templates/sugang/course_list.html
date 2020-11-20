@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}course_list.html{% endblock %}
+{% block content %}
+    {% for object in object_list %}
+        <br>
+        <a href="{% url 'sugang:course_detail' object.id %}" class="h2">
+            {{ object.title }}
+        </a>
+        <span class="font-italic h5">&nbsp;&nbsp;&nbsp;{{ object.professor }} 교수님</span>
+
+        <hr style="margin: 0 0 20px 0;">
+
+        <div class="row">
+            <ul>
+                {% for sugang in object.sugang_set.all %}
+                    <li>
+                        <a href="{{ sugang.get_absolute_url }}">{{ sugang.name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
+{% endblock %}

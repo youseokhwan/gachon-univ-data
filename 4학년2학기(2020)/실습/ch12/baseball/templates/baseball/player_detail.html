@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}player_detail.html{% endblock %}
+{% block content %}
+    <h2 class="mt-5">{{ object.name }}</h2>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-4">
+            <a href="{{ object.image.url }}">
+                <img src="{{ object.image.url }}" style="width: 75%;">
+            </a>
+        </div>
+
+        <ul class="col-md-3 mt-3">
+            <li class="h5">Team Name</li>
+            <p class="font-italic">
+                <a href="{% url 'baseball:team_detail' object.team.id %}">{{ object.team.name }}</a>
+            </p>
+
+            <li class="h5">Position</li>
+            <p class="font-italic">{{ object.position }}</p>
+
+            <li class="h5">Birth Day</li>
+            <p class="font-italic">{{ object.birth_day }}</p>
+        </ul>
+    </div>
+{% endblock %}

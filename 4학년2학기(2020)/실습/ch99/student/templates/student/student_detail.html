@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}student_detail.html{% endblock %}
+
+{% block content %}
+
+        <h1>Student Detail</h1>
+        <p>
+            학번 : {{ object.student_id }}<br>
+            이름 : {{ object.name }}<br>
+            전공 : {{ object.major }}<br>
+            학년 : {{ object.grade }}<br>
+            상태 : {{ object.status }}<br>
+            이메일 : {{ object.email }}
+        </p>
+
+{% endblock %}

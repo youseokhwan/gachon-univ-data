@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}book_detail.html{% endblock %}
+
+{% block extra-style %}
+    <style type="text/css">
+        {# 링크 밑줄 제거 #}
+        a:hover {
+            text-decoration: none;
+        }
+        .jumbotron {
+            padding: 2rem;
+        }
+        label {
+            color: gray;
+        }
+        .img-col {
+            max-width: 100px;
+        }
+        .my-col {
+            margin-right: 20px;
+        }
+        .form-control{
+            border: 1px solid black;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    {# 제목 #}
+    <h4>
+        {# 뒤로가기 버튼 #}
+        <a class="text-success" href="{% url 'mypage:index' %}" data-toggle="tooltip" data-placement="bottom" title="전체 도서" style="color: black">⬅︎</a>&nbsp;&nbsp;
+        상세정보
+    </h4>
+
+    <hr>
+
+    {# 도서 정보 #}
+    <div class="jumbotron">
+        <div class="row no-gutters">
+            {# 썸네일 #}
+            <div class="col img-col">
+                <img src="{{ object.image }}" alt="image" class="img-thumbnail">
+            </div>
+
+            {# 제목, 저자 #}
+            <div class="col">
+                <div class="card-body">
+                    <h4 class="card-title">{{ object.title }}</h4>
+                    <p class="card-text">{{ object.author }}</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row no-gutters">
+            {# 출판사 #}
+            <div class="col my-col">
+                <label for="publisher">출판사</label>
+                <input type="text" class="form-control" id="publisher" value="{{ object.publisher }}" readonly>
+            </div>
+
+            {# 출판일 #}
+            <div class="col my-col">
+                <label for="pubdate">출판일</label>
+                <input type="text" class="form-control" id="pubdate" value="{{ object.pubdate }}" readonly>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row no-gutters">
+            {# ISBN #}
+            <div class="col my-col">
+                <label for="isbn">ISBN</label>
+                <input type="text" class="form-control" id="isbn" value="{{ object.isbn }}" readonly>
+            </div>
+
+            {# 정가 #}
+            <div class="col my-col">
+                <label for="price">정가</label>
+                <input type="text" class="form-control" id="price" value="{{ object.price }}원" readonly>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row no-gutters">
+            {# 설명 #}
+            <div class="col my-col">
+                <label for="description">설명</label>
+                <textarea class="form-control" id="description" rows="3" readonly>{{ object.description }}</textarea>
+            </div>
+        </div>
+    </div>
+{% endblock %}

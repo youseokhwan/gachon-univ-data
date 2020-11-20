@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}book.html{% endblock %}
+
+{% block extra-style %}
+    <style type="text/css">
+        {# card hover #}
+        .card-img, .card-body {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+        .card:hover .card-img, .card:hover .card-body {
+            opacity: 0.3;
+        }
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .card:hover .middle{
+            opacity: 1;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    {# '추가되었습니다' alert #}
+    {% if messages %}
+        {% for message in messages %}
+            {% if message.tag == info %}
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>{{ message.message }}</strong>이(가) 내 도서에 추가되었습니다!
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            {% else %}
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    오류가 발생하였습니다.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    {# 도서 검색 form #}
+    <form action="" method="post">
+        <h5 for="book-search">도서 검색</h5>
+        {% csrf_token %}
+        {{ form.as_table }}
+        <button type="submit" class="btn btn-warning" hidden>검색</button>
+        <small id="book-search-desc" class="form-text text-muted">
+            제목, 저자, 출판사 검색
+        </small>
+    </form>
+
+    {# 검색 결과 #}
+    {% if object_list %}
+        <hr>
+
+        {# 도서 목록 #}
+        <div class="row row-cols-2 row-cols-md-3">
+            {% for item in object_list %}
+                <div class="col mb-3">
+                    <div class="card mb-3" style="max-width: 540px; max-height: 200px;">
+                        <div class="row no-gutters">
+                            {# 썸네일 이미지 #}
+                            <div class="col-md-4">
+                                <img src="{{ item.image }}" class="card-img" alt="{{ item.isbn }}" style="margin: 0 auto;">
+                            </div>
+
+                            {# 제목, 저자, 출판사 정보 #}
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h6 class="card-title">{{ item.title }}</h6>
+                                    <p class="card-text text-truncate"><small class="text-muted">{{ item.author }}, {{ item.publisher }}</small></p>
+                                </div>
+                            </div>
+
+                            {# hover시 '추가' 버튼 표시 #}
+                            <div class="middle">
+                                <form action="{% url 'book:insert' %}" method="post">
+                                    {% csrf_token %}
+                                    <input type="text" name="isbn" value="{{ item.isbn }}" hidden>
+                                    <input type="text" name="title" value="{{ item.title }}" hidden>
+                                    <input type="text" name="author" value="{{ item.author }}" hidden>
+                                    <input type="text" name="publisher" value="{{ item.publisher }}" hidden>
+                                    <input type="text" name="pubdate" value="{{ item.pubdate }}" hidden>
+                                    <input type="text" name="price" value="{{ item.price }}" hidden>
+                                    <input type="text" name="description" value="{{ item.description }}" hidden>
+                                    <input type="text" name="image" value="{{ item.image }}" hidden>
+                                    <button type="submit" class="btn btn-success">추가</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endblock %}

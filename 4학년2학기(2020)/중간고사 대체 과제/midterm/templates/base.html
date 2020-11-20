@@ -1,0 +1,84 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}base.html{% endblock %}</title>
+
+    {# Bootstrap CDN #}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <style type="text/css">
+        .container {
+            padding-top: 20px;
+        }
+        .footer {
+            background: whitesmoke;
+            padding-right: 20px;
+        }
+    </style>
+
+    {# 추가 CSS #}
+    {% block extra-style %}{% endblock %}
+</head>
+<body>
+{# 상단 Navbar #}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    {# 로고 #}
+    <a class="navbar-brand" href="{% url 'home' %}">
+        <img src="{% static 'img/logo.png' %}" width="40" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+        BookFinder
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    {# 각 App 메뉴 #}
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            {# book 앱 #}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'book:index' %}">도서 검색</a>
+            </li>
+
+            {# mypage 앱 #}
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    내 도서
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{% url 'mypage:index' %}">전체 도서</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="{% url 'mypage:title_search' %}">제목 검색</a>
+                    <a class="dropdown-item" href="{% url 'mypage:year_search' %}">연도별 검색</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+{# content #}
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+
+{# footer #}
+<footer class="fixed-bottom bg-info">
+    <div class="font-italic text-right footer">2020-2학기 웹DB프로그래밍 / 201533792 유석환 / <a href="https://github.com/youseokhwan/BookFinder" target="_blank">GitHub</a></div>
+</footer>
+
+{# Bootstrap CDN #}
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+{# Bootstrap 추가 JS #}
+<script>
+    {# tooltip 초기화 #}
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+</body>
+</html>
