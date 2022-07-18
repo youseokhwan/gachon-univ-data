@@ -1,4 +1,4 @@
-# personal-data
+# gachon-univ-data
 
 가천대학교에 관련된 개인 파일들을 보관하는 repository
 
